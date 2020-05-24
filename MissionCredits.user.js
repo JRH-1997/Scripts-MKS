@@ -75,7 +75,8 @@
                 var html_str = '';
 
                 if (get_credits_for_type(Missions[i].getAttribute('mission_type_id')) == "Alleen Ambulance") html_str = 'Alleen Ambulance';
-                else html_str = 'Gem. ' + get_credits_for_type(Missions[i].getAttribute('mission_type_id')) + ' Credits';
+                elseif (get_credits_for_type(Missions[i].getAttribute('mission_type_id')) >= 1) html_str = 'Gem. ' + get_credits_for_type(Missions[i].getAttribute('mission_type_id')) + ' Credits';
+                else html_str = 'Alleen Ambulance';
 
                 div_elem.innerHTML = html_str;
                 div_elem.setAttribute("class", "missionCredits");
@@ -111,7 +112,8 @@
 
             // create div element
             if (credits == "Alleen Ambulance") html_str = 'Alleen Ambulance';
-            else html_str = 'Gem. ' + credits + ' Credits';
+            elseif (Credits >= 1) html_str = 'Gem. ' + credits + ' Credits';
+            else (Credits == "Alleen Ambulance") html_str = 'Alleen Ambulance'
 
             var div_elem = document.createElement('div');
             div_elem.innerHTML = html_str;
