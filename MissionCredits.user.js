@@ -61,7 +61,8 @@
 
                     var child = childs[ic2];
                     Missions[i].firstElementChild.firstElementChild.removeChild(child);
-                    child.innerHTML = 'Gem. ' + get_credits_for_type(e.mtid) + ' Credits';
+                    if (get_credits_for_type(e.mtid) == "Alleen Ambulance") child.innerHTML = 'Alleen Ambulance'
+                    else child.innerHTML = 'Gem. ' + get_credits_for_type(e.mtid) + ' Credits';
                     Missions[i].firstElementChild.firstElementChild.appendChild(child);
                 }
             }
