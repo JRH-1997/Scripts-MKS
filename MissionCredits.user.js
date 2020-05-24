@@ -113,7 +113,7 @@
             // create div element
             if (credits == "Alleen Ambulance") html_str = 'Alleen Ambulance';
             elseif (Credits > 1) html_str = 'Gem. ' + credits + ' Credits';
-            else  html_str = 'Alleen Ambulance'
+            else  html_str = 'Alleen Ambulance';
 
             var div_elem = document.createElement('div');
             div_elem.innerHTML = html_str;
