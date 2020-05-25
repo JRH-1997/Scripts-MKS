@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Missioncredits
 // @namespace    http://tampermonkey.net/
-// @version      2.2
+// @version      3.0.1
 // @description  NL versie van credits in meldingenlijst met dank aan itsDreyter voor de originele Duitse versie.
 // @author       itsDreyter / JRH1997
 // @match        https://www.meldkamerspel.com/
