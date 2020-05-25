@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Missioncredits
 // @namespace    http://tampermonkey.net/
-// @version      3.0
+// @version      3.0.1
 // @description  NL versie van credits in meldingenlijst met dank aan itsDreyter voor de originele Duitse versie.
 // @author       itsDreyter / JRH1997
 // @match        https://www.meldkamerspel.com/
@@ -616,9 +616,9 @@
 /* 600 */ 500, 
 /* 601 */ 500, 
 /* 602 */ 510, 
-/* 603 */ 'NIET GEVONDEN', 
-/* 604 */ 'NIET GEVONDEN', 
-/* 605 */ 'NIET GEVONDEN', 
+/* 603 */ 1020, 
+/* 604 */ 4860, 
+/* 605 */ 11010, 
 /* 606 */ 'NIET GEVONDEN', 
 /* 607 */ 'NIET GEVONDEN', 
 /* 608 */ 'NIET GEVONDEN', 
