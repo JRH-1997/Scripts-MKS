@@ -5,8 +5,6 @@
 // @description  Berechnet zu verdienende Credits der derzeitigen Einsatzliste
 // @author       Lennard[TFD] | Piet2001
 // @match        https://www.meldkamerspel.com/
-// @updateURL    https://github.com/Piet2001/MKS-Scripts/raw/master/remainingCredits.user.js
-// @downloadURL  https://github.com/Piet2001/MKS-Scripts/raw/master/remainingCredits.user.js
 // ==/UserScript==
 
 (function() {
