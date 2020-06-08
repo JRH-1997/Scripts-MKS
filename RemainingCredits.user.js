@@ -111,13 +111,17 @@
             }
             //var missionCredits = requirements[parseInt(missionId)].average_credits || 250;
             var missionCredits = mission.average_credits || 250;
-            if(!$(t).parent().attr("id").includes("alliance"))
+            if($(t).parent().attr("id").includes("alliance"))
             {
-                credits += missionCredits;
+                creditsAlliance += missionCredits;
+            }
+            else if($(t).parent().attr("id").includes("sicherheitswache"))
+            {
+                creditsAlliance += missionCredits
             }
             else
             {
-                creditsAlliance += missionCredits;
+                credits += missionCredits;
             }
         });
         $("#remCredits").text(beautifyCredits(credits) + " / " + beautifyCredits(creditsAlliance));
