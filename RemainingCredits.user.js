@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Remaining Credits
 // @namespace    https://leitstellenspiel.de
-// @version      1.0.1
+// @version      1.0.2
 // @description  Berechnet zu verdienende Credits der derzeitigen Einsatzliste
 // @author       Lennard[TFD] | Piet2001
 // @match        https://www.meldkamerspel.com/
@@ -111,13 +111,17 @@
             }
             //var missionCredits = requirements[parseInt(missionId)].average_credits || 250;
             var missionCredits = mission.average_credits || 250;
-            if(!$(t).parent().attr("id").includes("alliance"))
+            if($(t).parent().attr("id").includes("alliance"))
             {
-                credits += missionCredits;
+                creditsAlliance += missionCredits;
+            }
+            else if($(t).parent().attr("id").includes("sicherheitswache"))
+            {
+                creditsAlliance += missionCredits
             }
             else
             {
-                creditsAlliance += missionCredits;
+                credits += missionCredits;
             }
         });
         $("#remCredits").text(beautifyCredits(credits) + " / " + beautifyCredits(creditsAlliance));
