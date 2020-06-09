@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Missioncredits in title
 // @namespace    http://tampermonkey.net/
-// @version      0.1.0
+// @version      0.1.1
 // @description  NL Credits in Missiontitle
 // @author       JRH1997
 // @match        https://www.meldkamerspel.com/*
@@ -38,7 +38,7 @@ async function init()
         let missionH1 = $("#missionH1");
 
         let html = `&nbsp&nbsp&nbsp&nbsp
-		<span class="label label-info"> <span id='html_str'> - </span></span>
+		<span class="label label-primary"> <span id='html_str'> - </span></span>
 		`;
 
 		let Creditsintitle = missionH1.append(html);
