@@ -1033,12 +1033,12 @@
             else html_str = 'Gem. ' + credits + ' Credits';
 
             var div_elem = document.createElement('div');
-            div_elem.innerHTML = html_str;
+            div_elem.innerHTML = `<span class="label label-primary"> <span id='html_str'> - </span></span>`;
             div_elem.setAttribute("class", "missionCredits");
             div_elem.setAttribute("id", "missionCredits_" + Missions[i].getAttribute('mission_id'));
 
             // add div element
-            Missions[i].firstElementChild.firstElementChild.appendChild(<span class="label label-primary"> <span id='div_elem'> - </span></span>);
+            Missions[i].firstElementChild.firstElementChild.appendChild(div_elem);
         }
     }
 
