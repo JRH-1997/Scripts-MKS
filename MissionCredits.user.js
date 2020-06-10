@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Missioncredits
 // @namespace    http://tampermonkey.net/
-// @version      3.0.4
+// @version      3.0.5
 // @description  NL versie van credits in meldingenlijst met dank aan itsDreyter voor de originele Duitse versie.
 // @author       itsDreyter / JRH1997
 // @match        https://www.meldkamerspel.com/
@@ -1033,7 +1033,7 @@
             else html_str = 'Gem. ' + credits + ' Credits';
 
             var div_elem = document.createElement('div');
-            div_elem.innerHTML = html_str;
+            div_elem.innerHTML = <span class="label label-primary"> <span id='html_str'> - </span></span>;
             div_elem.setAttribute("class", "missionCredits");
             div_elem.setAttribute("id", "missionCredits_" + Missions[i].getAttribute('mission_id'));
 
