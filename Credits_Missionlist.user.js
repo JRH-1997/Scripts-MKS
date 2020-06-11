@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Credits in Missionlist
+// @name         Credits Missionlist
 // @namespace    http://tampermonkey.net/
-// @version      4.0.0
+// @version      4.0.2
 // @description  Credits in Missionlist
 // @author       JRH1997
 // @match        https://www.meldkamerspel.com/
@@ -69,6 +69,7 @@
             var existing = false;
 
             if (e.id != Missions[i].getAttribute('mission_id')) continue;
+            var mission_type_id = Missions[i].getAttribute('mission_type_id');
 
             // check if html element is actually existing
             for (var ic = 0; ic < childs.length; ic++)
@@ -87,12 +88,8 @@
                 {
                     if(childs[ic2].className != 'missionCredits') continue;
                     var mission2;
-                    mission2 = requirements.filter(e => e.id == parseInt(e.mtid))[0] || 'q';
-                    if(mission2 = 'q')
-                    {
-                        requirements = await getRequirements();
-                        mission2 = requirements.filter(e => e.id == parseInt(e.mtid))[0] || 'q';
-                    }
+                    mission2 = requirements.filter(e => e.id == parseInt(mission_type_id))[0];
+
                     //var credits = requirements[parseInt(missionId)].average_credits || 0;
                     var credits = mission2.average_credits || 0;
 
@@ -138,8 +135,8 @@
                 else if (credits2 >= 4500) label2 = 'label-success'
                 else label2 = 'label-primary'
 
-                var div_elem = document.createElement('div');
-                
+                var div_elem = document.createElement('h4');
+
                 div_elem.innerHTML = `<span class="label ` + label2 + `"> <span id='html_str'>` + html_str2 + `</span></span>`;
                 div_elem.setAttribute("class", "missionCredits");
                 div_elem.setAttribute("id", "missionCredits_" + Missions[i].getAttribute('mission_id'));
@@ -197,7 +194,7 @@
             else if (credits >= 4500) label = 'label-success'
             else label = 'label-primary'
 
-            var div_elem = document.createElement('div');
+            var div_elem = document.createElement('h4');
             div_elem.innerHTML = `<span class="label ` + label + `"> <span id='html_str'>` + html_str + `</span></span>`
 		    div_elem.setAttribute("class", "missionCredits");
             div_elem.setAttribute("id", "missionCredits_" + Missions[i].getAttribute('mission_id'));
