@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Missioncredits in title
+// @name         Credits Missionheader
 // @namespace    http://tampermonkey.net/
 // @version      0.1.6
 // @description  NL Credits in Missiontitle
