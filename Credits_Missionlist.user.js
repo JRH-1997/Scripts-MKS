@@ -15,6 +15,8 @@
 
     var label;
     var requirements;
+    var credits ='';
+    var html_str
 
     function getRequirements()
     {
@@ -27,10 +29,6 @@
             });
         });
     };
-    function beautifyCredits(credits)
-    {
-        return credits.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.');
-    }
 
 
     // initial call of adding info
@@ -90,18 +88,11 @@
                     mission2 = get_credits_for_type(e.mtid);
 
                     //var credits = requirements[parseInt(missionId)].average_credits || 0;
-                    var credits = mission2.average_credits || 0;
+                    let credits = mission2.average_credits || 0;
 
-                    var html_str;
-                    if (credits == 0) html_str = `Alleen Ambulance`
-                    else html_str = beautifyCredits(credits) + ' Credits';
+                    gethtml_str(credits);
 
-                    var label;
-                    if (credits == 0) label = 'label-warning'
-                    else if (credits >= 8000) label = 'label-danger'
-                    else if (credits >= 4500) label = 'label-success'
-                    else label = 'label-primary'
-
+                    getlabel(credits);
 
                     var child = childs[ic2];
                     Missions[i].firstElementChild.firstElementChild.removeChild(child);
@@ -122,21 +113,15 @@
                     mission = requirements.filter(e => e.id == parseInt(mission_type_id))[0];
                 }
                 //var credits = requirements[parseInt(missionId)].average_credits || 0;
-                var credits2 = mission.average_credits || 0;
+                let credits = mission.average_credits || 0;
 
-                var html_str2 = '';
-                if (credits2 == 0) html_str2 = `Alleen Ambulance`
-                else html_str2 = beautifyCredits(credits2) + ' Credits';
+                gethtml_str(credits);
 
-                var label2;
-                if (credits2 == 0) label2 = 'label-warning'
-                else if (credits2 >= 8000) label2 = 'label-danger'
-                else if (credits2 >= 4500) label2 = 'label-success'
-                else label2 = 'label-primary'
+                getlabel(credits);
 
                 var div_elem = document.createElement('h4');
 
-                div_elem.innerHTML = `<span class="label ` + label2 + `"> <span id='html_str'>` + html_str2 + `</span></span>`;
+                div_elem.innerHTML = `<span class="label ` + label + `"> <span id='html_str'>` + html_str + `</span></span>`;
                 div_elem.setAttribute("class", "missionCredits");
                 div_elem.setAttribute("id", "missionCredits_" + Missions[i].getAttribute('mission_id'));
                 Missions[i].firstElementChild.firstElementChild.appendChild(div_elem);
@@ -178,20 +163,11 @@
                 mission = requirements.filter(e => e.id == parseInt(mission_type_id))[0];
             }
             //var credits = requirements[parseInt(missionId)].average_credits || 0;
-            var credits = mission.average_credits || 0;
+            let credits = mission.average_credits || 0;
 
-            // init html string
+            gethtml_str(credits);
 
-            // create div element
-            var html_str;
-            if (credits == 0) html_str = `Alleen Ambulance`
-            else html_str = beautifyCredits(credits) + ' Credits';
-
-            var label;
-            if (credits == 0) label = 'label-warning'
-            else if (credits >= 8000) label = 'label-danger'
-            else if (credits >= 4500) label = 'label-success'
-            else label = 'label-primary'
+            getlabel(credits);
 
             var div_elem = document.createElement('h4');
             div_elem.innerHTML = `<span class="label ` + label + `"> <span id='html_str'>` + html_str + `</span></span>`
@@ -207,5 +183,17 @@
     function get_credits_for_type(type)
     {
         return requirements.filter(e => e.id == [type])[0];
+    }
+    function gethtml_str(credits)
+    {
+        if (credits == 0) html_str = `Alleen Ambulance`
+        else html_str = credits.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.') + ' Credits';
+    }
+    function getlabel(credits)
+    {
+        if (credits == 0) label = 'label-warning'
+        else if (credits >= 8000) label = 'label-danger'
+        else if (credits >= 4500) label = 'label-success'
+        else label = 'label-primary'
     }
 })();
