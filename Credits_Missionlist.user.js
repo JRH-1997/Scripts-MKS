@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         Credits Missionlist
 // @namespace    http://tampermonkey.net/
-// @version      4.0.2
+// @version      4.0.3
 // @description  Credits in Missionlist
 // @author       JRH1997
 // @match        https://www.meldkamerspel.com/
 // @grant        none
 // ==/UserScript==
 
-(function() {
+(function(e) {
     'use strict';
 
     // array with credits..
@@ -52,17 +52,6 @@
         var Missions = $('.missionSideBarEntry');
         var added = false;
 
-        //console.log(await getCredits(3));
-        if(sessionStorage.getItem("LSS_MissionCache") == null)
-        {
-            requirements = await getRequirements();
-            sessionStorage.setItem("LSS_MissionCache", JSON.stringify(requirements));
-        }
-        else
-        {
-            requirements = JSON.parse(sessionStorage.getItem("LSS_MissionCache"));
-        }
-
         for (var i = 0; i < Missions.length; i++)
         {
             var childs = Missions[i].firstElementChild.firstElementChild.children;
@@ -87,8 +76,18 @@
                 for(var ic2 = 0; ic2 < childs.length; ic2++)
                 {
                     if(childs[ic2].className != 'missionCredits') continue;
+                    //console.log(await getCredits(3));
+                    if(sessionStorage.getItem("LSS_MissionCache") == null)
+                    {
+                        let requirements2 = await getRequirements();
+                        sessionStorage.setItem("LSS_MissionCache", JSON.stringify(requirements2));
+                    }
+                    else
+                    {
+                        requirements = JSON.parse(sessionStorage.getItem("LSS_MissionCache"));
+                    }
                     var mission2;
-                    mission2 = requirements.filter(e => e.id == parseInt(mission_type_id))[0];
+                    mission2 = get_credits_for_type(e.mtid);
 
                     //var credits = requirements[parseInt(missionId)].average_credits || 0;
                     var credits = mission2.average_credits || 0;
@@ -112,7 +111,7 @@
             }
             else //create element
             {
-                var mission_type_id = Missions[i].getAttribute('mission_type_id');
+                let mission_type_id = Missions[i].getAttribute('mission_type_id');
 
                 if(mission_type_id == 'null') continue;
 
@@ -202,5 +201,11 @@
             // add div element
             Missions[i].firstElementChild.firstElementChild.appendChild(div_elem);
         }
+    }
+        // returns the credits for a specific mission type
+
+    function get_credits_for_type(type)
+    {
+        return requirements.filter(e => e.id == [type])[0];
     }
 })();
