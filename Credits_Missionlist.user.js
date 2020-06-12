@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Credits Missionlist
 // @namespace    http://tampermonkey.net/
-// @version      4.0.4
+// @version      4.0.5
 // @description  Credits in Missionlist
 // @author       JRH1997
 // @match        https://www.meldkamerspel.com/
@@ -10,8 +10,6 @@
 
 (function(e) {
     'use strict';
-
-    // array with credits..
 
     var label;
     var requirements;
@@ -29,23 +27,34 @@
             });
         });
     };
+    async function loadrequirements()
+    {
+        //console.log(await getCredits(3));
+        if(sessionStorage.getItem("LSS_MissionCache") == null)
+        {
+            requirements = await getRequirements();
+            sessionStorage.setItem("LSS_MissionCache", JSON.stringify(requirements));
+        }
+        else
+        {
+            requirements = JSON.parse(sessionStorage.getItem("LSS_MissionCache"));
+        }
+    }
+    loadrequirements();
 
-
-    // initial call of adding info
-    initial_setup();
+    init();
 
     // extend missionMarkerAdd -----------------------------------------------------------------------
     var original_func = missionMarkerAdd;
 
-    // this function is always called, when a new mission is added
+    // this function is called when a mission is mutated
     missionMarkerAdd = function(e) {
         original_func.apply(this, arguments);
 
-        update(e);
+        mutations(e);
     }
 
-    // this function shows the credits information at initial loading of the page
-    async function update(e)
+    async function mutations(e)
     {
         var Missions = $('.missionSideBarEntry');
         var added = false;
@@ -56,39 +65,23 @@
             var existing = false;
 
             if (e.id != Missions[i].getAttribute('mission_id')) continue;
-            var mission_type_id = Missions[i].getAttribute('mission_type_id');
 
-            // check if html element is actually existing
+            // check if element is existing
             for (var ic = 0; ic < childs.length; ic++)
             {
-                if(childs[ic].className == 'missionCredits')
+                if(childs[ic].className == 'creditsmissionlist')
                 {
                    existing = true;
                    break;
                 }
             }
 
-            // if it's existing but mtid is filled, we re create the element
             if(existing == true && e.mtid != undefined)
             {
                 for(var ic2 = 0; ic2 < childs.length; ic2++)
                 {
-                    if(childs[ic2].className != 'missionCredits') continue;
-                    //console.log(await getCredits(3));
-                    if(sessionStorage.getItem("LSS_MissionCache") == null)
-                    {
-                        let requirements2 = await getRequirements();
-                        sessionStorage.setItem("LSS_MissionCache", JSON.stringify(requirements2));
-                    }
-                    else
-                    {
-                        requirements = JSON.parse(sessionStorage.getItem("LSS_MissionCache"));
-                    }
-                    var mission2;
-                    mission2 = get_credits_for_type(e.mtid);
-
-                    //var credits = requirements[parseInt(missionId)].average_credits || 0;
-                    let credits = mission2.average_credits || 0;
+                    if(childs[ic2].className != 'creditsmissionlist') continue;
+                    let credits = gettypecredits(e.mtid).average_credits || 0;
 
                     gethtml_str(credits);
 
@@ -100,20 +93,11 @@
                     Missions[i].firstElementChild.firstElementChild.appendChild(child);
                 }
             }
-            else //create element
+            else //create
             {
-                let mission_type_id = Missions[i].getAttribute('mission_type_id');
+                if(Missions[i].getAttribute('mission_type_id') == 'null') continue;
 
-                if(mission_type_id == 'null') continue;
-
-                let mission = requirements.filter(e => e.id == parseInt(mission_type_id))[0];
-                if(mission == undefined)
-                {
-                    requirements = await getRequirements();
-                    mission = requirements.filter(e => e.id == parseInt(mission_type_id))[0];
-                }
-                //var credits = requirements[parseInt(missionId)].average_credits || 0;
-                let credits = mission.average_credits || 0;
+                let credits = gettypecredits(Missions[i].getAttribute('mission_type_id')).average_credits || 0;
 
                 gethtml_str(credits);
 
@@ -122,48 +106,27 @@
                 var div_elem = document.createElement('h4');
 
                 div_elem.innerHTML = `<span class="label ` + label + `"> <span id='html_str'>` + html_str + `</span></span>`;
-                div_elem.setAttribute("class", "missionCredits");
-                div_elem.setAttribute("id", "missionCredits_" + Missions[i].getAttribute('mission_id'));
+                div_elem.setAttribute("class", "creditsmissionlist");
+                div_elem.setAttribute("id", "creditsmissionlist_" + Missions[i].getAttribute('mission_id'));
                 Missions[i].firstElementChild.firstElementChild.appendChild(div_elem);
             }
         }
     }
 
-    async function initial_setup()
+    async function init()
     {
-        // clear all
-        $('.missionCredits').remove();
+        // clear 
+        $('.creditsmissionlist').remove();
 
-        // get complete mission list
+        // get  mission list
         var Missions = $('.missionSideBarEntry');
 
-        //console.log(await getCredits(3));
-        if(sessionStorage.getItem("LSS_MissionCache") == null)
-        {
-            requirements = await getRequirements();
-            sessionStorage.setItem("LSS_MissionCache", JSON.stringify(requirements));
-        }
-        else
-        {
-            requirements = JSON.parse(sessionStorage.getItem("LSS_MissionCache"));
-        }
-
-        // add info to every mission
+        // add info to mission
         for (var i = 0; i < Missions.length; i++)
         {
-            var mission_type_id = Missions[i].getAttribute('mission_type_id');
+            if (Missions[i].getAttribute('mission_type_id') == 'null') continue;
 
-            if (mission_type_id == 'null') continue;
-
-            // init credits
-            let mission = requirements.filter(e => e.id == parseInt(mission_type_id))[0];
-            if(mission == undefined)
-            {
-                requirements = await getRequirements();
-                mission = requirements.filter(e => e.id == parseInt(mission_type_id))[0];
-            }
-            //var credits = requirements[parseInt(missionId)].average_credits || 0;
-            let credits = mission.average_credits || 0;
+            let credits = gettypecredits(Missions[i].getAttribute('mission_type_id')).average_credits || 0;
 
             gethtml_str(credits);
 
@@ -171,16 +134,15 @@
 
             var div_elem = document.createElement('h4');
             div_elem.innerHTML = `<span class="label ` + label + `"> <span id='html_str'>` + html_str + `</span></span>`
-		    div_elem.setAttribute("class", "missionCredits");
-            div_elem.setAttribute("id", "missionCredits_" + Missions[i].getAttribute('mission_id'));
+		    div_elem.setAttribute("class", "creditsmissionlist");
+            div_elem.setAttribute("id", "creditsmissionlist_" + Missions[i].getAttribute('mission_id'));
 
             // add div element
             Missions[i].firstElementChild.firstElementChild.appendChild(div_elem);
         }
     }
-        // returns the credits for a specific mission type
 
-    function get_credits_for_type(type)
+    function gettypecredits(type)
     {
         return requirements.filter(e => e.id == [type])[0];
     }
