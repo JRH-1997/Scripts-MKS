@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Remaining Credits
 // @namespace    https://leitstellenspiel.de
-// @version      1.0.4
+// @version      1.0.5
 // @description  Berechnet zu verdienende Credits der derzeitigen Einsatzliste
 // @author       Lennard[TFD] | Piet2001 | JRH1997
 // @match        https://www.leitstellenspiel.de/
