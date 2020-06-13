@@ -133,16 +133,10 @@
 
         let filterBtns = filterDiv.append(html);
 
-        //console.log(await getCredits(3));
-        if(sessionStorage.getItem("LSS_MissionCache") == null)
-        {
-            requirements = await getRequirements();
-            sessionStorage.setItem("LSS_MissionCache", JSON.stringify(requirements));
-        }
-        else
-        {
-            requirements = JSON.parse(sessionStorage.getItem("LSS_MissionCache"));
-        }
+        sessionStorage.clear("LSS_Missionrequirements")
+        requirements = await getRequirements();
+        sessionStorage.setItem("LSS_Missionrequirements", JSON.stringify(requirements));
+        requirements = JSON.parse(sessionStorage.getItem("LSS_Missionrequirements"));
 
         var missionList = $("#missions-panel-body");
         var missions = missionList.find("a[id*='alarm_button']");
