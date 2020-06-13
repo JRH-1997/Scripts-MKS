@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Credits Missionlist
 // @namespace    http://tampermonkey.net/
-// @version      4.0.5
+// @version      4.0.6
 // @description  Credits in Missionlist
 // @author       JRH1997
 // @match        https://www.meldkamerspel.com/
