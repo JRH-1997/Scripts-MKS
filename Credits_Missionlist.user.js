@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         Credits Missionlist
 // @namespace    http://tampermonkey.net/
-// @version      4.0.6
+// @version      4.0.7
 // @description  Credits in Missionlist
 // @author       JRH1997
 // @match        https://www.meldkamerspel.com/
 // @grant        none
 // ==/UserScript==
 
-(function(e) {
+(function() {
     'use strict';
 
     var label;
@@ -52,15 +52,14 @@
 
             if (e.id != Missions[i].getAttribute('mission_id')) continue;
 
-            //console.log(await getCredits(3));
-            if(sessionStorage.getItem("LSS_MissionCache") == null)
+            if(sessionStorage.getItem("LSS_Missionrequirements") == null)
             {
                 requirements = await getRequirements();
-                sessionStorage.setItem("LSS_MissionCache", JSON.stringify(requirements));
+                sessionStorage.setItem("LSS_Missionrequirements", JSON.stringify(requirements));
             }
             else
             {
-                requirements = JSON.parse(sessionStorage.getItem("LSS_MissionCache"));
+                requirements = JSON.parse(sessionStorage.getItem("LSS_Missionrequirements"));
             }
 
             // check if element is existing
@@ -118,17 +117,11 @@
         // get  mission list
         var Missions = $('.missionSideBarEntry');
 
-        //console.log(await getCredits(3));
-        if(sessionStorage.getItem("LSS_MissionCache") == null)
-        {
-            requirements = await getRequirements();
-            sessionStorage.setItem("LSS_MissionCache", JSON.stringify(requirements));
-        }
-        else
-        {
-            requirements = JSON.parse(sessionStorage.getItem("LSS_MissionCache"));
-        }
-
+        sessionStorage.clear("LSS_Missionrequirements")
+        requirements = await getRequirements();
+        sessionStorage.setItem("LSS_Missionrequirements", JSON.stringify(requirements));
+        requirements = JSON.parse(sessionStorage.getItem("LSS_Missionrequirements"));
+        
         // add info to mission
         for (var i = 0; i < Missions.length; i++)
         {
