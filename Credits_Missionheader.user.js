@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Credits Missionheader
 // @namespace    http://tampermonkey.net/
-// @version      0.1.6
+// @version      0.1.7
 // @description  NL Credits in Missiontitle
 // @author       JRH1997
 // @match        https://www.meldkamerspel.com/*
@@ -39,14 +39,14 @@ async function init()
         let missionH1 = $("#missionH1");
 
         //console.log(await getCredits(3));
-        if(sessionStorage.getItem("LSS_MissionCache") == null)
+        if(sessionStorage.getItem("LSS_Missionrequirements") == null)
         {
             requirements = await getRequirements();
-            sessionStorage.setItem("LSS_MissionCache", JSON.stringify(requirements));
+            sessionStorage.setItem("LSS_Missionrequirements", JSON.stringify(requirements));
         }
         else
         {
-            requirements = JSON.parse(sessionStorage.getItem("LSS_MissionCache"));
+            requirements = JSON.parse(sessionStorage.getItem("LSS_Missionrequirements"));
         }
 
         getlabel()
