@@ -27,20 +27,6 @@
             });
         });
     };
-    async function loadrequirements()
-    {
-        //console.log(await getCredits(3));
-        if(sessionStorage.getItem("LSS_MissionCache") == null)
-        {
-            requirements = await getRequirements();
-            sessionStorage.setItem("LSS_MissionCache", JSON.stringify(requirements));
-        }
-        else
-        {
-            requirements = JSON.parse(sessionStorage.getItem("LSS_MissionCache"));
-        }
-    }
-    loadrequirements();
 
     init();
 
@@ -65,6 +51,17 @@
             var existing = false;
 
             if (e.id != Missions[i].getAttribute('mission_id')) continue;
+
+            //console.log(await getCredits(3));
+            if(sessionStorage.getItem("LSS_MissionCache") == null)
+            {
+                requirements = await getRequirements();
+                sessionStorage.setItem("LSS_MissionCache", JSON.stringify(requirements));
+            }
+            else
+            {
+                requirements = JSON.parse(sessionStorage.getItem("LSS_MissionCache"));
+            }
 
             // check if element is existing
             for (var ic = 0; ic < childs.length; ic++)
@@ -120,6 +117,17 @@
 
         // get  mission list
         var Missions = $('.missionSideBarEntry');
+
+        //console.log(await getCredits(3));
+        if(sessionStorage.getItem("LSS_MissionCache") == null)
+        {
+            requirements = await getRequirements();
+            sessionStorage.setItem("LSS_MissionCache", JSON.stringify(requirements));
+        }
+        else
+        {
+            requirements = JSON.parse(sessionStorage.getItem("LSS_MissionCache"));
+        }
 
         // add info to mission
         for (var i = 0; i < Missions.length; i++)
