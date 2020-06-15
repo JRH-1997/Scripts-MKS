@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Remaining Credits
 // @namespace    https://leitstellenspiel.de
-// @version      1.0.5
+// @version      1.0.6
 // @description  Berechnet zu verdienende Credits der derzeitigen Einsatzliste
 // @author       Lennard[TFD] | Piet2001 | JRH1997
 // @match        https://www.leitstellenspiel.de/
@@ -115,23 +115,23 @@
 
         let html = ``
 
-        if (I18n.locale == "de_DE") html = `<br><br>
+        if (I18n.locale == "de_DE") html = `<br>
              <span>Zu verdienen: <span id='remCredits'>0 / 0</span> Credits</span>
                     `;
-        else if (I18n.locale == "nl_NL") html = `<br><br>
+        else if (I18n.locale == "nl_NL") html = `<br>
                     <span>Te verdienen: <span id='remCredits'>0 / 0</span> Credits</span>
                     `;
-        else if (I18n.locale == "en_US") html = `<br><br>
+        else if (I18n.locale == "en_US") html = `<br>
                     <span>To earn: <span id='remCredits'>0 / 0</span> Credits</span>
                     `;
-        else if (I18n.locale == "en_GB") html = `<br><br>
+        else if (I18n.locale == "en_GB") html = `<br>
                     <span>To earn: <span id='remCredits'>0 / 0</span> Credits</span>
                     `;
-        else if (I18n.locale == "en_AU") html = `<br><br>
+        else if (I18n.locale == "en_AU") html = `<br>
                     <span>To earn: <span id='remCredits'>0 / 0</span> Credits</span>
                     `;
 
-        let filterBtns = filterDiv.append(html);
+        let filterBtns = filterDiv.after(html);
 
         sessionStorage.clear("LSS_Missionrequirements")
         requirements = await getRequirements();
