@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Credits Missionlist Label
 // @namespace    http://tampermonkey.net/
-// @version      4.0.9
+// @version      4.0.10
 // @description  Credits in Missionlist in colored labels
 // @author       JRH1997
 // @match        https://www.meldkamerspel.com/
@@ -65,7 +65,7 @@
             // check if element is existing
             for (var ic = 0; ic < childs.length; ic++)
             {
-                if(childs[ic].className == 'creditsmissionlist')
+                if(childs[ic].className == 'creditsmissionlistlabel')
                 {
                    existing = true;
                    break;
