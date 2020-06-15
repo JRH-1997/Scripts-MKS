@@ -1,10 +1,14 @@
 // ==UserScript==
 // @name         Remaining Credits
 // @namespace    https://leitstellenspiel.de
-// @version      1.0.3
+// @version      1.0.6
 // @description  Berechnet zu verdienende Credits der derzeitigen Einsatzliste
-// @author       Lennard[TFD] | Piet2001
+// @author       Lennard[TFD] | Piet2001 | JRH1997
+// @match        https://www.leitstellenspiel.de/
+// @match        https://www.missionchief.com/
 // @match        https://www.meldkamerspel.com/
+// @match        https://www.missionchief.co.uk/
+// @match        https://www.missionchief-australia.com/
 // ==/UserScript==
 
 (function() {
@@ -33,14 +37,61 @@
 
     function getRequirements()
     {
-        return new Promise(resolve => {
-            $.ajax({
-                url: "https://www.meldkamerspel.com/einsaetze.json",
-                method: "GET",
-            }).done((res) => {
-                resolve(res);
+        if (I18n.locale == "de_DE")
+        {
+            return new Promise(resolve => {
+                $.ajax({
+                    url: "https://www.leitstellenspiel.de/einsaetze.json",
+                    method: "GET",
+                }).done((res) => {
+                    resolve(res);
+                });
             });
-        });
+        }
+        else if (I18n.locale == "nl_NL")
+        {
+            return new Promise(resolve => {
+                $.ajax({
+                    url: "https://www.meldkamerspel.com/einsaetze.json",
+                    method: "GET",
+                }).done((res) => {
+                    resolve(res);
+                });
+            });
+        }
+        else if (I18n.locale == "en_US")
+        {
+            return new Promise(resolve => {
+                $.ajax({
+                    url: "https://www.missionchief.com/einsaetze.json",
+                    method: "GET",
+                }).done((res) => {
+                    resolve(res);
+                });
+            });
+        }
+        else if (I18n.locale == "en_GB")
+        {
+            return new Promise(resolve => {
+                $.ajax({
+                    url: "https://www.missionchief.co.uk/einsaetze.json",
+                    method: "GET",
+                }).done((res) => {
+                    resolve(res);
+                });
+            });
+        }
+        else if (I18n.locale == "en_AU")
+        {
+            return new Promise(resolve => {
+                $.ajax({
+                    url: "https://www.missionchief-australia.com/einsaetze.json",
+                    method: "GET",
+                }).done((res) => {
+                    resolve(res);
+                });
+            });
+        }
     }
 
     function setupListener(mission)
@@ -61,21 +112,31 @@
     {
 
         let filterDiv = $("#btn-group-mission-select");
-        let html = `<br><br>
+
+        let html = ``
+
+        if (I18n.locale == "de_DE") html = `<br>
+             <span>Zu verdienen: <span id='remCredits'>0 / 0</span> Credits</span>
+                    `;
+        else if (I18n.locale == "nl_NL") html = `<br>
                     <span>Te verdienen: <span id='remCredits'>0 / 0</span> Credits</span>
                     `;
-        let filterBtns = filterDiv.append(html);
+        else if (I18n.locale == "en_US") html = `<br>
+                    <span>To earn: <span id='remCredits'>0 / 0</span> Credits</span>
+                    `;
+        else if (I18n.locale == "en_GB") html = `<br>
+                    <span>To earn: <span id='remCredits'>0 / 0</span> Credits</span>
+                    `;
+        else if (I18n.locale == "en_AU") html = `<br>
+                    <span>To earn: <span id='remCredits'>0 / 0</span> Credits</span>
+                    `;
 
-        //console.log(await getCredits(3));
-        if(sessionStorage.getItem("LSS_MissionCache") == null)
-        {
-            requirements = await getRequirements();
-            sessionStorage.setItem("LSS_MissionCache", JSON.stringify(requirements));
-        }
-        else
-        {
-            requirements = JSON.parse(sessionStorage.getItem("LSS_MissionCache"));
-        }
+        let filterBtns = filterDiv.after(html);
+
+        sessionStorage.clear("LSS_Missionrequirements")
+        requirements = await getRequirements();
+        sessionStorage.setItem("LSS_Missionrequirements", JSON.stringify(requirements));
+        requirements = JSON.parse(sessionStorage.getItem("LSS_Missionrequirements"));
 
         var missionList = $("#missions-panel-body");
         var missions = missionList.find("a[id*='alarm_button']");
@@ -97,7 +158,7 @@
     {
         var credits = 0;
         var creditsAlliance = 0;
-        var creditsGepland = 0;
+        var creditsPlanned = 0;
         var missionList = $("#missions-panel-body");
         var missions = missionList.find("a[id*='alarm_button']").parent().parent().parent().not("[class*='mission_deleted']").not("[class*='mission_alliance_distance_hide']");
         missions.each(async (e, t) => {
@@ -118,15 +179,18 @@
             }
             else if($(t).parent().attr("id").includes("sicherheitswache"))
             {
-                creditsGepland += missionCredits
+                creditsPlanned += missionCredits
             }
             else
             {
                 credits += missionCredits;
             }
         });
-        $("#remCredits").text(beautifyCredits(credits) + " / " + beautifyCredits(creditsGepland) + " / " + beautifyCredits(creditsAlliance));
+        if (I18n.locale == "en_GB")
+            $("#remCredits").text(beautifyCredits(credits) + " / " + beautifyCredits(creditsAlliance));
+        else
+            $("#remCredits").text(beautifyCredits(credits) + " / " + beautifyCredits(creditsPlanned) + " / " + beautifyCredits(creditsAlliance));
         //console.log(credits);
-    }
+    };
     init();
 })();
