@@ -2,7 +2,7 @@
 // @name         Credits Missionlist Label
 // @namespace    http://tampermonkey.net/
 // @version      4.0.8
-// @description  Credits in Missionlist
+// @description  Credits in Missionlist in colored labels
 // @author       JRH1997
 // @match        https://www.meldkamerspel.com/
 // @grant        none
