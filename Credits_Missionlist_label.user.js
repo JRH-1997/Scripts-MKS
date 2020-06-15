@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Credits Missionlist Label
 // @namespace    http://tampermonkey.net/
-// @version      4.0.8
+// @version      4.0.9
 // @description  Credits in Missionlist in colored labels
 // @author       JRH1997
 // @match        https://www.meldkamerspel.com/
@@ -76,7 +76,7 @@
             {
                 for(var ic2 = 0; ic2 < childs.length; ic2++)
                 {
-                    if(childs[ic2].className != 'creditsmissionlist') continue;
+                    if(childs[ic2].className != 'creditsmissionlistlabel') continue;
                     let credits = gettypecredits(e.mtid).average_credits || 0;
 
                     gethtml_str(credits);
@@ -102,8 +102,8 @@
                 var div_elem = document.createElement('h4');
 
                 div_elem.innerHTML = `<span class="label ` + label + `"> <span id='html_str'>` + html_str + `</span></span>`;
-                div_elem.setAttribute("class", "creditsmissionlist");
-                div_elem.setAttribute("id", "creditsmissionlist_" + Missions[i].getAttribute('mission_id'));
+                div_elem.setAttribute("class", "creditsmissionlistlabel");
+                div_elem.setAttribute("id", "creditsmissionlistlabel_" + Missions[i].getAttribute('mission_id'));
                 Missions[i].firstElementChild.firstElementChild.appendChild(div_elem);
             }
         }
@@ -135,8 +135,8 @@
 
             var div_elem = document.createElement('h4');
             div_elem.innerHTML = `<span class="label ` + label + `"> <span id='html_str'>` + html_str + `</span></span>`
-		    div_elem.setAttribute("class", "creditsmissionlist");
-            div_elem.setAttribute("id", "creditsmissionlist_" + Missions[i].getAttribute('mission_id'));
+		    div_elem.setAttribute("class", "creditsmissionlistlabel");
+            div_elem.setAttribute("id", "creditsmissionlistlabel_" + Missions[i].getAttribute('mission_id'));
 
             // add div element
             Missions[i].firstElementChild.firstElementChild.appendChild(div_elem);
