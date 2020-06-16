@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Credits Missionlist Text
 // @namespace    http://tampermonkey.net/
-// @version      4.0.8
+// @version      4.0.9
 // @description  Credits in Missionlist in Text
 // @author       JRH1997
 // @match        https://www.meldkamerspel.com/
@@ -143,6 +143,6 @@
     function gethtml_str(credits)
     {
         if (credits == 0) html_str = `Alleen Ambulance`
-        else html_str = 'Gem ' + credits.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.') + ' Credits';
+        else html_str = 'Gem. ' + credits.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.') + ' Credits';
     }
 })();
