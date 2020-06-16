@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Credits Missionheader
 // @namespace    http://tampermonkey.net/
-// @version      0.1.7
+// @version      0.1.8
 // @description  NL Credits in Missiontitle
 // @author       JRH1997
-// @match        https://www.meldkamerspel.com/*
+// @match        https://www.meldkamerspel.com/missions/*
 // @grant        none
 // ==/UserScript==
 
@@ -115,4 +115,3 @@ let missionHelp = $('#mission_help');
 init ();
   }
 })();
-
