@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Credits Missionlist Label
 // @namespace    http://tampermonkey.net/
-// @version      4.0.10
+// @version      4.0.11
 // @description  Credits in Missionlist in colored labels
 // @author       JRH1997
 // @match        https://www.meldkamerspel.com/
@@ -77,6 +77,13 @@
                 for(var ic2 = 0; ic2 < childs.length; ic2++)
                 {
                     if(childs[ic2].className != 'creditsmissionlistlabel') continue;
+                    if (gettypecredits(e.mtid) == undefined)
+                    {
+                        sessionStorage.clear("LSS_Missionrequirements")
+                        requirements = await getRequirements();
+                        sessionStorage.setItem("LSS_Missionrequirements", JSON.stringify(requirements));
+                        requirements = JSON.parse(sessionStorage.getItem("LSS_Missionrequirements"));
+                    }
                     let credits = gettypecredits(e.mtid).average_credits || 0;
 
                     gethtml_str(credits);
@@ -92,6 +99,13 @@
             else //create
             {
                 if(Missions[i].getAttribute('mission_type_id') == 'null') continue;
+                if (gettypecredits(Missions[i].getAttribute('mission_type_id')) == undefined)
+                {
+                    sessionStorage.clear("LSS_Missionrequirements")
+                    requirements = await getRequirements();
+                    sessionStorage.setItem("LSS_Missionrequirements", JSON.stringify(requirements));
+                    requirements = JSON.parse(sessionStorage.getItem("LSS_Missionrequirements"));
+                }
 
                 let credits = gettypecredits(Missions[i].getAttribute('mission_type_id')).average_credits || 0;
 
@@ -117,15 +131,27 @@
         // get  mission list
         var Missions = $('.missionSideBarEntry');
 
-        sessionStorage.clear("LSS_Missionrequirements")
-        requirements = await getRequirements();
-        sessionStorage.setItem("LSS_Missionrequirements", JSON.stringify(requirements));
-        requirements = JSON.parse(sessionStorage.getItem("LSS_Missionrequirements"));
+        if(sessionStorage.getItem("LSS_Missionrequirements") == null)
+        {
+            requirements = await getRequirements();
+            sessionStorage.setItem("LSS_Missionrequirements", JSON.stringify(requirements));
+        }
+        else
+        {
+            requirements = JSON.parse(sessionStorage.getItem("LSS_Missionrequirements"));
+        }
         
         // add info to mission
         for (var i = 0; i < Missions.length; i++)
         {
             if (Missions[i].getAttribute('mission_type_id') == 'null') continue;
+            if (gettypecredits(Missions[i].getAttribute('mission_type_id')) == undefined)
+            {
+                sessionStorage.clear("LSS_Missionrequirements")
+                requirements = await getRequirements();
+                sessionStorage.setItem("LSS_Missionrequirements", JSON.stringify(requirements));
+                requirements = JSON.parse(sessionStorage.getItem("LSS_Missionrequirements"));
+            }
 
             let credits = gettypecredits(Missions[i].getAttribute('mission_type_id')).average_credits || 0;
 
