@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Credits Missionlist Label
 // @namespace    http://tampermonkey.net/
-// @version      4.0.11
+// @version      4.0.12
 // @description  Credits in Missionlist in colored labels
 // @author       JRH1997
 // @match        https://www.meldkamerspel.com/
@@ -126,7 +126,7 @@
     async function init()
     {
         // clear 
-        $('.creditsmissionlist').remove();
+        $('.creditsmissionlistlabel').remove();
 
         // get  mission list
         var Missions = $('.missionSideBarEntry');
