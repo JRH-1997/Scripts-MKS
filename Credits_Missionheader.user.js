@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Credits Missionheader
 // @namespace    http://tampermonkey.net/
-// @version      0.1.8
+// @version      0.1.9
 // @description  NL Credits in Missiontitle
 // @author       JRH1997
 // @match        https://www.meldkamerspel.com/missions/*
@@ -11,7 +11,7 @@
 (function() {
     'use strict';
 
-	var html_str;
+    var html_str;
     var label;
     var credits;
 
@@ -49,7 +49,7 @@ async function init()
             requirements = JSON.parse(sessionStorage.getItem("LSS_Missionrequirements"));
         }
 
-        getlabel()
+        await getlabel()
 
         let html = `<br>&nbsp&nbsp&nbsp&nbsp
 		<span class="label ` + label + `"> <span id='html_str'> - </span></span>
@@ -59,51 +59,63 @@ async function init()
 
         calculate();
 	}
-function calculate()
+async function calculate()
     {
         var credits = 0;
         var help = $("#navbar-right-help-button");
         var HelpButton = help.find("a[id*='mission_help']").parent().parent().parent();
-        HelpButton.each(async (e, t) => {
-            //if($(t).parent().css("display") == "none") return;
-            let missionId = $('#mission_help').attr('href').split("/").pop().replace(/\?.*/, '');
-			if(missionId == "null") return;
+        //if($(t).parent().css("display") == "none") return;
+        let missionId = $('#mission_help').attr('href').split("/").pop().replace(/\?.*/, '');
+        if(missionId == "null") return;
+        if (requirements.filter(e => e.id == parseInt(missionId))[0] == undefined)
+        {
+            sessionStorage.clear("LSS_Missionrequirements")
+            requirements = await getRequirements();
+            sessionStorage.setItem("LSS_Missionrequirements", JSON.stringify(requirements));
+            requirements = JSON.parse(sessionStorage.getItem("LSS_Missionrequirements"));
             let mission = requirements.filter(e => e.id == parseInt(missionId))[0];
-            if(mission == undefined)
-            {
-                requirements = await getRequirements();
-                mission = requirements.filter(e => e.id == parseInt(missionId))[0];
-            }
             //var credits = requirements[parseInt(missionId)].average_credits || 0;
-            var missionCredits = mission.average_credits || 0;
+            let missionCredits = mission.average_credits || 0;
             credits += missionCredits;
-            });
-
+        }
+        else
+        {
+            let mission = requirements.filter(e => e.id == parseInt(missionId))[0];
+            //var credits = requirements[parseInt(missionId)].average_credits || 0;
+            let missionCredits = mission.average_credits || 0;
+            credits += missionCredits;
+        }
         if (credits == 0)
             $("#html_str").text `Alleen Ambulance`;
         else
             $("#html_str").text(beautifyCredits(credits) + ` Credits`);
     }
-    function getlabel()
+async function getlabel()
     {
         var credits = 0;
         var help = $("#navbar-right-help-button");
-        var HelpButton = help.find("a[id*='mission_help']" ||'');
-        HelpButton.each(async (e, t) => {
-            //if($(t).parent().css("display") == "none") return;
-            let missionId = $('#mission_help').attr('href').split("/").pop().replace(/\?.*/, '');
-			if(missionId == "null") return;
+        var HelpButton = help.find("a[id*='mission_help']").parent().parent().parent();
+        //if($(t).parent().css("display") == "none") return;
+        let missionId = $('#mission_help').attr('href').split("/").pop().replace(/\?.*/, '');
+        if(missionId == "null") return;
+        if (requirements.filter(e => e.id == parseInt(missionId))[0] == undefined)
+        {
+            sessionStorage.clear("LSS_Missionrequirements")
+            requirements = await getRequirements();
+            sessionStorage.setItem("LSS_Missionrequirements", JSON.stringify(requirements));
+            requirements = JSON.parse(sessionStorage.getItem("LSS_Missionrequirements"));
             let mission = requirements.filter(e => e.id == parseInt(missionId))[0];
-            if(mission == undefined)
-            {
-                requirements = await getRequirements();
-                mission = requirements.filter(e => e.id == parseInt(missionId))[0];
-            }
             //var credits = requirements[parseInt(missionId)].average_credits || 0;
-            var missionCredits = mission.average_credits || 0;
+            let missionCredits = mission.average_credits || 0;
             credits += missionCredits;
-            });
-
+        }
+        else
+        {
+            let mission = requirements.filter(e => e.id == parseInt(missionId))[0];
+            //var credits = requirements[parseInt(missionId)].average_credits || 0;
+            let missionCredits = mission.average_credits || 0;
+            credits += missionCredits;
+        }
         if (credits == 0) {label = 'label-warning'}
         else if (credits >= 8000) {label = 'label-danger'}
         else if (credits >= 4500) {label = 'label-success'}

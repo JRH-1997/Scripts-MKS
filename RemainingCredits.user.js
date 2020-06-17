@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Remaining Credits
 // @namespace    https://leitstellenspiel.de
-// @version      1.0.6
+// @version      1.0.7
 // @description  Berechnet zu verdienende Credits der derzeitigen Einsatzliste
 // @author       Lennard[TFD] | Piet2001 | JRH1997
 // @match        https://www.leitstellenspiel.de/
@@ -34,6 +34,7 @@
 
         });
     });
+
 
     function getRequirements()
     {
@@ -133,11 +134,15 @@
 
         let filterBtns = filterDiv.after(html);
 
-        sessionStorage.clear("LSS_Missionrequirements")
-        requirements = await getRequirements();
-        sessionStorage.setItem("LSS_Missionrequirements", JSON.stringify(requirements));
-        requirements = JSON.parse(sessionStorage.getItem("LSS_Missionrequirements"));
-
+        if(sessionStorage.getItem("LSS_Missionrequirements") == null)
+        {
+            requirements = await getRequirements();
+            sessionStorage.setItem("LSS_Missionrequirements", JSON.stringify(requirements));
+        }
+        else
+        {
+            requirements = JSON.parse(sessionStorage.getItem("LSS_Missionrequirements"));
+        }
         var missionList = $("#missions-panel-body");
         var missions = missionList.find("a[id*='alarm_button']");
 
@@ -148,6 +153,7 @@
         mutationObserver.observe($("#missions-panel-body")[0], {
             childList: true,
         });
+
 
         calculate();
     }
@@ -164,15 +170,16 @@
         missions.each(async (e, t) => {
             //if($(t).parent().css("display") == "none") return;
             var missionId = $(t).attr("mission_type_id");
-            if(missionId == "null") return;
-            let mission = requirements.filter(e => e.id == parseInt(missionId))[0];
-            if(mission == undefined)
+            if($(t).attr("mission_type_id") == "null") return;
+            if(gettypecredits($(t).attr("mission_type_id")) == undefined)
             {
+                sessionStorage.clear("LSS_Missionrequirements")
                 requirements = await getRequirements();
-                mission = requirements.filter(e => e.id == parseInt(missionId))[0];
+                sessionStorage.setItem("LSS_Missionrequirements", JSON.stringify(requirements));
+                requirements = JSON.parse(sessionStorage.getItem("LSS_Missionrequirements"));
             }
             //var missionCredits = requirements[parseInt(missionId)].average_credits || 250;
-            var missionCredits = mission.average_credits || 250;
+            var missionCredits = gettypecredits($(t).attr("mission_type_id")).average_credits || 250;
             if($(t).parent().attr("id").includes("alliance"))
             {
                 creditsAlliance += missionCredits;
@@ -192,5 +199,20 @@
             $("#remCredits").text(beautifyCredits(credits) + " / " + beautifyCredits(creditsPlanned) + " / " + beautifyCredits(creditsAlliance));
         //console.log(credits);
     };
+    function gettypecredits(type)
+    {
+        return requirements.filter(e => e.id == [type])[0];
+    }
+
     init();
+
+    // extend missionMarkerAdd -----------------------------------------------------------------------
+    var original_func = missionMarkerAdd;
+
+    // this function is called when a mission is mutated
+    missionMarkerAdd = function(e) {
+        original_func.apply(this, arguments);
+
+        calculate(e);
+    }
 })();
