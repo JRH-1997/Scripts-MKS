@@ -12,15 +12,17 @@ Op de afbeelding hierboven kan je zien hoe dit wordt weergegeven. De getallen st
 <br>
 Een alleen ambulance melding wordt voor 250 credits meegenomen, omdat dit het aantal credits is dat een patiënt zonder vervoer oplevert. Met meer patiënten, wel vervoer of MMT is de opbrengst dus hoger. 
 <br>
+<br>
 ( Dit script werkt momenteel voor de volgende versies: NL, DE, UK, US en AU, wordt nog uitgebreid)
+<br>
 <br>
 <b><a href="https://github.com/JRH-1997/MKS-scripts/raw/master/RemainingCredits.user.js">Installeer RemainingCredits</a></b>
 
 # Credits Missionlist:
 Dit script geeft het gemiddeld aantal te verdienen credits weer bij de melding in de meldingenlijst. 
-Dit script heb ik in 2 varianten. Als gekleurd label of als tekst. 
+Dit script heb ik in 2 varianten: als gekleurd label of als tekst. 
 
-## Variant Label:
+### Variant Label:
 Hieronder zie je een voorbeeld van een melding waar een gekleurd label in staat:
 ![Missionlistlabel](AfbeeldingenScriptNL/Missionlistlabel.png)
 <br>
@@ -30,7 +32,7 @@ De Labels zijn er in 4 kleuren, die de grootte van de melding aangeven:
 - Voor meldingen vanaf 4500 t/m 7999 credits: ![LabelGroen](AfbeeldingenScriptNL/LabelGroen.png)
 - Voor meldingen van 8000 credits en hoger: ![LabelRood](AfbeeldingenScriptNL/LabelRood.png)
 
-## Variant Tekst:
+### Variant Tekst:
 Hieronder zie je een voorbeeld van een melding waar credits als tekst staan en een voorbeeld van een melding waar alleen een ambulance nodig is. 
 <br>
 ![MissionlistTextCredits](AfbeeldingenScriptNL/MissionlistTextCredits.png)
@@ -57,6 +59,9 @@ De Labels zijn er in 4 kleuren, die de grootte van de melding aangeven:
 - Voor meldingen t/m 4499 credits: ![LabelBlauw](AfbeeldingenScriptNL/LabelBlauw.png)
 - Voor meldingen vanaf 4500 t/m 7999 credits: ![LabelGroen](AfbeeldingenScriptNL/LabelGroen.png)
 - Voor meldingen van 8000 credits en hoger: ![LabelRood](AfbeeldingenScriptNL/LabelRood.png)
+<br>
+<br>
+(Dit script werkt momenteel alleen in de NL versie, wordt nog aan gewerkt)
 <br>
 <b><a href="https://github.com/JRH-1997/MKS-scripts/raw/master/Credits_Missionheader.user.js">Installeer Credits Missionheader</a></b>
 
