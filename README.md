@@ -7,13 +7,13 @@ Dit script laat zien wat je meldingen in je meldingenlijst totaal gemiddeld ople
 <br>
 Op de afbeelding hierboven kan je zien hoe dit wordt weergegeven. De getallen staan voor de volgende categorieën van links naar rechts:
 -	Eigen meldingen, inclusief besteld vervoer. 
--	Geplande inzetten (alleen in UK wordt deze niet weergegeven. 
--	Teammeldingen, inclusief teamevent
+-	Geplande inzetten (alleen in UK wordt deze niet weergegeven). 
+-	Teammeldingen, inclusief teamevent.
 <br>
 Een alleen ambulance melding wordt voor 250 credits meegenomen, omdat dit het aantal credits is dat een patiënt zonder vervoer oplevert. Met meer patiënten, wel vervoer of MMT is de opbrengst dus hoger. 
 <br>
 <br>
-( Dit script werkt momenteel voor de volgende versies: NL, DE, UK, US en AU, wordt nog uitgebreid)
+(Dit script werkt momenteel voor de volgende versies: NL, DE, UK, US en AU, wordt nog uitgebreid)
 <br>
 <br>
 <b><a href="https://github.com/JRH-1997/MKS-scripts/raw/master/RemainingCredits.user.js">Installeer RemainingCredits</a></b>
