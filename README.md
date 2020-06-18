@@ -1,7 +1,20 @@
+Beste spelers,
+<br><br>
+Ik heb een aantal scripts gemaakt of aangepast. Deze wil ik graag met jullie delen, zodat jullie hier ook profijt van kunnen hebben. 
+<br><br>
+<b>LET OP! Om de scripts te kunnen installeren is Tampermonkey nodig in je browser: <a href="https://www.tampermonkey.net/">Installeer Tamponkey</a> </b>
+<br><br>
+Indien er vragen, opmerkingen en/of verzoeken zijn kunnen jullie mij bereiken via <a href="https://www.meldkamerspel.com/messages/new?target=Jrh1997">een bericht in het spel</a>, <a href="https://forum.meldkamerspel.com/index.php/ConversationAdd/?userID=933">een bericht op het forum</a>, in het topic op het forum of <a href="https://github.com/JRH-1997/MKS-scripts/issues"> hier bij issues</a>. 
+<br><br>
+Hopelijk hebben jullie er plezier van.
+<br><br>
+Groet Jrh1997
+<br><br>
+
 # RemainingCredits: 
 <b>(Met dank aan LennardTFD voor het originele Duitse script. Ik heb toestemming om het te delen. )</b>
 <br>
-Dit script laat zien wat je meldingen in je meldingenlijst totaal gemiddeld opleveren verdeeld in 3 categorieën. 
+Dit script laat zien wat je meldingen in je meldingenlijst gemiddeld bij elkaar opleveren verdeeld in 3 categorieën. 
 <br>
 ![RemainingCredits](AfbeeldingenScriptNL/RemainingCredits.png)
 <br>
