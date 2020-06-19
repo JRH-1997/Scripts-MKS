@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Credits Missionheader
 // @namespace    http://tampermonkey.net/
-// @version      0.1.9
-// @description  NL Credits in Missiontitle
+// @version      1.0.0
+// @description  Shows label with credits in the missionheader
 // @author       JRH1997
 // @match        https://www.meldkamerspel.com/missions/*
 // @grant        none
