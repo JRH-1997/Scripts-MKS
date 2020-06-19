@@ -78,3 +78,18 @@ De Labels zijn er in 4 kleuren, die de grootte van de melding aangeven:
 <br>
 <b><a href="https://github.com/JRH-1997/MKS-scripts/raw/master/Credits_Missionheader.user.js">Installeer Credits Missionheader</a></b>
 
+# Hide AlarmNextShare Button
+Dit script verbergt de "Alarmeer, deel en volgende" knop boven de beschikbare voertuigen. 
+<br><br>
+Hieronder zie je 2 afbeeldingen. De eerste is zoals het nu is en de tweede is als je het script gebruikt. Dit om het verschil te laten zien. 
+<br>
+![Without](AfbeeldingenScriptNL/Without_Hide_AlarmNextShare_Button.png)
+<br>
+![With](AfbeeldingenScriptNL/With_Hide_AlarmNextShare_Button.png)
+<br>
+<br>
+(Dit script werkt in alle 24 versies die actief zijn op dit moment (19-06-2020))
+<br>
+<br>
+<b><a href="https://github.com/JRH-1997/MKS-scripts/raw/master/Hide_AlarmNextShare_Button.user.js">Installeer Hide AlarmNextShare Button</a></b>
+
