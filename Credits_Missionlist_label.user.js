@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Credits Missionlist Label
 // @namespace    http://tampermonkey.net/
-// @version      4.0.12
-// @description  Credits in Missionlist in colored labels
+// @version      4.1.0
+// @description  Shows a label with the average credits of the mission in the Missionlist
 // @author       JRH1997
 // @match        https://www.meldkamerspel.com/
 // @grant        none
