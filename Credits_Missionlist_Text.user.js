@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Credits Missionlist Text
 // @namespace    http://tampermonkey.net/
-// @version      4.0.10
-// @description  Credits in Missionlist in Text
+// @version      4.1.0
+// @description  Shows a text with the average credits of the mission in the Missionlist
 // @author       JRH1997
 // @match        https://www.meldkamerspel.com/
 // @grant        none
