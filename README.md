@@ -4,7 +4,7 @@ Ik heb een aantal scripts gemaakt of aangepast. Deze wil ik graag met jullie del
 <br><br>
 <b>LET OP! Om de scripts te kunnen installeren is Tampermonkey nodig in je browser: <a href="https://www.tampermonkey.net/">Installeer Tamponkey</a> </b>
 <br><br>
-Indien er vragen, opmerkingen en/of verzoeken zijn kunnen jullie mij bereiken via <a href="https://www.meldkamerspel.com/messages/new?target=Jrh1997">een bericht in het spel</a>, <a href="https://forum.meldkamerspel.com/index.php/ConversationAdd/?userID=933">een bericht op het forum</a>, in het topic op het forum of <a href="https://github.com/JRH-1997/MKS-scripts/issues"> hier bij issues</a>. 
+Indien er vragen, opmerkingen en/of verzoeken zijn kunnen jullie mij bereiken via <a href="https://www.meldkamerspel.com/messages/new?target=Jrh1997">een bericht in het spel</a>, <a href="https://forum.meldkamerspel.com/index.php/ConversationAdd/?userID=933">een bericht op het forum</a>, <a href="https://forum.meldkamerspel.com/index.php/Thread/2930-Losse-scripts-Jrh1997/?postID=21716#post21716"> in het topic op het forum</a> of <a href="https://github.com/JRH-1997/MKS-scripts/issues"> hier bij issues</a>. 
 <br><br>
 Hopelijk hebben jullie er plezier van.
 <br><br>
