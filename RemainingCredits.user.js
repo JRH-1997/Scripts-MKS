@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Remaining Credits
 // @namespace    https://leitstellenspiel.de
-// @version      1.0.7
-// @description  Berechnet zu verdienende Credits der derzeitigen Einsatzliste
+// @version      1.1.0
+// @description  Shows the total of the average credits of all missions in the missionlist
 // @author       Lennard[TFD] | Piet2001 | JRH1997
 // @match        https://www.leitstellenspiel.de/
 // @match        https://www.missionchief.com/
