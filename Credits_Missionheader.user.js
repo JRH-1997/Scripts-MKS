@@ -2,7 +2,7 @@
 // @name         Credits Missionheader
 // @namespace    http://tampermonkey.net/
 // @version      1.0.0
-// @description  Shows label with credits in the missionheader
+// @description  Shows a label with the average credits of the mission in the missionheader
 // @author       JRH1997
 // @match        https://www.meldkamerspel.com/missions/*
 // @grant        none
