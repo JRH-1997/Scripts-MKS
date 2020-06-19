@@ -1,5 +1,6 @@
 // ==UserScript==
 // @name         Hide Alarm-Next-Share Button
+// @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  Hides the upper Alarm-Next-Share Button
 // @author       Jrh1997
