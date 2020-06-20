@@ -4,11 +4,7 @@
 // @version      1.1.0
 // @description  Shows the total of the average credits of all missions in the missionlist
 // @author       Lennard[TFD] | Piet2001 | JRH1997
-// @match        https://www.leitstellenspiel.de/
-// @match        https://www.missionchief.com/
-// @match        https://www.meldkamerspel.com/
-// @match        https://www.missionchief.co.uk/
-// @match        https://www.missionchief-australia.com/
+// @include      /^https?:\/\/[www.]*(?:leitstellenspiel\.de|missionchief\.co\.uk|missionchief\.com|meldkamerspel\.com|centro-de-mando\.es|missionchief-australia\.com|larmcentralen-spelet\.se|operatorratunkowy\.pl|operatore112\.it|operateur112\.fr|dispetcher112\.ru|alarmcentral-spil\.dk|nodsentralspillet\.com|operacni-stredisko\.cz|112-merkez\.com|jogo-operador112\.com|operador193\.com|centro-de-mando\.mx|dyspetcher101-game\.com|missionchief-japan\.com|hatakeskuspeli\.com|missionchief-korea\.com|jocdispecerat112\.com|dispecerske-centrum\.com)\/.*$/
 // ==/UserScript==
 
 (function() {
@@ -38,62 +34,16 @@
 
     function getRequirements()
     {
-        if (I18n.locale == "de_DE")
-        {
-            return new Promise(resolve => {
-                $.ajax({
-                    url: "https://www.leitstellenspiel.de/einsaetze.json",
-                    method: "GET",
-                }).done((res) => {
-                    resolve(res);
-                });
+        return new Promise(resolve => {
+            var url = window.location.hostname + "einsaetze.json";
+            $.ajax({
+                url: "/einsaetze.json",
+                method: "GET",
+            }).done((res) => {
+                resolve(res);
             });
-        }
-        else if (I18n.locale == "nl_NL")
-        {
-            return new Promise(resolve => {
-                $.ajax({
-                    url: "https://www.meldkamerspel.com/einsaetze.json",
-                    method: "GET",
-                }).done((res) => {
-                    resolve(res);
-                });
-            });
-        }
-        else if (I18n.locale == "en_US")
-        {
-            return new Promise(resolve => {
-                $.ajax({
-                    url: "https://www.missionchief.com/einsaetze.json",
-                    method: "GET",
-                }).done((res) => {
-                    resolve(res);
-                });
-            });
-        }
-        else if (I18n.locale == "en_GB")
-        {
-            return new Promise(resolve => {
-                $.ajax({
-                    url: "https://www.missionchief.co.uk/einsaetze.json",
-                    method: "GET",
-                }).done((res) => {
-                    resolve(res);
-                });
-            });
-        }
-        else if (I18n.locale == "en_AU")
-        {
-            return new Promise(resolve => {
-                $.ajax({
-                    url: "https://www.missionchief-australia.com/einsaetze.json",
-                    method: "GET",
-                }).done((res) => {
-                    resolve(res);
-                });
-            });
-        }
-    }
+        });
+    };
 
     function setupListener(mission)
     {
@@ -129,6 +79,9 @@
                     <span>To earn: <span id='remCredits'>0 / 0</span> Credits</span>
                     `;
         else if (I18n.locale == "en_AU") html = `<br>
+                    <span>To earn: <span id='remCredits'>0 / 0</span> Credits</span>
+                    `;
+        else html = `<br>
                     <span>To earn: <span id='remCredits'>0 / 0</span> Credits</span>
                     `;
 
