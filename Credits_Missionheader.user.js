@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Credits Missionheader
 // @namespace    http://tampermonkey.net/
-// @version      1.0.0
+// @version      1.1.0
 // @description  Shows a label with the average credits of the mission in the missionheader
 // @author       JRH1997
-// @match        https://www.meldkamerspel.com/missions/*
+// @include      /^https?:\/\/[www.]*(?:leitstellenspiel\.de|missionchief\.co\.uk|missionchief\.com|meldkamerspel\.com|centro-de-mando\.es|missionchief-australia\.com|larmcentralen-spelet\.se|operatorratunkowy\.pl|operatore112\.it|operateur112\.fr|dispetcher112\.ru|alarmcentral-spil\.dk|nodsentralspillet\.com|operacni-stredisko\.cz|112-merkez\.com|jogo-operador112\.com|operador193\.com|centro-de-mando\.mx|dyspetcher101-game\.com|missionchief-japan\.com|hatakeskuspeli\.com|missionchief-korea\.com|jocdispecerat112\.com|dispecerske-centrum\.com)\/missions\/.*$/
 // @grant        none
 // ==/UserScript==
 
@@ -14,20 +14,26 @@
     var html_str;
     var label;
     var credits;
+    var OnlyAmbulance
+
+    if (I18n.locale == "de_DE") OnlyAmbulance = 'Nur Krankenwagen'
+    else if (I18n.locale == "nl_NL") OnlyAmbulance = 'Alleen Ambulance'
+    else OnlyAmbulance = 'Only Ambulance'
 
     var requirements;
 
     function getRequirements()
     {
         return new Promise(resolve => {
+            var url = window.location.hostname + "einsaetze.json";
             $.ajax({
-                url: "https://www.meldkamerspel.com/einsaetze.json",
+                url: "/einsaetze.json",
                 method: "GET",
             }).done((res) => {
                 resolve(res);
             });
         });
-    }
+    };
 
    function beautifyCredits(credits)
     {
@@ -86,9 +92,9 @@ async function calculate()
             credits += missionCredits;
         }
         if (credits == 0)
-            $("#html_str").text `Alleen Ambulance`;
+            $("#html_str").text(OnlyAmbulance);
         else
-            $("#html_str").text(beautifyCredits(credits) + ` Credits`);
+            $("#html_str").text(`~ ` + beautifyCredits(credits) + ` Credits`);
     }
 async function getlabel()
     {
