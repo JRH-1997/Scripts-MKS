@@ -11,6 +11,8 @@ Hopelijk hebben jullie er plezier van.
 Groet Jrh1997
 <br><br>
 
+<B>Laatste update Readme: 21-06-2020</b>
+
 # RemainingCredits: 
 <b>(Met dank aan LennardTFD voor het originele Duitse script. Ik heb toestemming om het te delen. )</b>
 <br>
@@ -26,7 +28,7 @@ Op de afbeelding hierboven kan je zien hoe dit wordt weergegeven. De getallen st
 Een alleen ambulance melding wordt voor 250 credits meegenomen, omdat dit het aantal credits is dat een patiënt zonder vervoer oplevert. Met meer patiënten, wel vervoer of MMT is de opbrengst dus hoger. 
 <br>
 <br>
-(Dit script werkt momenteel voor de volgende versies: NL, DE, UK, US en AU, wordt nog uitgebreid)
+(Dit script werkt in alle 24 versies die actief zijn op dit moment (21-06-2020). Indien er naast UK nog een versie zonder geplande inzetten is, dan graag deze doorgeven.)
 <br>
 <br>
 <b><a href="https://github.com/JRH-1997/MKS-scripts/raw/master/RemainingCredits.user.js">Installeer RemainingCredits</a></b>
@@ -48,12 +50,10 @@ De Labels zijn er in 4 kleuren, die de grootte van de melding aangeven:
 ### Variant Tekst:
 Hieronder zie je een voorbeeld van een melding waar credits als tekst staan en een voorbeeld van een melding waar alleen een ambulance nodig is. 
 <br>
-![MissionlistTextCredits](AfbeeldingenScriptNL/MissionlistTextCredits.png)
-<br>
-![MissionlistTextAmbulance](AfbeeldingenScriptNL/MissionlistTextAmbulance.png)
+![MissionlistText](AfbeeldingenScriptNL/MissionlistText.png)
 <br>
 <br>
-(Dit script werkt momenteel alleen in de NL versie, wordt nog aan gewerkt)
+(Dit script werkt in alle 24 versies die actief zijn op dit moment (21-06-2020).)
 
 <b><a href="https://github.com/JRH-1997/MKS-scripts/raw/master/Credits_Missionlist_Text.user.js">Installeer Credits Missionlist Text</a></b>
 <br>
@@ -74,7 +74,7 @@ De Labels zijn er in 4 kleuren, die de grootte van de melding aangeven:
 - Voor meldingen van 8000 credits en hoger: ![LabelRood](AfbeeldingenScriptNL/LabelRood.png)
 <br>
 <br>
-(Dit script werkt momenteel alleen in de NL versie, wordt nog aan gewerkt)
+(Dit script werkt in alle 24 versies die actief zijn op dit moment (21-06-2020).)
 <br>
 <b><a href="https://github.com/JRH-1997/MKS-scripts/raw/master/Credits_Missionheader.user.js">Installeer Credits Missionheader</a></b>
 
@@ -88,7 +88,7 @@ Hieronder zie je 2 afbeeldingen. De eerste is zoals het nu is en de tweede is al
 ![With](AfbeeldingenScriptNL/With_Hide_AlarmNextShare_Button.png)
 <br>
 <br>
-(Dit script werkt in alle 24 versies die actief zijn op dit moment (19-06-2020))
+(Dit script werkt in alle 24 versies die actief zijn op dit moment (21-06-2020))
 <br>
 <br>
 <b><a href="https://github.com/JRH-1997/MKS-scripts/raw/master/Hide_AlarmNextShare_Button.user.js">Installeer Hide AlarmNextShare Button</a></b>
