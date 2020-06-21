@@ -103,11 +103,6 @@
             setupListener($(t).parent().parent().parent());
         });
 
-        mutationObserver.observe($("#missions-panel-body")[0], {
-            childList: true,
-        });
-
-
         calculate();
     }
 
