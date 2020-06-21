@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Credits Missionlist Label
 // @namespace    http://tampermonkey.net/
-// @version      4.1.0
+// @version      4.2.0
 // @description  Shows a label with the average credits of the mission in the Missionlist
 // @author       JRH1997
-// @match        https://www.meldkamerspel.com/
+// @include      /^https?:\/\/[www.]*(?:leitstellenspiel\.de|missionchief\.co\.uk|missionchief\.com|meldkamerspel\.com|centro-de-mando\.es|missionchief-australia\.com|larmcentralen-spelet\.se|operatorratunkowy\.pl|operatore112\.it|operateur112\.fr|dispetcher112\.ru|alarmcentral-spil\.dk|nodsentralspillet\.com|operacni-stredisko\.cz|112-merkez\.com|jogo-operador112\.com|operador193\.com|centro-de-mando\.mx|dyspetcher101-game\.com|missionchief-japan\.com|hatakeskuspeli\.com|missionchief-korea\.com|jocdispecerat112\.com|dispecerske-centrum\.com)\/.*$/
 // @grant        none
 // ==/UserScript==
 
@@ -15,12 +15,18 @@
     var requirements;
     var credits ='';
     var html_str
+    var OnlyAmbulance
+
+    if (I18n.locale == "de_DE") OnlyAmbulance = 'Nur Krankenwagen'
+    else if (I18n.locale == "nl_NL") OnlyAmbulance = 'Alleen Ambulance'
+    else OnlyAmbulance = 'Only Ambulance'
 
     function getRequirements()
     {
         return new Promise(resolve => {
+            var url = window.location.hostname + "einsaetze.json";
             $.ajax({
-                url: "https://www.meldkamerspel.com/einsaetze.json",
+                url: "/einsaetze.json",
                 method: "GET",
             }).done((res) => {
                 resolve(res);
@@ -47,7 +53,7 @@
 
         for (var i = 0; i < Missions.length; i++)
         {
-            var childs = Missions[i].firstElementChild.firstElementChild.children;
+            var childs = $('#creditsmissionlistlabel_' + Missions[i].getAttribute('mission_id'))
             var existing = false;
 
             if (e.id != Missions[i].getAttribute('mission_id')) continue;
@@ -91,9 +97,11 @@
                     getlabel(credits);
 
                     var child = childs[ic2];
-                    Missions[i].firstElementChild.firstElementChild.removeChild(child);
+                    childs[ic].remove(child);
                     child.innerHTML = `<span class="label ` + label + `"> <span id='html_str'>` + html_str + `</span></span>`
-                    Missions[i].firstElementChild.firstElementChild.appendChild(child);
+                    var childNodes = Missions[i].firstElementChild.childNodes;
+                    var secondaryChildNodes = childNodes[1].firstElementChild.childNodes;
+                    secondaryChildNodes[1].firstElementChild.before(child);
                 }
             }
             else //create
@@ -118,7 +126,9 @@
                 div_elem.innerHTML = `<span class="label ` + label + `"> <span id='html_str'>` + html_str + `</span></span>`;
                 div_elem.setAttribute("class", "creditsmissionlistlabel");
                 div_elem.setAttribute("id", "creditsmissionlistlabel_" + Missions[i].getAttribute('mission_id'));
-                Missions[i].firstElementChild.firstElementChild.appendChild(div_elem);
+                var childNodes = Missions[i].firstElementChild.childNodes;
+                var secondaryChildNodes = childNodes[1].firstElementChild.childNodes;
+                secondaryChildNodes[1].firstElementChild.after(div_elem);
             }
         }
     }
@@ -165,7 +175,9 @@
             div_elem.setAttribute("id", "creditsmissionlistlabel_" + Missions[i].getAttribute('mission_id'));
 
             // add div element
-            Missions[i].firstElementChild.firstElementChild.appendChild(div_elem);
+            var childNodes = Missions[i].firstElementChild.childNodes;
+            var secondaryChildNodes = childNodes[1].firstElementChild.childNodes;
+            secondaryChildNodes[1].firstElementChild.before(div_elem);
         }
     }
 
@@ -175,8 +187,8 @@
     }
     function gethtml_str(credits)
     {
-        if (credits == 0) html_str = `Alleen Ambulance`
-        else html_str = credits.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.') + ' Credits';
+        if (credits == 0) html_str = OnlyAmbulance
+        else html_str = '~ ' + credits.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1.') + ' Credits';
     }
     function getlabel(credits)
     {
