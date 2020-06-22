@@ -21,7 +21,7 @@
     }
     let MissionhiderBtn = $(
         '<a id="Missionhider_button" class="leaflet-bar leaflet-control leaflet-control-custom hidden-xs Missionhider">' +
-        '<img src="/Missionhider/MissionhiderBtn.png" class="Missionhiderbtn" title="' + titleMissionhiderbtn + '"> ' +
+        '<img src="https://raw.githubusercontent.com/JRH-1997/MKS-scripts/master/Missionhider/MissionhiderBtn.png" class="Missionhiderbtn" title="' + titleMissionhiderbtn + '"> ' +
         '</a>'
     );
     $('.leaflet-control-container .leaflet-top.leaflet-left').append(MissionhiderBtn)
