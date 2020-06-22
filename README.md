@@ -93,3 +93,17 @@ Hieronder zie je 2 afbeeldingen. De eerste is zoals het nu is en de tweede is al
 <br>
 <b><a href="https://github.com/JRH-1997/MKS-scripts/raw/master/Hide_AlarmNextShare_Button.user.js">Installeer Hide AlarmNextShare Button</a></b>
 
+# Missionicons Hider
+Dit script geeft een knop om de meldingsafbeeldingen op de kaart te verbergen. De knop wordt linksboven in de kaart getoond.
+<br><br>
+![With](/Missionhider/MissionIconsHiderBtn.png)
+<br>
+Als je op de bovenstaande knop drukt, verberg je alle meldingsafbeeldingen op de kaart. Als je er nogmaals op drukt, worden alle meldingsafbeeldingen weer weergegeven. 
+<br><br>
+Afbeeldingen van de nieuwe meldingen worden automatisch verborgen als je meldingsafbeeldingen verborgen zijn. Bij het herladen van de pagina onthoud het script je laatste instelling, dus waren ze verborgen op het moment van herladen of het afsluiten van het spel, dan zijn ze ook weer verborgen als het spel weer laadt. 
+<br>
+<br>
+(Dit script werkt in alle 24 versies die actief zijn op dit moment (22-06-2020))
+<br>
+<br>
+<b><a href="https://github.com/JRH-1997/MKS-scripts/raw/master/Missionhider/Missionicons_hider.user.js">Installeer Missionicons Hider</a></b>
