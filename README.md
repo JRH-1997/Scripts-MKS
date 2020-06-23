@@ -107,3 +107,22 @@ Afbeeldingen van de nieuwe meldingen worden automatisch verborgen als je melding
 <br>
 <br>
 <b><a href="https://github.com/JRH-1997/MKS-scripts/raw/master/Missionhider/Missionicons_hider.user.js">Installeer Missionicons Hider</a></b>
+
+# Credits Missionlist Team en Credits Missionheader Team
+Dit script toont een label als de melding groot genoeg is om met je team te mogen delen. Er zijn 2 versies: 1 voor in de missionheader en 1 voor de missionlist. 
+<br><br>
+Zo ziet het label er uit: ![LabelTeam](/AfbeeldingenScriptNL/LabelTeam.png)
+<br><br>
+Het aantal credtis vanaf wanneer dit label getoond wordt is eenvouding aan te passen in het script. Het is standaard vanaf 3000 en als je het anders wilt is het alleen maar het getal wijzigen. <br>
+Het script kan je wijzigen in je eigen tampermonkey:
+- klik op het tampermonkeylogo
+- klik op dashboard
+- klik op de naam van het script
+- het script opent en vervang het getal bij: "var CreditsAllianceFrom = 3000" naar het gewenste getal
+<br><br>
+(Dit script werkt in alle 24 versies die actief zijn op dit moment (22-06-2020), vertalingen aanwezig voor NL, DE en EN andere talen in EN.)
+<br><br>
+<b><a href="https://github.com/JRH-1997/MKS-scripts/raw/master/Credits_Missionheader_TEAM_from_.._credits.user.js">Installeer Credits Missionheader Team</a></b> <br>
+<b><a href="https://github.com/JRH-1997/MKS-scripts/raw/master/Credits_Missionlist_Label_TEAM_from_.._credits.user.js">Installeer Credits Missionlist Team</a></b>
+
+
