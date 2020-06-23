@@ -12,13 +12,12 @@
     'use strict';
 
     var CreditsAllianceFrom = 3000;
-    var label;
     var credits;
-    var html_str
+    var html_strTEAM
 
-    if (I18n.locale == "de_DE") html_str = 'VERBAND'
-    else if (I18n.locale == "nl_NL") html_str = 'TEAM'
-    else html_str = 'ALLIANCE'
+    if (I18n.locale == "de_DE") html_strTEAM = 'VERBAND'
+    else if (I18n.locale == "nl_NL") html_strTEAM = 'TEAM'
+    else html_strTEAM = 'ALLIANCE'
 
     var requirements;
 
@@ -55,21 +54,17 @@ async function init()
             requirements = JSON.parse(sessionStorage.getItem("LSS_Missionrequirements"));
         }
 
-        await getlabel()
+        await getcredits()
         if (credits >= CreditsAllianceFrom) {
 
-        let html = `<br>&nbsp&nbsp&nbsp&nbsp
-		<span class="label label-danger"> <span id='html_str'> - </span></span>
+        let htmlteam = `<span class="label label-danger">`+  html_strTEAM + `</span>
 		`;
 
-		let Creditsintitle = missionH1.append(html);
-
-        calculate();
+		let Creditsintitle = missionH1.append(htmlteam);
         }
 	}
-async function getlabel()
+async function getcredits()
     {
-        var credits = 0;
         var help = $("#navbar-right-help-button");
         var HelpButton = help.find("a[id*='mission_help']").parent().parent().parent();
         //if($(t).parent().css("display") == "none") return;
@@ -83,15 +78,13 @@ async function getlabel()
             requirements = JSON.parse(sessionStorage.getItem("LSS_Missionrequirements"));
             let mission = requirements.filter(e => e.id == parseInt(missionId))[0];
             //var credits = requirements[parseInt(missionId)].average_credits || 0;
-            let missionCredits = mission.average_credits || 0;
-            credits += missionCredits;
+            credits = mission.average_credits || 0;
         }
         else
         {
             let mission = requirements.filter(e => e.id == parseInt(missionId))[0];
             //var credits = requirements[parseInt(missionId)].average_credits || 0;
-            let missionCredits = mission.average_credits || 0;
-            credits += missionCredits;
+            credits = mission.average_credits || 0;
         }
     }
 
