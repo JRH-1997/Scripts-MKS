@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         Credits Missionlist Label TEAM from 3000cr
+// @name         Credits Missionlist Label TEAM from .. credits
 // @namespace    http://tampermonkey.net/
 // @version      4.2.0
-// @description  Shows a label in the missionlist 'TEAM' from 3000 credits
+// @description  Shows a label in the missionlist 'TEAM' from .. credits
 // @author       JRH1997
 // @include      /^https?:\/\/[www.]*(?:leitstellenspiel\.de|missionchief\.co\.uk|missionchief\.com|meldkamerspel\.com|centro-de-mando\.es|missionchief-australia\.com|larmcentralen-spelet\.se|operatorratunkowy\.pl|operatore112\.it|operateur112\.fr|dispetcher112\.ru|alarmcentral-spil\.dk|nodsentralspillet\.com|operacni-stredisko\.cz|112-merkez\.com|jogo-operador112\.com|operador193\.com|centro-de-mando\.mx|dyspetcher101-game\.com|missionchief-japan\.com|hatakeskuspeli\.com|missionchief-korea\.com|jocdispecerat112\.com|dispecerske-centrum\.com)\/.*$/
 // @grant        none
@@ -11,15 +11,14 @@
 (function() {
     'use strict';
 
-    var label;
+    var CreditsAllianceFrom = 3000;
     var requirements;
     var credits ='';
     var html_str
-    var OnlyAmbulance
 
-    if (I18n.locale == "de_DE") OnlyAmbulance = 'Nur Krankenwagen'
-    else if (I18n.locale == "nl_NL") OnlyAmbulance = 'Alleen Ambulance'
-    else OnlyAmbulance = 'Only Ambulance'
+    if (I18n.locale == "de_DE") html_str = 'VERBAND'
+    else if (I18n.locale == "nl_NL") html_str = 'TEAM'
+    else html_str = 'ALLIANCE'
 
     function getRequirements()
     {
@@ -92,14 +91,11 @@
                     }
                     let credits = gettypecredits(e.mtid).average_credits || 0;
 
-                    gethtml_str(credits);
-
-                    getlabel(credits);
-                    if (label != '') {
+                    if (credits >= CreditsAllianceFrom) {
 
                     var child = childs[ic2];
                     childs[ic].remove(child);
-                    child.innerHTML = `<span class="label ` + label + `"> <span id='html_str'>` + html_str + `</span></span>`
+                    child.innerHTML = `<span class="label label-danger"> <span id='html_str'>` + html_str + `</span></span>`
                     var childNodes = Missions[i].firstElementChild.childNodes;
                     var secondaryChildNodes = childNodes[1].firstElementChild.childNodes;
                     secondaryChildNodes[1].firstElementChild.before(child);
@@ -119,14 +115,11 @@
 
                 let credits = gettypecredits(Missions[i].getAttribute('mission_type_id')).average_credits || 0;
 
-                gethtml_str(credits);
-
-                getlabel(credits);
-                if (label != '') {
+                if (credits >= CreditsAllianceFrom) {
 
                 var div_elem = document.createElement('h4');
 
-                div_elem.innerHTML = `<span class="label ` + label + `"> <span id='html_str'>` + html_str + `</span></span>`;
+                div_elem.innerHTML = `<span class="label label-danger"> <span id='html_str'>` + html_str + `</span></span>`;
                 div_elem.setAttribute("class", "creditsmissionlistlabelTEAM");
                 div_elem.setAttribute("id", "creditsmissionlistlabel_TEAM_" + Missions[i].getAttribute('mission_id'));
                 var childNodes = Missions[i].firstElementChild.childNodes;
@@ -169,13 +162,10 @@
 
             let credits = gettypecredits(Missions[i].getAttribute('mission_type_id')).average_credits || 0;
 
-            gethtml_str(credits);
-
-            getlabel(credits);
-            if (label != '') {
+            if (credits >= CreditsAllianceFrom) {
 
             var div_elem = document.createElement('h4');
-            div_elem.innerHTML = `<span class="label ` + label + `"> <span id='html_str'>` + html_str + `</span></span>`
+            div_elem.innerHTML = `<span class="label label-danger"> <span id='html_str'>` + html_str + `</span></span>`
 		    div_elem.setAttribute("class", "creditsmissionlistlabelTEAM");
             div_elem.setAttribute("id", "creditsmissionlistlabel_TEAM_" + Missions[i].getAttribute('mission_id'));
 
@@ -190,14 +180,5 @@
     function gettypecredits(type)
     {
         return requirements.filter(e => e.id == [type])[0];
-    }
-    function gethtml_str(credits)
-    {
-        if (credits >= 3000) html_str = 'TEAM'
-    }
-    function getlabel(credits)
-    {
-        if (credits >= 3000) label = 'label-danger'
-        else label = ''
     }
 })();
