@@ -75,3 +75,8 @@
     var OnlyAmbulance="Only Ambulance";
     var ToEarn="To earn: ";
     var LabelAlliance="ALLIANCE";
+	
+	// Only GB
+	// Credits SideMenu RemainingCredits Translation GB because of planned missions
+    RemainingCredits_Title_Menu_Translation="Shows the totals of the missions in categories: "+"Own missions /  Alliance Missions";
+    RemainingCreditsTotal_Title_Menu_Translation="Shows a grand total after the totals: "+"Own missions /  Alliance Missions / Grand total";
