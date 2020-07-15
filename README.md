@@ -13,6 +13,12 @@ Groet Jrh1997
 
 <B>Laatste update Readme: 21-06-2020</b>
 
+<B>Auteursrecht:</b><br>
+Op alle scripts rust het Nederlandse Auteursrecht. Scripts mogen niet zonder toestemming worden bewerkt of verder verspreidt. <br>
+Bij onderdelen waar het originele auteursrecht bij een derde rust, mogen deze niet zonder toestemming van deze derde worden bewerkt of verspreidt.
+Voor deze onderdelen is toestemming van de derden verkregen om deze te bewerken en te delen in mijn scripts. Ik zal u voor de betreffende specifieke delen dan ook doorverwijzen. 
+
+
 # RemainingCredits: 
 <b>(Met dank aan LennardTFD voor het originele Duitse script. Ik heb toestemming om het te delen. )</b>
 <br>
