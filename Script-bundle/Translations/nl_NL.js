@@ -21,10 +21,10 @@
         Missionlisttext_Menu_Translation = "In meldingenlijst als tekst";
         Missionheaderlabel_Menu_Translation = "In meldingstitel als label";
         Missionheadertext_Menu_Translation = "In meldingstitel als tekst";
-        Missionlistlabelafter_Menu_Translation="In meldingstitel als label<br>achter de naam";
-        Missionlisttextafter_Menu_Translation="In meldingstitel als tekst<br>achter de naam";
-        Missionlistlabelafter_Title_Menu_Translation="In meldingstitel als label achter de naam";
-        Missionlisttextafter_Title_Menu_Translation="In meldingstitel als tekst achter de naam";
+        Missionlistlabelafter_Menu_Translation="In meldingenlijst als label<br>achter de naam";
+        Missionlisttextafter_Menu_Translation="In meldingenlijst als tekst<br>achter de naam";
+        Missionlistlabelafter_Title_Menu_Translation="In meldingenlijst als label achter de naam";
+        Missionlisttextafter_Title_Menu_Translation="In meldingenlijst als tekst achter de naam";
         Missionlistlabel_Title_Menu_Translation = "Geeft de gemiddeld te verdienen credits weer in een label in de meldingenlijst";
         Missionlisttext_Title_Menu_Translation = "Geeft de gemiddeld te verdienen credits weer als tekst in de meldingenlijst";
         Missionheaderlabel_Title_Menu_Translation = "Geeft de gemiddeld te verdienen credits weer in een label in de meldingstitel";
@@ -71,7 +71,7 @@
 	      HideMissionlist_InvolvedAllianceMissions_Menu_Translation="Betrokken team meldingen";
         HideMissionlist_InvolvedEventMissions_Menu_Translation="Betrokken event meldingen";
         } // End Menu Translations
-    /* Script Translations */ {
+    /* Script Translations */ 
         // Credits Missionlist/header
         OnlyAmbulance = 'Alleen Ambulance';
         ToEarn = "Te verdienen: ";
