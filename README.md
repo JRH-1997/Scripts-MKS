@@ -43,7 +43,7 @@ Een alleen ambulance melding wordt voor 250 credits meegenomen, omdat dit het aa
 <br>
 
 # Credits Missionlist: 
-<b>(Instelling: Credits > In meldingslijst als label/text (achter de naam))</b>
+<b>(Instelling: Credits > In meldingslijst als label/text (achter de naam))</b><br>
 <b>(Met dank aan ItsDreyter voor het originele Duitse basisscript. Ik heb toestemming om het te delen. )</b>
 <br>
 Deze functie geeft het gemiddeld aantal te verdienen credits weer bij de melding in de meldingenlijst. 
@@ -117,7 +117,7 @@ Het openen van spraakaanvragen zal ik nog iets uitleggen:
 <br><br>
 
 # HideMap
-<b>(Instelling: Verberg op kaart)</b>
+<b>(Instelling: Verberg op kaart)</b><br>
 <b>(Met dank aan LennardTFD voor de originele basis van de teamgebouwen. Ik heb toestemming om het te delen. )</b>
 <br>
 Deze functie kan verschillende onderdelen op de kaart te verbergen. 
