@@ -81,7 +81,7 @@ De Labels zijn er in 4 kleuren, die de grootte van de melding aangeven:
 - Voor meldingen van 8000 credits en hoger: ![LabelRood](AfbeeldingenScriptNL/LabelRood.png)
 <br>
 
-# Credits Missionlist Team en Credits Missionheader Team
+# Label Alliance
 <b>(Instelling: Team Label)</b>
 <br>
 Deze functie toont een label als de melding groot genoeg is om met je team te mogen delen. Er zijn 2 versies: 1 voor in de missionheader en 1 voor de missionlist. 
