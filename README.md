@@ -27,7 +27,7 @@ Er zal bovenin de menubalk een extra knop komen waar alle functies in zijn opgen
 # RemainingCredits: 
 <b>(Instelling: Credits > Totalen boven meldingenlijst)</b>
 <br>
-<b>(Met dank aan LennardTFD voor het originele Duitse script. Ik heb toestemming om het te delen. )</b>
+<b>(Met dank aan LennardTFD voor het originele Duitse basisscript. Ik heb toestemming om het te delen. )</b>
 <br>
 Deze functie laat zien wat je meldingen in je meldingenlijst gemiddeld bij elkaar opleveren verdeeld in 3 categorieën. 
 <br>
@@ -44,6 +44,7 @@ Een alleen ambulance melding wordt voor 250 credits meegenomen, omdat dit het aa
 
 # Credits Missionlist: 
 <b>(Instelling: Credits > In meldingslijst als label/text (achter de naam))</b>
+<b>(Met dank aan ItsDreyter voor het originele Duitse basisscript. Ik heb toestemming om het te delen. )</b>
 <br>
 Deze functie geeft het gemiddeld aantal te verdienen credits weer bij de melding in de meldingenlijst. 
 Deze functie heb ik in 2 varianten: als gekleurd label of als tekst, daarnaast nog de variant achter de naam. Die werkt goed in combinatie met het script van MisteryKid waar de volledige meldingenlijst <br>een andere opmaak krijgt. (Nog niet publiekelijk beschikbaar)
@@ -117,6 +118,7 @@ Het openen van spraakaanvragen zal ik nog iets uitleggen:
 
 # HideMap
 <b>(Instelling: Verberg op kaart)</b>
+<b>(Met dank aan LennardTFD voor de originele basis van de teamgebouwen. Ik heb toestemming om het te delen. )</b>
 <br>
 Deze functie kan verschillende onderdelen op de kaart te verbergen. 
 <br><br>
