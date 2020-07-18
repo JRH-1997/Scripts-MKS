@@ -16,6 +16,7 @@
         Hotkey_Menu_Translation="Hotkeys";
         HideMap_Menu_Translation="Ausblenden auf Karte";
         HideMissionlist_Menu_Translation="Ausblenden auf Einsätzeliste";
+        ToplistRank_Menu_Translation="Toplist platze im Header";
 
         // Side menu Credts Translations
         Missionlistlabel_Menu_Translation ="In der Einsätzeliste als Etikett";
