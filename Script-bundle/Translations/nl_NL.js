@@ -15,6 +15,7 @@
         Hotkey_Menu_Translation="Sneltoetsen";
         HideMap_Menu_Translation="Verberg op kaart";
         HideMissionlist_Menu_Translation="Verberg in meldingenlijst";
+        ToplistRank_Menu_Translation="Toplist plaats in menubalk";		
 
         // Side menu Credts Translations
         Missionlistlabel_Menu_Translation = "In meldingenlijst als label";

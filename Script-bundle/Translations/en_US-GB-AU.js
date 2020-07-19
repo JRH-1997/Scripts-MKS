@@ -15,6 +15,7 @@
     var Hotkey_Menu_Translation="Hotkeys";
     var HideMap_Menu_Translation="Hide on Map";
     var HideMissionlist_Menu_Translation="Hide in the missionlist";
+    var ToplistRank_Menu_Translation="Toplist rank in header"
 
 
     // Side menu Credits Translations
