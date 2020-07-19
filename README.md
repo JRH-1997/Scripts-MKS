@@ -154,3 +154,10 @@ Deze functie verbergt meldingen in de meldingenlijst op basis van verschillende 
     - Betrokken team meldingen (waar je een voertuig heen hebt gestuurd)
     - Betrokken event meldingen (waar je een voertuig heen hebt gestuurd)
 <br>
+
+# Toplist Rank
+<b>(Instelling: Toplist plaats in menubalk)</b>
+<br>
+Deze functie laat bovenin de menubalk je plaats in de ranglijst zien. Als je er op klikt opent de goede pagina van de ranglijst ook direct.
+<br>
+![ToplistRank](/AfbeeldingenScriptNL/Toplist.png)
