@@ -63,7 +63,7 @@ for(x in maplayers[0]){
   listofmarkers.push(x)
 }
 mission_positions.mission_positions.forEach((e) => {
-  if(e.caption == POINAME)
+  if(POINAME == "Alles"||e.caption == POINAME)
     listofPOI_1.push(e.id);
 })
 listofmarkers.forEach((e) => {
@@ -71,7 +71,10 @@ listofmarkers.forEach((e) => {
     {
       map.removeLayer(maplayer[e]);
     }
-});alert("POI "+POINAME+" verwijderen gelukt!")}
+});listofPOI_1 = [];
+maplayer=[];
+maplayers = [];
+listofmarkers = [];alert("POI "+POINAME+" verwijderen gelukt!")}
 async function ShowPOI(){
 var POINAME = document.getElementById("POI_input").value;
 var mission_positions;
@@ -91,9 +94,12 @@ listofmarkers.forEach((e) => {
       listofmarkersnew.push(maplayer[e].id);
 })
 mission_positions.mission_positions.forEach((e) => {
-  if(e.caption == POINAME){
+if(e.caption == POINAME||POINAME == "Alles"){
     if(listofmarkersnew.indexOf(e.id) == -1)
       map_pois_service.leafletMissionPositionMarkerAdd(e)
   }
-});alert("POI "+POINAME+" laden gelukt!")}
+});listofPOI_1 = [];
+maplayer=[];
+maplayers = [];
+listofmarkers = [];alert("POI "+POINAME+" laden gelukt!")}
 })();
