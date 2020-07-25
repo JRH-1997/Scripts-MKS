@@ -29,6 +29,7 @@
         });
         $('#ShowPOI').click(function(e){
                 try{
+            ShowPOI();
             }catch(err) { console.error(err.message, " > Scripts-MKS > Button ShowPOI");}
             return false;
         });
@@ -51,6 +52,7 @@ async function HidePOI(){
 var POINAME = document.getElementById("POI_input").value;
 var mission_positions;
 mission_positions = await getmission_positions();
+alert("Inladen POI data succesvol, wacht totdat alle POI "+POINAME+" verwijderd zijn, je krijgt een melding")
 listofPOI_1 = [];
 maplayer=[];
 maplayers = [];
@@ -68,13 +70,13 @@ listofmarkers.forEach((e) => {
   if(listofPOI_1.indexOf(maplayer[e].id) != -1)
     {
       map.removeLayer(maplayer[e]);
-        console.log(POINAME)
     }
-})}
+});alert("POI "+POINAME+" verwijderen gelukt!")}
 async function ShowPOI(){
 var POINAME = document.getElementById("POI_input").value;
 var mission_positions;
 mission_positions = await getmission_positions();
+alert("Inladen POI data succesvol, wacht totdat alle POI "+POINAME+" geladen zijn, je krijgt een melding")
 listofPOI_1 = [];
 maplayer=[];
 maplayers = [];
@@ -89,9 +91,9 @@ listofmarkers.forEach((e) => {
       listofmarkersnew.push(maplayer[e].id);
 })
 mission_positions.mission_positions.forEach((e) => {
-  if(e.caption == "Bos"){
+  if(e.caption == POINAME){
     if(listofmarkersnew.indexOf(e.id) == -1)
       map_pois_service.leafletMissionPositionMarkerAdd(e)
   }
-})}
+});alert("POI "+POINAME+" laden gelukt!")}
 })();
