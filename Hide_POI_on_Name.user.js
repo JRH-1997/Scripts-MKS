@@ -8,7 +8,7 @@
 // @grant        GM_addStyle
 // ==/UserScript==
 (function(){
-    GM_addStyle(`.JRH3{position:absolute; z-index:999; background:#c9302c; width:250px; top:200px; right:-250px !important;}`);
+    GM_addStyle('.JRH3{position:absolute; z-index:999; background:#c9302c; width:250px; top:200px; right:-250px !important;}');
         // Add side dropdown for FilterAllianceMissionsByUserID
         $('<ul class="dropdown-menu JRH3" id="FilterPOI_Dropdown"><li id=JRH_3_Dropdown_1" role="presentation"><a href="" id="HidePOI">Verberg</a></li></ul>').appendTo('#JRH_3');
         $('<li id="JRH_3_Dropdown_2"><a href="" id="ShowPOI">Toon</a></li>').appendTo('#JRH_3 .dropdown-menu');
