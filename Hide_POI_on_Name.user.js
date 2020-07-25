@@ -71,7 +71,10 @@ listofmarkers.forEach((e) => {
     {
       map.removeLayer(maplayer[e]);
     }
-});alert("POI "+POINAME+" verwijderen gelukt!")}
+});listofPOI_1 = [];
+maplayer=[];
+maplayers = [];
+listofmarkers = [];alert("POI "+POINAME+" verwijderen gelukt!")}
 async function ShowPOI(){
 var POINAME = document.getElementById("POI_input").value;
 var mission_positions;
@@ -95,5 +98,8 @@ mission_positions.mission_positions.forEach((e) => {
     if(listofmarkersnew.indexOf(e.id) == -1)
       map_pois_service.leafletMissionPositionMarkerAdd(e)
   }
-});alert("POI "+POINAME+" laden gelukt!")}
+});listofPOI_1 = [];
+maplayer=[];
+maplayers = [];
+listofmarkers = [];alert("POI "+POINAME+" laden gelukt!")}
 })();
