@@ -47,12 +47,51 @@ function getmission_positions()
                 });
             });}catch(err) { console.error(err.message, " > Scripts-MKS  > getmission_positions");}
         };
+function getmission_positionsState()
+            {
+                try{
+                return new Promise(resolve => {
+                $.ajax({
+                    url: "/map_filters",
+                    method: "GET"
+                }).done((res) => {
+                    resolve(res);
+                });
+            });}catch(err) { console.error(err.message, " > Scripts-MKS  > getmission_positions");}
+        };
+function POI_ON()
+			{
+				$.ajax({
+					url: "/map_filters",
+					method: "PUT",
+					data: {
+						filter_id: "pois",
+						checked: "true"
+					}
+				});
+			};
+function POI_OFF()
+			{
+				$.ajax({
+					url: "/map_filters",
+					method: "PUT",
+					data: {
+						filter_id: "pois",
+						checked: "true"
+					}
+				});
+			};
+			
 
 async function HidePOI(){
 var POINAME = document.getElementById("POI_input").value;
-var mission_positions;
-mission_positions = await getmission_positions();
+var mission_positions_state = await getmission_positionsState();
+mission_positions_state = mission_positions_state.mission_positions_section.filters;
+mission_positions_state = mission_positions_state[0].checked;
+if(!mission_positions_state) POI_ON();
+var mission_positions = await getmission_positions();
 alert("Inladen POI data succesvol, wacht totdat alle POI "+POINAME+" verwijderd zijn, je krijgt een melding")
+if(!mission_positions_state) POI_OFF();
 listofPOI_1 = [];
 maplayer=[];
 maplayers = [];
@@ -77,9 +116,13 @@ maplayers = [];
 listofmarkers = [];alert("POI "+POINAME+" verwijderen gelukt!")}
 async function ShowPOI(){
 var POINAME = document.getElementById("POI_input").value;
-var mission_positions;
-mission_positions = await getmission_positions();
+var mission_positions_state = await getmission_positionsState();
+mission_positions_state = mission_positions_state.mission_positions_section.filters;
+mission_positions_state = mission_positions_state[0].checked;
+if(!mission_positions_state) POI_ON();
+var mission_positions = await getmission_positions();
 alert("Inladen POI data succesvol, wacht totdat alle POI "+POINAME+" geladen zijn, je krijgt een melding")
+if(!mission_positions_state) POI_OFF();
 listofPOI_1 = [];
 maplayer=[];
 maplayers = [];
