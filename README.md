@@ -1,3 +1,5 @@
+<a href="https://jrh-1997.github.io/Scripts-MKS/">Nederlands</a>/<a href="https://jrh-1997.github.io/Scripts-MKS/EN">English</a>
+
 Beste spelers,
 <br><br>
 Ik heb een aantal scripts gemaakt of aangepast. Deze wil ik graag met jullie delen, zodat jullie hier ook profijt van kunnen hebben.<br>
