@@ -1,4 +1,4 @@
-<a href="https://jrh-1997.github.io/Scripts-MKS/">Nederlands </a> /<a href="https://jrh-1997.github.io/Scripts-MKS/EN"> English</a>
+<h3><a href="https://jrh-1997.github.io/Scripts-MKS/">Nederlands </a> /<a href="https://jrh-1997.github.io/Scripts-MKS/EN"> English</a></h3>
 
 Beste spelers,
 <br><br>
