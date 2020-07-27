@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         Scripts-MKS
-// @version      1.3
+// @version      1.4
 // @description  Bundle of my scripts || Author Base RemainingCredits: LennardTFD (DE) || Author Base Hide AllianceBuildings: LennardTFD (DE) || Author Base Credits Missionlist: ItsDreyter (DE)
 // @author       JRH1997
 // @include      /^https?:\/\/[www.]*(?:leitstellenspiel\.de|missionchief\.co\.uk|missionchief\.com|meldkamerspel\.com|centro-de-mando\.es|missionchief-australia\.com|larmcentralen-spelet\.se|operatorratunkowy\.pl|operatore112\.it|operateur112\.fr|dispetcher112\.ru|alarmcentral-spil\.dk|nodsentralspillet\.com|operacni-stredisko\.cz|112-merkez\.com|jogo-operador112\.com|operador193\.com|centro-de-mando\.mx|dyspetcher101-game\.com|missionchief-japan\.com|hatakeskuspeli\.com|missionchief-korea\.com|jocdispecerat112\.com|dispecerske-centrum\.com)\/.*$/
 // @grant        GM_addStyle
 // @namespacen
-// @downloadURL  https://github.com/JRH-1997/scripts-MKS/raw/master/Script-bundle/Scripts-MKS.user.js
-// @updateURL    https://github.com/JRH-1997/scripts-MKS/raw/master/Script-bundle/Scripts-MKS.user.js
+// @downloadURL  https://github.com/JRH-1997/Scripts-MKS/raw/master/Script-bundle/Scripts-MKS.user.js
+// @updateURL    https://github.com/JRH-1997/Scripts-MKS/raw/master/Script-bundle/Scripts-MKS.user.js
 // ==/UserScript==
 var $jscomp=$jscomp||{};$jscomp.scope={};$jscomp.createTemplateTagFirstArg=function(e){return e.raw=e};$jscomp.createTemplateTagFirstArgWithRaw=function(e,h){e.raw=h;return e};$jscomp.ASSUME_ES5=!1;$jscomp.ASSUME_NO_NATIVE_MAP=!1;$jscomp.ASSUME_NO_NATIVE_SET=!1;$jscomp.SIMPLE_FROUND_POLYFILL=!1;$jscomp.ISOLATE_POLYFILLS=!1;
 $jscomp.defineProperty=$jscomp.ASSUME_ES5||"function"==typeof Object.defineProperties?Object.defineProperty:function(e,h,m){if(e==Array.prototype||e==Object.prototype)return e;e[h]=m.value;return e};$jscomp.getGlobal=function(e){e=["object"==typeof globalThis&&globalThis,e,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var h=0;h<e.length;++h){var m=e[h];if(m&&m.Math==Math)return m}throw Error("Cannot find global object");};$jscomp.global=$jscomp.getGlobal(this);
