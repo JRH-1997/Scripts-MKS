@@ -1,11 +1,13 @@
 // ==UserScript==
 // @name         Hide POI on Name
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  try to take over the world!
 // @author       JRH1997
 // @match        https://www.meldkamerspel.com/
 // @grant        GM_addStyle
+// @updateURL    https://github.com/JRH-1997/scripts-MKS/raw/master/Hide_POI_on_Name.user.js
+// @downloadURL  https://github.com/JRH-1997/scripts-MKS/raw/master/Hide_POI_on_Name.user.js
 // ==/UserScript==
 (function(){
     GM_addStyle('.JRH3{position:absolute; z-index:999; background:#c9302c; width:250px; top:200px; right:-250px !important;}');
