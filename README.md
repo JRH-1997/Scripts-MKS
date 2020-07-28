@@ -7,16 +7,16 @@ Alle scripts heb ik samengevoegd tot 1 totaalscripts genaamd Scripts-MKS.
 <br><br>
 <b>LET OP! Om het script te kunnen installeren is Tampermonkey nodig in je browser: <a href="https://www.tampermonkey.net/">Installeer Tamponkey</a> </b>
 <br><br>
-Indien er vragen, opmerkingen en/of verzoeken zijn kunnen jullie mij bereiken via <a href="https://www.meldkamerspel.com/messages/new?target=Jrh1997">een bericht in het spel</a>, <a href="https://forum.meldkamerspel.com/wcf/index.php?ConversationAdd/&userID=933">een bericht op het forum</a>, <a href="https://forum.meldkamerspel.com/index.php?thread/2930-scripts-mks-jrh1997/"> in het topic op het forum</a> of <a href="https://github.com/JRH-1997/MKS-scripts/issues"> hier bij issues</a>. 
+Indien er vragen, opmerkingen en/of verzoeken zijn kunnen jullie mij bereiken via <a href="https://www.meldkamerspel.com/messages/new?target=Jrh1997">een bericht in het spel</a>, <a href="https://forum.meldkamerspel.com/wcf/index.php?ConversationAdd/&userID=933">een bericht op het forum</a>, <a href="https://forum.meldkamerspel.com/index.php?thread/2930-scripts-mks-jrh1997/"> in het topic op het forum</a> of <a href="https://github.com/JRH-1997/Scripts-MKS/issues"> hier bij issues</a>. 
 <br><br>
 Hopelijk hebben jullie er plezier van.
 <br><br>
 Groet Jrh1997
 <br><br>
 
-<b><a href="https://github.com/JRH-1997/MKS-scripts/raw/master/Script-bundle/Scripts-MKS.user.js">Installeer hier het script</a></b>
+<b><a href="https://github.com/JRH-1997/Scripts-MKS/raw/master/Script-bundle/Scripts-MKS.user.js">Installeer hier het script</a></b>
 <br><br>
-<B>Laatste update Readme: 18-07-2020</b>
+<B>Laatste update Readme: 28-07-2020</b>
 
 <B>Auteursrecht:</b><br>
 Op alle scripts rust het Nederlandse Auteursrecht. Scripts mogen niet zonder toestemming worden bewerkt of verder verspreidt. <br>
@@ -123,6 +123,7 @@ Het openen van spraakaanvragen zal ik nog iets uitleggen:
 <b>(Met dank aan LennardTFD voor de originele basis van de teamgebouwen. Ik heb toestemming om het te delen. )</b>
 <br>
 Deze functie kan verschillende onderdelen op de kaart te verbergen. 
+Deze functie zal binnenkort worden geüpdate i.v.m. de recente update van het spel. Wensen voor extra filteropties zijn welkom. 
 <br><br>
 De volgende onderdelen kunnen verborgen worden:
 - Gebouwen:
