@@ -33,6 +33,8 @@
         RemainingCreditsTotal_Menu_Translation="Gesamtsumme der summen";
         RemainingCredits_Title_Menu_Translation="Summen über der einsätzeliste: "+"Eigene Einsätze / Geplante Einsätze / Verbands Einsätze";
         RemainingCreditsTotal_Title_Menu_Translation="Summen über der einsätzeliste: "+"Eigene Einsätze / Geplante Einsätze / Verbands Einsätze / Gesamtsumme";
+        CreditsLabelGreen_Menu_Translation="Grüne Etikett von: ";
+        CreditsLabelRed_Menu_Translation="Rotes Etikett von: ";
 
         // Side Menu AllianceLabel Translations
         AllianceLabel_missionheader_Menu_Translation="Im Einsätzeheader";
