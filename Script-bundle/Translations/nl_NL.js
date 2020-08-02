@@ -34,6 +34,8 @@
         RemainingCreditsTotal_Menu_Translation = "Eindtotaal achter de totalen";
         RemainingCredits_Title_Menu_Translation = "Geeft de totalen van de categoriën weer boven aan de meldingenlijst:"+" eigen meldingen / geplande meldingen /  team meldingen";
         RemainingCreditsTotal_Title_Menu_Translation = "Geeft achter de totalen bovenaan de meldingenlijst nog het eindtotaal daarvan weer:"+"eigen meldingen / geplande meldingen /  team meldingen / eindtotaal ";
+        CreditsLabelGreen_Menu_Translation="Groen label vanaf: ";
+        CreditsLabelRed_Menu_Translation="Rood label vanaf: ";
 
         // Side Menu AllianceLabel Translations
         AllianceLabel_missionheader_Menu_Translation="In de meldingstitel";
