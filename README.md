@@ -55,12 +55,14 @@ Deze functie heb ik in 2 varianten: als gekleurd label of als tekst, daarnaast n
 Hieronder zie je een voorbeeld van een melding waar een gekleurd label in staat:
 ![Missionlistlabel](AfbeeldingenScriptNL/Missionlistlabel.png)
 <br>
-De Labels zijn er in 4 kleuren, die de grootte van de melding aangeven:
+De Labels zijn er in 4 kleuren, die de grootte van de melding aangeven. De standaard instelling is:
 - Voor meldingen met alleen ambulances: ![LabelAmbulance](AfbeeldingenScriptNL/LabelAmbulance.png)
 - Voor meldingen t/m 4499 credits: ![LabelBlauw](AfbeeldingenScriptNL/LabelBlauw.png)
 - Voor meldingen vanaf 4500 t/m 7999 credits: ![LabelGroen](AfbeeldingenScriptNL/LabelGroen.png)
 - Voor meldingen van 8000 credits en hoger: ![LabelRood](AfbeeldingenScriptNL/LabelRood.png)
-
+<br>
+De groene en rode labels zijn naar wens aan te passen vanaf wanneer deze getoond worden.
+<br>
 ### Variant Tekst:
 Hieronder zie je een voorbeeld van een melding waar credits als tekst staan en een voorbeeld van een melding waar alleen een ambulance nodig is. 
 <br>
@@ -76,11 +78,13 @@ Deze functie geeft in de bovenste balk van de melding het gemiddeld aantal credi
 <br>
 Hierboven zie je een voorbeeld hoe dit er uit ziet. 
 <br>
-De Labels zijn er in 4 kleuren, die de grootte van de melding aangeven:
+De Labels zijn er in 4 kleuren, die de grootte van de melding aangeven. De standaard instelling is:
 - Voor meldingen met alleen ambulances: ![LabelAmbulance](AfbeeldingenScriptNL/LabelAmbulance.png)
 - Voor meldingen t/m 4499 credits: ![LabelBlauw](AfbeeldingenScriptNL/LabelBlauw.png)
 - Voor meldingen vanaf 4500 t/m 7999 credits: ![LabelGroen](AfbeeldingenScriptNL/LabelGroen.png)
 - Voor meldingen van 8000 credits en hoger: ![LabelRood](AfbeeldingenScriptNL/LabelRood.png)
+<br>
+De groene en rode labels zijn naar wens aan te passen vanaf wanneer deze getoond worden.
 <br>
 
 # Label Alliance

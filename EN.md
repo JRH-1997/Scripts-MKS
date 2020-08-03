@@ -55,11 +55,14 @@ It comes in two variations: Colored label or plain text, including the variation
 In the image below you can see an example of a mission with the colored label:
 ![Missionlistlabel](AfbeeldingenScriptNL/Missionlistlabel.png)
 <br>
-The labels come in four different colors, representing the average earned amount per mission:
+The labels come in four different colors, representing the average earned amount per mission. The default settings:
 - Ambulance Only missions: ![LabelAmbulance](AfbeeldingenScriptNL/LabelAmbulance.png)
 - Missions up to 4499 credits: ![LabelBlauw](AfbeeldingenScriptNL/LabelBlauw.png)
 - Missions from 4500 up to 7999 credits: ![LabelGroen](AfbeeldingenScriptNL/LabelGroen.png)
 - Missions from 8000 credits or higher: ![LabelRood](AfbeeldingenScriptNL/LabelRood.png)
+<br>
+The green and red labels are customizable from when they are displayed.
+<br>
 
 ### Variantion Text:
 Below an example of a mission with text average credit earnings and an example for Ambulance Only missions.
@@ -76,11 +79,13 @@ This options added the average earnings for the mission in the missionheader.
 <br>
 In the image above you can see an example.
 <br>
-The labels come in four different colors, representing the average earned amount per mission:
+The labels come in four different colors, representing the average earned amount per mission. The default settings:
 - Ambulance Only missions: ![LabelAmbulance](AfbeeldingenScriptNL/LabelAmbulance.png)
 - Missions up to 4499 credits: ![LabelBlauw](AfbeeldingenScriptNL/LabelBlauw.png)
 - Missions from 4500 up to 7999 credits: ![LabelGroen](AfbeeldingenScriptNL/LabelGroen.png)
 - Missions from 8000 credits or higher: ![LabelRood](AfbeeldingenScriptNL/LabelRood.png)
+<br>
+The green and red labels are customizable from when they are displayed.
 <br>
 
 # Label Alliance
