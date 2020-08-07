@@ -1,4 +1,5 @@
-  // General Menu Translations
+    // Menu Translations
+    // General Menu Translations
     var SettingsScripts="Settings Script";
     var On="On: ";
     var Off="Off: ";
@@ -15,8 +16,7 @@
     var Hotkey_Menu_Translation="Hotkeys";
     var HideMap_Menu_Translation="Hide on Map";
     var HideMissionlist_Menu_Translation="Hide in the missionlist";
-    var ToplistRank_Menu_Translation="Toplist rank in header"
-
+    var ToplistRank_Menu_Translation="Toplist rank in header";
 
     // Side menu Credits Translations
     var Missionlistlabel_Menu_Translation="In missionlist as label";
@@ -46,11 +46,15 @@
     var AllianceLabel_missionlist_Title_Menu_Translation="In missionlist";
     var AllianceLabelValue_setting_Translation="Label 'Alliance' from:";
     var AllianceLabelValue_setting_save_Translation="Save setting";
+    var AllianceLabel_ColorLabels_Menu_Translation="In the same colors as the<br>credits Labels"
     // Side Menu Hotkey Translations
     var Hotkey_SearchKeycode_Menu_Translation="Find the code for a shortcut here";
     var Hotkey_InputKeycode_Menu_Translation="Enter the desired code below:";
-    var Hotkey_OpenTransportRequest_Menu_Translation="Open Transport request (Q)";
-    var Hotkey_SavePOI_Menu_Translation="Save new POI (space)";
+    var Hotkey_OpenTransportRequest_Menu_Translation="Open Transport request ";
+    var Hotkey_OpenTransportRequest_Default_Menu_Translation="(Q) ";
+    var Hotkey_SavePOI_Menu_Translation="Save new POI ";
+    var Hotkey_SavePOI_Default_Menu_Translation="(space) ";
+    var Hotkey_Restoredefault_Menu_Translation="Restore default settings";
     // Side Menu HideMap Translations
     var HideMap_AllOwnBuildings_Menu_Translation="All own buildings";
     var HideMap_OwnFireBuidlings_Menu_Translation="All own fire buildings";
@@ -72,9 +76,9 @@
     var HideMissionlist_AllAllianceMissions_Menu_Translation="All alliance missions";
     var HideMissionlist_InvolvedAllianceMissions_Menu_Translation="Involved alliance missions";
     var HideMissionlist_InvolvedEventMissions_Menu_Translation="Involved event missions";
-    }// end menu translations
+    // end menu translations
 
-    /* Script Translations */{
+    // Script Translations
     // Script Credits Missionlist/Missionheader/RemainingCredits/Alliancelabel Translations
     var OnlyAmbulance="Only Ambulance";
     var ToEarn="To earn: ";

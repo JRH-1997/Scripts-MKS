@@ -96,6 +96,8 @@ Zo ziet het label er uit: ![LabelTeam](/AfbeeldingenScriptNL/LabelTeam.png)
 <br><br>
 Het aantal credtis vanaf wanneer dit label getoond wordt is eenvouding aan te passen in het script. Het is standaard vanaf 3000 en als je het anders wilt is het alleen maar het getal wijzigen in het menu en op opslaan drukken. <br>
 <br>
+Optioneel: Het label kan dezelfde kleur krijgen als de credits labels. 
+<br>
 
 # Hide AlarmNextShare Button
 <b>(Instelling: Verberg "Alarmeer, deel en volgende" knop)</b>

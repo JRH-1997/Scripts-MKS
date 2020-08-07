@@ -1,4 +1,4 @@
-    /* Menu Translations */ {
+    // Menu Translations
         // General Menu Translations
         On = "Aan: ";
         Off = "Uit: ";
@@ -15,7 +15,7 @@
         Hotkey_Menu_Translation="Sneltoetsen";
         HideMap_Menu_Translation="Verberg op kaart";
         HideMissionlist_Menu_Translation="Verberg in meldingenlijst";
-        ToplistRank_Menu_Translation="Toplist plaats in menubalk";		
+        ToplistRank_Menu_Translation="Toplist plaats in menubalk";
 
         // Side menu Credts Translations
         Missionlistlabel_Menu_Translation = "In meldingenlijst als label";
@@ -44,12 +44,16 @@
         AllianceLabel_missionlist_Title_Menu_Translation="Geeft een label 'team' in de meldingenlijst als deze groter is dan het ingestelde aantal";
         AllianceLabelValue_setting_Translation="Label 'team' vanaf:";
         AllianceLabelValue_setting_save_Translation="Instelling opslaan";
+        AllianceLabel_ColorLabels_Menu_Translation="In dezelfde kleuren als de<br>Credits labels";
 
         // Side Menu Hotkey Translations
         Hotkey_SearchKeycode_Menu_Translation="Zoek hier de code voor een sneltoets";
         Hotkey_InputKeycode_Menu_Translation="Voer hieronder de gewenste code in:";
-        Hotkey_OpenTransportRequest_Menu_Translation="Open spraakaanvraag op hoofdscherm (Q) ";
-        Hotkey_SavePOI_Menu_Translation="Opslaan nieuwe POI (spatie) ";
+        Hotkey_OpenTransportRequest_Menu_Translation="Open spraakaanvraag op hoofdscherm ";
+        Hotkey_SavePOI_Menu_Translation="Opslaan nieuwe POI ";
+        Hotkey_SavePOI_Default_Menu_Translation="(spatie) ";
+        Hotkey_Restoredefault_Menu_Translation="Standaardinstelling terugzetten";
+        
 
         // Side Menu HideMap Translations
         HideMap_AllOwnBuildings_Menu_Translation="Alle eigen gebouwen";
@@ -66,15 +70,15 @@
         HideMap_AllOwnNotInvolvedVehicles_Menu_Translation="Vrije eigen voertuigen";
 
 	// Side Menu HideMissionlist Translation
-	      HideMissionlist_AllOwnMissions_Menu_Translation="Alle eigen meldingen";
+	HideMissionlist_AllOwnMissions_Menu_Translation="Alle eigen meldingen";
         HideMissionlist_InvolvedOwnMissions_Menu_Translation="Betrokken eigen meldingen";
         HideMissionlist_SharedOwnMissions_Menu_Translation="Gedeelde meldingen";
         HideMissionlist_NotSharedOwnMissions_Menu_Translation="Niet gedeelde meldingen";
-	      HideMissionlist_AllAllianceMissions_Menu_Translation="Alle team meldingen";
-	      HideMissionlist_InvolvedAllianceMissions_Menu_Translation="Betrokken team meldingen";
+	HideMissionlist_AllAllianceMissions_Menu_Translation="Alle team meldingen";
+	HideMissionlist_InvolvedAllianceMissions_Menu_Translation="Betrokken team meldingen";
         HideMissionlist_InvolvedEventMissions_Menu_Translation="Betrokken event meldingen";
-        } // End Menu Translations
-    /* Script Translations */ 
+    // End Menu Translations
+    // Script Translations
         // Credits Missionlist/header
         OnlyAmbulance = 'Alleen Ambulance';
         ToEarn = "Te verdienen: ";

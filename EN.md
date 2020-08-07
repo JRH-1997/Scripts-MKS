@@ -39,7 +39,7 @@ The image above shows how this is being displayed. The amounts shown are the fol
 -   Personal missions, including scheduled transport missions.
 -	Planned missions (Not displayed in the UK version)
 -   Alliance Missions, including alliance event missions.
--	Total, previous three added together (Not shown in image yet).
+-	Total, previous three added together (Optional, Not shown in image yet).
 <br>
 An "Ambulance Only" mission is added to the amounts for 250 credits each. This is because that is the amount for a ambulance only mission without transporting the patient. More patients, fly car or transporting a patients has higher earnings.
 <br>
@@ -97,6 +97,7 @@ This is what the label looks like: ![LabelTeam](/AfbeeldingenScriptNL/LabelTeam.
 <br><br>
 This starting number of credits which displays this label can be set in the script menu. Default is set at 3000 credits. If you want to change this, this can be done in the menu.
 <br>
+Optional:  The label can be in the same colors as the Credits labels. 
 <br>
 
 # Hide AlarmNextShare Button
