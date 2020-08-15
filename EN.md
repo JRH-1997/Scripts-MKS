@@ -7,7 +7,7 @@ All the scripts have been bundled into one package named "Scripts-MKS".
 <br><br>
 <b>NOTE: To use these scripts, tampermonkey is required in your browser. <a href="https://www.tampermonkey.net/">Click here to install Tampermonkey</a> </b>
 <br><br>
-Incase of questions, comments or requests you can contact me through <a href="https://www.meldkamerspel.com/messages/new?target=Jrh1997">a message in the dutch MKS</a>, <a href="https://forum.meldkamerspel.com/wcf/index.php?ConversationAdd/&userID=933">a direct message on the dutch forums</a>, <a href="https://forum.meldkamerspel.com/index.php?thread/2930-scripts-mks-jrh1997/"> in the topic on the dutch forums</a> or <a href="https://github.com/JRH-1997/Scripts-MKS/issues"> here on Github Issues</a>. 
+Incase of questions, comments or requests you can contact me through <a href="https://www.meldkamerspel.com/messages/new?target=Jrh1997">a message in the dutch MKS</a>, <a href="https://forum.meldkamerspel.com/wcf/index.php?ConversationAdd/&userID=933">a direct message on the dutch forums</a>, <a href="https://forum.meldkamerspel.com/index.php?thread/2930-scripts-mks-jrh1997/"> in the topic on the dutch forums</a>, <a href="https://github.com/JRH-1997/Scripts-MKS/issues"> here on Github Issues</a> or by a private message on Discord JRH1997#2625. 
 <br><br>
 I hope these scripts will bring a little more joy to your gaming experience.
 <br><br>
@@ -16,7 +16,7 @@ Greetings Jrh1997
 
 <b><a href="https://github.com/JRH-1997/Scripts-MKS/raw/master/Script-bundle/Scripts-MKS.user.js">Click here to install the script package.</a></b>
 <br><br>
-<B>Last updated: Readme: 28-07-2020</b>
+<B>Last updated: Readme: 15-08-2020</b>
 
 <B>LICENSING:</b><br>
 These scripts are owned by their respective owners. None of the scripts are permitted to be modifified or distributed without my explicit permission. <br>
@@ -127,27 +127,26 @@ I will explain something more about opening radio calls:
 
 # HideMap
 <b>(Setting: Hide on map)</b><br>
-<b>(Alliance buildings original by LennardTFD. Permission to redistribute has been granted to me. )</b>
 <br>
 This feature can hide different parts of the map.
-This feature will be updated soon because of the latest update of the game. If there are any whishes to add, let me know. 
 <br><br>
 The following parts can be hidden:
-- Buildings:
-    - All own buildings
-    - Own Fire Stations
-    - Own EMS Stations
-    - Own Police Stations
-    - All Alliance Buildings
 - Missions: 
-    - All Missions
-    - Personal Missions
-    - Alliance Missions
-    - Event Missions
+    - Personal Missions:
+		- By state (Red/Yellow/Green)
+		- Involved missions (If you have sent a vehicle to the missions)
+		- Shared or not shared
+    - Alliance Missions:
+		- By state (Red/Yellow/Green)
+		- Involved missions (If you have sent a vehicle to the missions)
+    - Event Missions:
+		- By state (Red/Yellow/Green)
+		- Involved missions (If you have sent a vehicle to the missions)
 - Vehicles: (Only available on OpenSourceMap, not on MapKit.)
     - All own vehicles
     - Alliance vehicles
     - Own available non-stationary vehicles
+- POI by name
 <br>
 
 # Hide Missionlist

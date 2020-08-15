@@ -56,18 +56,38 @@
     var Hotkey_SavePOI_Default_Menu_Translation="(space) ";
     var Hotkey_Restoredefault_Menu_Translation="Restore default settings";
     // Side Menu HideMap Translations
-    var HideMap_AllOwnBuildings_Menu_Translation="All own buildings";
-    var HideMap_OwnFireBuidlings_Menu_Translation="All own fire buildings";
-    var HideMap_OwnAmbulanceBuildings_Menu_Translation="All own ambulance buildings";
-    var HideMap_OwnPoliceBuildings_Menu_Translation="All own police buildings";
-    var HideMap_AllAllianceBuildings_Menu_Translation="All alliance buildings";
-    var HideMap_AllMissionIcons_Menu_Translation="All missions";
-    var HideMap_AllAllianceMissions_Menu_Translation="All alliance missions";
-    var HideMap_AllOwnMissions_Menu_Translation="All own missions";
-    var HideMap_AllEventMissions_Menu_Translation="All event missions";
     var HideMap_AllOwnVehicles_Menu_Translation="All own vehicles";
     var HideMap_AllAllianceVehicles_Menu_Translation="All alliance vehicles";
     var HideMap_AllOwnNotInvolvedVehicles_Menu_Translation="All own not involved vehicles";
+    var HideMap_POI_Menu_Translation="POI by name";
+        // HideMap MissionsByState
+        var HideMap_RedownMission_Menu_Translation = "Red own missions";
+        var HideMap_YellowOwnMission_Menu_Translation = "Yellow own missions";
+        var HideMap_GreenOwnMission_Menu_Translation = "Green own missions";
+        var HideMap_RedAllianceMission_Menu_Translation = "Red alliance missions";
+        var HideMap_YellowAllianceMission_Menu_Translation = "Yellow alliance missions";
+        var HideMap_GreenAllianceMission_Menu_Translation = "Green alliance missions";
+        var HideMap_RedEventMission_Menu_Translation = "Red event missions";
+        var HideMap_YellowEventMission_Menu_Translation = "Yellow event missions";
+        var HideMap_GreenEventMission_Menu_Translation = "Green event missions";
+        // HideMap Shared/NotShared
+        var HideMap_SharedMissions_Menu_Translation = "Shared missions";
+        var HideMap_NotSharedMissions_Menu_Translation = "Not shared missions";
+        // Hidemap involved missions
+        var HideMap_InvolvedOwnMissions_Menu_Translation="Involved own missions";
+        var HideMap_InvolvedAllianceMissions_Menu_Translation="Involved alliance missions";
+        var HideMap_InvolvedEventMissions_Menu_Translation="Involved event missions";
+        // HideMap POI Menu
+        var HideMap_POI_Header_Translation="Hide/Show POI by name";
+        var HideMap_POI_All_Translation="All";
+        var HideMap_POI_Show_POI_Translation="Show POI";
+        var HideMap_POI_Hide_POI_Translation="Hide POI";
+        var HideMap_POI_Choose_POI_Translation="Choose POI:";
+        var HideMap_POI_WarningPOIFilterOn_Translation="The game's POI must be activated: ";
+        var HideMap_POI_Close_Translation="Close";
+        var HideMap_POI_POI_On_Translation="Turn on";
+        var HideMap_POI_POI_Off_Translation="Turn off";
+        var HideMap_POI_Working_Translation="Working...";
     // Side Menu HideMissionlist Translation
     var HideMissionlist_AllOwnMissions_Menu_Translation="All own missions";
     var HideMissionlist_InvolvedOwnMissions_Menu_Translation="Involved own missions";

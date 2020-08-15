@@ -1,4 +1,4 @@
-    // Menu Translations
+     // Menu Translations
         // General Menu Translations
         On = "Aan: ";
         Off = "Uit: ";
@@ -53,21 +53,42 @@
         Hotkey_SavePOI_Menu_Translation="Opslaan nieuwe POI ";
         Hotkey_SavePOI_Default_Menu_Translation="(spatie) ";
         Hotkey_Restoredefault_Menu_Translation="Standaardinstelling terugzetten";
-        
+
 
         // Side Menu HideMap Translations
-        HideMap_AllOwnBuildings_Menu_Translation="Alle eigen gebouwen";
-        HideMap_OwnFireBuidlings_Menu_Translation="Eigen brandweer gebouwen";
-        HideMap_OwnAmbulanceBuildings_Menu_Translation="Eigen ambulance gebouwen";
-        HideMap_OwnPoliceBuildings_Menu_Translation="Eigen politie gebouwen";
-        HideMap_AllAllianceBuildings_Menu_Translation="Alle teamgebouwen";
-        HideMap_AllMissionIcons_Menu_Translation="Alle meldingen";
-        HideMap_AllAllianceMissions_Menu_Translation="Team meldingen";
-        HideMap_AllOwnMissions_Menu_Translation="Eigen meldingen";
-        HideMap_AllEventMissions_Menu_Translation="Event meldingen";
         HideMap_AllOwnVehicles_Menu_Translation="Alle eigen voertuigen";
         HideMap_AllAllianceVehicles_Menu_Translation="Team voertuigen";
         HideMap_AllOwnNotInvolvedVehicles_Menu_Translation="Vrije eigen voertuigen";
+        HideMap_POI_Menu_Translation="POI op Naam";
+            // HideMap MissionsByState
+            HideMap_RedownMission_Menu_Translation = "Rode eigen meldingen";
+            HideMap_YellowOwnMission_Menu_Translation = "Gele eigen meldingen";
+            HideMap_GreenOwnMission_Menu_Translation = "Groene eigen meldingen";
+            HideMap_RedAllianceMission_Menu_Translation = "Rode team meldingen";
+            HideMap_YellowAllianceMission_Menu_Translation = "Gele team meldingen";
+            HideMap_GreenAllianceMission_Menu_Translation = "Groene team meldingen";
+            HideMap_RedEventMission_Menu_Translation = "Rode event meldingen";
+            HideMap_YellowEventMission_Menu_Translation = "Gele event meldingen";
+            HideMap_GreenEventMission_Menu_Translation = "Groene event meldingen";
+            // HideMap Shared/NotShared
+            HideMap_SharedMissions_Menu_Translation = "Gedeelde meldingen";
+            HideMap_NotSharedMissions_Menu_Translation = "Niet gedeelde meldingen";
+            // Hidemap involved missions
+            HideMap_InvolvedOwnMissions_Menu_Translation="Betrokken eigen meldingen";
+            HideMap_InvolvedAllianceMissions_Menu_Translation="Betrokken team meldingen";
+            HideMap_InvolvedEventMissions_Menu_Translation="Betrokken event meldingen";
+            // HideMap POI Menu
+            HideMap_POI_Header_Translation="POI verbergen/tonen op naam";
+            HideMap_POI_All_Translation="Alles";
+            HideMap_POI_Show_POI_Translation="POI Tonen";
+            HideMap_POI_Hide_POI_Translation="POI Verbergen";
+            HideMap_POI_Choose_POI_Translation="Kies POI:";
+            HideMap_POI_WarningPOIFilterOn_Translation="De POI van het spel moeten aan staan: ";
+            HideMap_POI_Close_Translation="Sluiten";
+            HideMap_POI_POI_On_Translation="Aanzetten";
+            HideMap_POI_POI_Off_Translation="Uitzetten";
+            HideMap_POI_Working_Translation="Bezig...";
+
 
 	// Side Menu HideMissionlist Translation
 	HideMissionlist_AllOwnMissions_Menu_Translation="Alle eigen meldingen";

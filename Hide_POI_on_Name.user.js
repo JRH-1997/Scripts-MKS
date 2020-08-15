@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Hide POI on Name
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      0.4
 // @description  try to take over the world!
 // @author       JRH1997
 // @match        https://www.meldkamerspel.com/
@@ -10,6 +10,10 @@
 // @downloadURL  https://github.com/JRH-1997/Scripts-MKS/raw/master/Hide_POI_on_Name.user.js
 // ==/UserScript==
 (function(){
+	var update = "Remaining Credits, credits missionlist, credits missionheader, Hide Alarm Next Share Button, Missionicon hider: \n\nThis Script will not be updated anymore, so are my other scripts. \nTo receive updates and new scripts, remove this script and install my script bundle: https://jrh-1997.github.io/Scripts-MKS/EN. \nThere you will find all my scripts together."}
+	if (I18n.locale == "nl_NL") update = "Remaining Credits, credits missionlist, credits missionheader, Hide Alarm Next Share Button, Missionicon hider:\n\nDit script wordt niet meer geüpdate, net zoals mijn andere scripts. \nOm updates én nieuwe scripts te ontvangen verwijder je dit scrtipt en installeer je de nieuwe bundel: https://jrh-1997.github.io/Scripts-MKS/. \nDaar kan je al mijn scripts samen vinden."
+	if(!localStorage.updateJRH) {localStorage.setItem("updateJRH", true); alert(update)}
+
     GM_addStyle('.JRH3{position:absolute; z-index:999; background:#c9302c; width:250px; top:200px; right:-250px !important;}');
         // Add side dropdown for FilterAllianceMissionsByUserID
         $('<ul class="dropdown-menu JRH3" id="FilterPOI_Dropdown"><li id=JRH_3_Dropdown_1" role="presentation"><a href="" id="HidePOI">Verberg</a></li></ul>').appendTo('#JRH_3');
