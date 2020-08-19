@@ -15,7 +15,7 @@ Groet Jrh1997
 <br><br>
 <b>De installatielink voor Beta is niet via deze site beschikbaar.</b>
 <br><br>
-<B>Laatste update Readme: 14-08-2020</b>
+<B>Laatste update Readme: 19-08-2020</b>
 
 <B>Auteursrecht:</b><br>
 Op alle scripts rust het Nederlandse Auteursrecht. Scripts mogen niet zonder toestemming worden bewerkt of verder verspreidt. <br>
@@ -25,6 +25,16 @@ Voor deze onderdelen is toestemming van de derden verkregen om deze te bewerken 
 # Scripts-MKS
 Hieronder zal ik een korte uitleg geven over de verschillende onderdelen in het script. 
 Er zal bovenin de menubalk een extra knop komen waar alle functies in zijn opgenomen. 
+
+# Double Credits Event:
+<b>(Instelling: Credits > Automatisch dubbele credits event)</b>
+<br>
+Deze functie berekent automatisch de dubbele credits bij de volgende modules als ze actief zijn en het dubbele credits event actief is:
+- RemainingCredits
+- Credits Missionheader
+- Credits Missionlist
+<br><br>
+Deze functie staat standaard aan. De functie is uit te zetten in het menu. 
 # RemainingCredits: 
 <b>(Instelling: Credits > Totalen boven meldingenlijst)</b>
 <br>
