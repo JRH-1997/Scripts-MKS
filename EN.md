@@ -16,7 +16,7 @@ Greetings Jrh1997
 
 <b><a href="https://github.com/JRH-1997/Scripts-MKS/raw/master/Script-bundle/Scripts-MKS.user.js">Click here to install the script package.</a></b>
 <br><br>
-<B>Last updated: Readme: 15-08-2020</b>
+<B>Last updated: Readme: 26-08-2020</b>
 
 <B>LICENSING:</b><br>
 These scripts are owned by their respective owners. None of the scripts are permitted to be modifified or distributed without my explicit permission. <br>
@@ -26,6 +26,18 @@ I've personally obtained permission to redistribute these scripts. If you like t
 # Scripts-MKS
 Below I will give a brief description of each component of the script. 
 Next to the personal menu a new menu will appear where you will find all the functions this script has to offer.
+
+# Double Credits Event:
+<b>(Instelling: Credits > Automatisch dubbele credits event)</b>
+<br>
+This function calculates the double credits when the double credits event is active. 
+It working with te following modules:
+- RemainingCredits
+- Credits Missionheader
+- Credits Missionlist
+<br><br>
+The function is on by default. It can be turned off in the menu. 
+
 # RemainingCredits: 
 <b>(Settings: Credits > Totals above missionlist)</b>
 <br>

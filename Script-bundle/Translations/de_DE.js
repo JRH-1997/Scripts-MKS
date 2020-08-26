@@ -35,6 +35,7 @@
         RemainingCreditsTotal_Title_Menu_Translation="Summen über der einsätzeliste: "+"Eigene Einsätze / Geplante Einsätze / Verbands Einsätze / Gesamtsumme";
         CreditsLabelGreen_Menu_Translation="Grüne Etikett von: ";
         CreditsLabelRed_Menu_Translation="Rotes Etikett von: ";
+        DoubleCreditsEvent_Menu_Translation="Automatisches Double Credits<br>Event";
 
         // Side Menu AllianceLabel Translations
         AllianceLabel_missionheader_Menu_Translation="Im Einsätzeheader";

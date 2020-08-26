@@ -1,4 +1,4 @@
-     // Menu Translations
+    // Menu Translations
         // General Menu Translations
         On = "Aan: ";
         Off = "Uit: ";
@@ -36,6 +36,7 @@
         RemainingCreditsTotal_Title_Menu_Translation = "Geeft achter de totalen bovenaan de meldingenlijst nog het eindtotaal daarvan weer:"+"eigen meldingen / geplande meldingen /  team meldingen / eindtotaal ";
         CreditsLabelGreen_Menu_Translation="Groen label vanaf: ";
         CreditsLabelRed_Menu_Translation="Rood label vanaf: ";
+        DoubleCreditsEvent_Menu_Translation="Automatisch dubbele credits<br>event";
 
         // Side Menu AllianceLabel Translations
         AllianceLabel_missionheader_Menu_Translation="In de meldingstitel";

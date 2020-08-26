@@ -37,6 +37,7 @@
     var RemainingCreditsTotal_Title_Menu_Translation="Shows a grand total after the totals: "+"Own missions / Planned missions / Alliance Missions / Grand total";
     var CreditsLabelGreen_Menu_Translation="Green label from: ";
     var CreditsLabelRed_Menu_Translation="Red label from: ";
+    var DoubleCreditsEvent_Menu_Translation="Automatic double credits event";
 
 
     // Side Menu AllianceLabel Translations
