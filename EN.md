@@ -28,7 +28,7 @@ Below I will give a brief description of each component of the script.
 Next to the personal menu a new menu will appear where you will find all the functions this script has to offer.
 
 # Double Credits Event:
-<b>(Instelling: Credits > Automatisch dubbele credits event)</b>
+<b>(Settings: Credits > Automatic double credits event)</b>
 <br>
 This function calculates the double credits when the double credits event is active. 
 It working with te following modules:
