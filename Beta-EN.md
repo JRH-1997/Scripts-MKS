@@ -61,7 +61,7 @@ An "Ambulance Only" mission is added to the amounts for 250 credits each. This i
 <b>(Original by Jan/KBOE2. Permission to redistribute.)</b>
 <br>
 This function shows number of the to share, number of the shared and the credits total of the shared missions.<br> 
-The credits value from when it is count as a to share mission is the same as the value of the label. You can change this in the menu. 
+The credits value from when it is count as a to share mission is the same as the value of the label. You can change this in the menu. <br>
 ![TotalSharedToShare](AfbeeldingenScriptNL/TotalSharedToShareEN.png)
 
 # Credits Missionlist: 

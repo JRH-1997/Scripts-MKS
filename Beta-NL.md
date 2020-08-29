@@ -33,6 +33,7 @@ Deze functie berekent automatisch de dubbele credits bij de volgende modules als
 - RemainingCredits
 - Credits Missionheader
 - Credits Missionlist
+
 <br><br>
 Deze functie staat standaard aan. De functie is uit te zetten in het menu. 
 # RemainingCredits: 
@@ -57,7 +58,7 @@ Een alleen ambulance melding wordt voor 250 credits meegenomen, omdat dit het aa
 <b>(Instelling: Team > Totalen van de te delen / gedeelde meldingen)</b><br>
 <b>(Met dank aan Jan/KBOE2 voor het originele basisscript. Ik heb toestemming om het te delen.)</b>
 <br>
-Deze functie geeft totalen van het aantal te delen, aantal gedeelde en totaal credits van de gedeelde meldingen. <br>Het aantal te delen wordt bepaald aan de hand van het ingestelde aantal credits in het scriptmenu onder Team. 
+Deze functie geeft totalen van het aantal te delen, aantal gedeelde en totaal credits van de gedeelde meldingen. <br>Het aantal te delen wordt bepaald aan de hand van het ingestelde aantal credits in het scriptmenu onder Team. <br>
 ![TotalSharedToShare](AfbeeldingenScriptNL/TotalSharedToShareNL.png)
 
 # Credits Missionlist: 
