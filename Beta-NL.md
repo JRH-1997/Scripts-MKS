@@ -15,7 +15,7 @@ Groet Jrh1997
 <br><br>
 <b>De installatielink voor Beta is niet via deze site beschikbaar.</b>
 <br><br>
-<B>Laatste update Readme: 19-08-2020</b>
+<B>Laatste update Readme: 29-08-2020</b>
 
 <B>Auteursrecht:</b><br>
 Op alle scripts rust het Nederlandse Auteursrecht. Scripts mogen niet zonder toestemming worden bewerkt of verder verspreidt. <br>
@@ -52,6 +52,13 @@ Op de afbeelding hierboven kan je zien hoe dit wordt weergegeven. De getallen st
 <br>
 Een alleen ambulance melding wordt voor 250 credits meegenomen, omdat dit het aantal credits is dat een patiënt zonder vervoer oplevert. Met meer patiënten, wel vervoer of MMT is de opbrengst dus hoger. 
 <br>
+
+# Totalen van gedeelde / te delen meldingen:
+<b>(Instelling: Team > Totalen van de te delen / gedeelde meldingen)</b><br>
+<b>(Met dank aan Jan/KBOE2 voor het originele basisscript. Ik heb toestemming om het te delen.)</b>
+<br>
+Deze functie geeft totalen van het aantal te delen, aantal gedeelde en totaal credits van de gedeelde meldingen. <br>Het aantal te delen wordt bepaald aan de hand van het ingestelde aantal credits in het scriptmenu onder Team. 
+![TotalSharedToShare](AfbeeldingenScriptNL/TotalSharedToShareNL.png)
 
 # Credits Missionlist: 
 <b>(Instelling: Credits > In meldingslijst als label/text (achter de naam))</b><br>
