@@ -43,7 +43,7 @@
         AllianceLabel_missionlist_Menu_Translation="In de meldingenlijst";
         AllianceLabel_missionheader_Title_Menu_Translation="Geeft een label 'team' in de meldingstitel als deze groter is dan het ingestelde aantal";
         AllianceLabel_missionlist_Title_Menu_Translation="Geeft een label 'team' in de meldingenlijst als deze groter is dan het ingestelde aantal";
-        AllianceLabelValue_setting_Translation="Label 'team' vanaf:";
+        AllianceLabelValue_setting_Translation="Teammeldingen vanaf:";
         AllianceLabelValue_setting_save_Translation="Instelling opslaan";
         AllianceLabel_ColorLabels_Menu_Translation="In dezelfde kleuren als de<br>Credits labels";
         AllianceCount_Menu_Translation="Totalen van de te delen /<br>gedeelde meldingen";
