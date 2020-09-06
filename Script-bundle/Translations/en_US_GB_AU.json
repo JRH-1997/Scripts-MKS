@@ -31,7 +31,7 @@
     "AllianceLabel_missionlist_Menu_Translation": "Label in missionlist",
     "AllianceLabel_missionheader_Title_Menu_Translation": "Show a label with 'Alliance' from an adjustable value of credits",
     "AllianceLabel_missionlist_Title_Menu_Translation": "Show a label with 'Alliance' from an adjustable value of credits",
-    "AllianceLabelValue_setting_Translation": "Mission for Alliance from:",
+    "AllianceLabelValue_setting_Translation": "Mission for Alliance from: ",
     "AllianceLabelValue_setting_save_Translation": "Save setting",
     "AllianceLabel_ColorLabels_Menu_Translation": "In the same colors as the<br>credits Labels",
     "AllianceCount_Menu_Translation": "Totals of to share / shared<br>missions above the missionlist",
