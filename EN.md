@@ -16,7 +16,7 @@ Greetings Jrh1997
 
 <b><a href="https://github.com/JRH-1997/Scripts-MKS/raw/master/Script-bundle/Scripts-MKS.user.js">Click here to install the script package.</a></b>
 <br><br>
-<B>Last updated: Readme: 26-08-2020</b>
+<B>Last updated: Readme: 10-09-2020</b>
 
 <B>LICENSING:</b><br>
 These scripts are owned by their respective owners. None of the scripts are permitted to be modifified or distributed without my explicit permission. <br>
@@ -28,7 +28,7 @@ Below I will give a brief description of each component of the script.
 Next to the personal menu a new menu will appear where you will find all the functions this script has to offer.
 
 # Double Credits Event:
-<b>(Settings: Credits > Automatic double credits event)</b>
+<b>(Instelling: Credits > Automatisch dubbele credits event)</b>
 <br>
 This function calculates the double credits when the double credits event is active. 
 It working with te following modules:
@@ -45,7 +45,7 @@ The function is on by default. It can be turned off in the menu.
 <br>
 This option shows the average earnings for your missions added up in three different categories.
 <br>
-![RemainingCredits](AfbeeldingenScriptNL/RemainingCredits.png)
+![RemainingCredits](AfbeeldingenScriptNL/RemainingCreditsEN.png)
 <br>
 The image above shows how this is being displayed. The amounts shown are the following categories from left to right:
 -   Personal missions, including scheduled transport missions.
@@ -55,6 +55,14 @@ The image above shows how this is being displayed. The amounts shown are the fol
 <br>
 An "Ambulance Only" mission is added to the amounts for 250 credits each. This is because that is the amount for a ambulance only mission without transporting the patient. More patients, fly car or transporting a patients has higher earnings.
 <br>
+
+# Totals of Shared / To share missions:
+<b>(Settings: Alliance > Totals of to share / Shared missions)</b><br>
+<b>(Original by Jan/KBOE2. Permission to redistribute.)</b>
+<br>
+This function shows number of the to share, number of the shared and the credits total of the shared missions.<br> 
+The credits value from when it is count as a to share mission is the same as the value of the label. You can change this in the menu. <br>
+![TotalSharedToShare](AfbeeldingenScriptNL/TotalSharedToShareEN.png)
 
 # Credits Missionlist: 
 <b>(Settings: Credits > In missionlist, as text or label)</b><br>

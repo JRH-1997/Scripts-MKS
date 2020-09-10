@@ -16,7 +16,7 @@ Groet Jrh1997
 
 <b><a href="https://github.com/JRH-1997/Scripts-MKS/raw/master/Script-bundle/Scripts-MKS.user.js">Installeer hier het script</a></b>
 <br><br>
-<B>Laatste update Readme: 26-08-2020</b>
+<B>Laatste update Readme: 10-09-2020</b>
 
 <B>Auteursrecht:</b><br>
 Op alle scripts rust het Nederlandse Auteursrecht. Scripts mogen niet zonder toestemming worden bewerkt of verder verspreidt. <br>
@@ -34,6 +34,7 @@ Deze functie berekent automatisch de dubbele credits bij de volgende modules als
 - RemainingCredits
 - Credits Missionheader
 - Credits Missionlist
+
 <br><br>
 Deze functie staat standaard aan. De functie is uit te zetten in het menu. 
 # RemainingCredits: 
@@ -53,6 +54,13 @@ Op de afbeelding hierboven kan je zien hoe dit wordt weergegeven. De getallen st
 <br>
 Een alleen ambulance melding wordt voor 250 credits meegenomen, omdat dit het aantal credits is dat een patiënt zonder vervoer oplevert. Met meer patiënten, wel vervoer of MMT is de opbrengst dus hoger. 
 <br>
+
+# Totalen van gedeelde / te delen meldingen:
+<b>(Instelling: Team > Totalen van de te delen / gedeelde meldingen)</b><br>
+<b>(Met dank aan Jan/KBOE2 voor het originele basisscript. Ik heb toestemming om het te delen.)</b>
+<br>
+Deze functie geeft totalen van het aantal te delen, aantal gedeelde en totaal credits van de gedeelde meldingen. <br>Het aantal te delen wordt bepaald aan de hand van het ingestelde aantal credits in het scriptmenu onder Team. <br>
+![TotalSharedToShare](AfbeeldingenScriptNL/TotalSharedToShareNL.png)
 
 # Credits Missionlist: 
 <b>(Instelling: Credits > In meldingslijst als label/text (achter de naam))</b><br>
