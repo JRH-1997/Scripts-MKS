@@ -15,7 +15,7 @@ Groet Jrh1997
 <br><br>
 <b>De installatielink voor Beta is niet via deze site beschikbaar.</b>
 <br><br>
-<B>Laatste update Readme: 29-08-2020</b>
+<B>Laatste update Readme: 01-10-2020</b>
 
 <B>Auteursrecht:</b><br>
 Op alle scripts rust het Nederlandse Auteursrecht. Scripts mogen niet zonder toestemming worden bewerkt of verder verspreidt. <br>
@@ -173,8 +173,10 @@ Deze functie verbergt meldingen in de meldingenlijst op basis van verschillende 
 - Eigen meldingen:
     - Alle eigen meldingen
     - Betrokken eigen meldingen (waar je een voertuig heen hebt gestuurd)
+	- Niet betrokken eigen meldingen (waar je nog geen voertuig heen hebt gestuurd)
     - Gedeelde meldingen
     - Niet gedeelde meldingen
+	- Meldingen onder de teamgrens (in te stellen in het menu "Team")
 - Team meldingen:
     - Alle team meldingen
     - Betrokken team meldingen (waar je een voertuig heen hebt gestuurd)

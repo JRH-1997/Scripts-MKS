@@ -16,7 +16,7 @@ Greetings Jrh1997
 
 <b>The installation link is not available on the site</b>
 <br><br>
-<B>Last updated: Readme: 29-08-2020</b>
+<B>Last updated: Readme: 01-10-2020</b>
 
 <B>LICENSING:</b><br>
 These scripts are owned by their respective owners. None of the scripts are permitted to be modifified or distributed without my explicit permission. <br>
@@ -175,9 +175,11 @@ The following parts can be hidden:
 This options hides missions from the mission list based on one or more of these options:
 - Personal Missions:
     - All personal missions
-    - Involved shared missions ( shared missions you have a vehicle enroute/on scene )
+    - Involved own missions ( own missions you have a vehicle enroute/on scene )
+	- Not involved own missions 
     - Shared missions
     - Non-Shared Missions
+	- Missions under the alliance value 
 - Alliance Missions:
     - All alliance missions
     - Involved alliance missions (alliance missions you have a vehicle enroute/on scene)
