@@ -16,7 +16,7 @@ Groet Jrh1997
 
 <b><a href="https://github.com/JRH-1997/Scripts-MKS/raw/master/Script-bundle/Scripts-MKS.user.js">Installeer hier het script</a></b>
 <br><br>
-<B>Laatste update Readme: 10-09-2020</b>
+<B>Laatste update Readme: 7-10-2020</b>
 
 <B>Auteursrecht:</b><br>
 Op alle scripts rust het Nederlandse Auteursrecht. Scripts mogen niet zonder toestemming worden bewerkt of verder verspreidt. <br>
@@ -174,8 +174,10 @@ Deze functie verbergt meldingen in de meldingenlijst op basis van verschillende 
 - Eigen meldingen:
     - Alle eigen meldingen
     - Betrokken eigen meldingen (waar je een voertuig heen hebt gestuurd)
+	- Niet betrokken eigen meldingen (waar je nog geen voertuig heen hebt gestuurd)
     - Gedeelde meldingen
     - Niet gedeelde meldingen
+	- Meldingen onder de teamgrens (in te stellen in het menu "Team")
 - Team meldingen:
     - Alle team meldingen
     - Betrokken team meldingen (waar je een voertuig heen hebt gestuurd)
