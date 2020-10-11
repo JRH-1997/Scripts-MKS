@@ -16,7 +16,7 @@ Greetings Jrh1997
 
 <b>The installation link is not available on the site</b>
 <br><br>
-<B>Last updated: Readme: 01-10-2020</b>
+<B>Last updated: Readme: 11-10-2020</b>
 
 <B>LICENSING:</b><br>
 These scripts are owned by their respective owners. None of the scripts are permitted to be modifified or distributed without my explicit permission. <br>
@@ -60,9 +60,9 @@ An "Ambulance Only" mission is added to the amounts for 250 credits each. This i
 <b>(Settings: Alliance > Totals of to share / Shared missions)</b><br>
 <b>(Original by Jan/KBOE2. Permission to redistribute.)</b>
 <br>
-This function shows number of the to share, number of the shared and the credits total of the shared missions.<br> 
+This function shows number and credits total of the to share and shared missions.<br> 
 The credits value from when it is count as a to share mission is the same as the value of the label. You can change this in the menu. <br>
-![TotalSharedToShare](AfbeeldingenScriptNL/TotalSharedToShareEN.png)
+![TotalSharedToShare](AfbeeldingenScriptNL/TotalSharedToShareNewEN.png)
 
 # Credits Missionlist: 
 <b>(Settings: Credits > In missionlist, as text or label)</b><br>
