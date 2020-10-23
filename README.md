@@ -16,7 +16,7 @@ Groet Jrh1997
 
 <b><a href="https://github.com/JRH-1997/Scripts-MKS/raw/master/Script-bundle/Scripts-MKS.user.js">Installeer hier het script</a></b>
 <br><br>
-<B>Laatste update Readme: 7-10-2020</b>
+<B>Laatste update Readme: 23-10-2020</b>
 
 <B>Auteursrecht:</b><br>
 Op alle scripts rust het Nederlandse Auteursrecht. Scripts mogen niet zonder toestemming worden bewerkt of verder verspreidt. <br>
@@ -57,10 +57,10 @@ Een alleen ambulance melding wordt voor 250 credits meegenomen, omdat dit het aa
 
 # Totalen van gedeelde / te delen meldingen:
 <b>(Instelling: Team > Totalen van de te delen / gedeelde meldingen)</b><br>
-<b>(Met dank aan Jan/KBOE2 voor het originele basisscript. Ik heb toestemming om het te delen.)</b>
 <br>
-Deze functie geeft totalen van het aantal te delen, aantal gedeelde en totaal credits van de gedeelde meldingen. <br>Het aantal te delen wordt bepaald aan de hand van het ingestelde aantal credits in het scriptmenu onder Team. <br>
-![TotalSharedToShare](AfbeeldingenScriptNL/TotalSharedToShareNL.png)
+Deze functie geeft totalen van het aantal en totaal credits van de te delen en gedeelde meldingen. <br>Het aantal te delen wordt bepaald aan de hand van het ingestelde aantal credits in het scriptmenu onder Team. <br>
+De opbouw is: "Te delen: 'aantal' / 'credits' | Gedeeld: 'aantal' / 'credits'"<br>
+![TotalSharedToShare](AfbeeldingenScriptNL/TotalSharedToShareNewNL.png)
 
 # Credits Missionlist: 
 <b>(Instelling: Credits > In meldingslijst als label/text (achter de naam))</b><br>

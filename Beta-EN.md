@@ -58,7 +58,6 @@ An "Ambulance Only" mission is added to the amounts for 250 credits each. This i
 
 # Totals of Shared / To share missions:
 <b>(Settings: Alliance > Totals of to share / Shared missions)</b><br>
-<b>(Original by Jan/KBOE2. Permission to redistribute.)</b>
 <br>
 This function shows number and credits total of the to share and shared missions.<br> 
 The credits value from when it is count as a to share mission is the same as the value of the label. You can change this in the menu. <br>
