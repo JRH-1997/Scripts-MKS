@@ -83,5 +83,6 @@
         "HideMissionlist_InvolvedEventMissions_Menu_Translation": "Beteiligte event Einsätze",
         "OnlyAmbulance": "Nur Krankenwagen",
         "ToEarn": "Zu verdienen: ",
-        "LabelAlliance": "VERBAND"
+        "LabelAlliance": "VERBAND",
+        "undefined": "Unbekannt"
 }

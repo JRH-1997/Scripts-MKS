@@ -10,6 +10,7 @@
     "HideMap_Menu_Translation": "Hide on Map",
     "HideMissionlist_Menu_Translation": "Hide in the missionlist",
     "ToplistRank_Menu_Translation": "Toplist rank in header",
+    "data_collection_Menu_Translation": "Data collection",
     "Missionlistlabel_Menu_Translation": "In missionlist as label",
     "Missionlisttext_Menu_Translation": "In missionlist as text",
     "Missionlistlabelafter_Menu_Translation": "In missionlist as label<br>after the name",
@@ -82,7 +83,16 @@
     "HideMissionlist_AllAllianceMissions_Menu_Translation": "All alliance missions",
     "HideMissionlist_InvolvedAllianceMissions_Menu_Translation": "Involved alliance missions",
     "HideMissionlist_InvolvedEventMissions_Menu_Translation": "Involved event missions",
+    "data_collection_optout_Menu_Translation": "Stop data collection",
+    "data_collection_optin_Menu_Translation": "Start data collection",
+    "data_collection_deleterequest_Menu_Translation": "Request for deletion of data",
+    "data_collection_withdrawdeleterequest_Menu_Translation": "Withdraw request for deletion of data",
+    "data_collection_areyousure_delete_Menu_Translation": "\nAre you sure you would request for deletion of your data? We only use this data for support, statistics and find/resolve bugs.",
+    "data_collection_areyousure_optout_Menu_Translation": "\nAre you sure you would stop the data collection? We only use this data for support, statistics and find/resolve bugs.",
+    "data_collection_areyousure_optin_Menu_Translation": "\nAre you sure you would start data collection? We only use this data for support, statistics and find/resolve bugs.",
+    "data_collection_areyousure_withdraw_Menu_Translation": "\nAre you sure you would withdraw your request for deletionof your data?",
     "OnlyAmbulance": "Only Ambulance",
     "ToEarn": "To earn: ",
-    "LabelAlliance": "ALLIANCE"
+    "LabelAlliance": "ALLIANCE",
+    "undefined": "Unknown"
 }

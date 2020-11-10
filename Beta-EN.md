@@ -27,6 +27,12 @@ I've personally obtained permission to redistribute these scripts. If you like t
 Below I will give a brief description of each component of the script. 
 Next to the personal menu a new menu will appear where you will find all the functions this script has to offer.
 
+# Data collection:
+We collect usage data and error logging. <br>
+These data includes: user ID, username, gameversion, Script settings and script version. If it's an error report, then the data will also includes the Error message. <br> We only use this information for support, statistics and finding/resolving bugs.<br><br>
+ 
+You can always optin, optout, request for deletion of your data and witdraw that request via the script menu. After a request for deletion of your data, you'll get an alert in game when the data is deleted.
+
 # Double Credits Event:
 <b>(Instelling: Credits > Automatisch dubbele credits event)</b>
 <br>
