@@ -16,7 +16,7 @@ Greetings Jrh1997
 
 <b><a href="https://github.com/JRH-1997/Scripts-MKS/raw/master/Script-bundle/Scripts-MKS.user.js">Click here to install the script package.</a></b>
 <br><br>
-<B>Last updated: Readme: 23-10-2020</b>
+<B>Last updated: Readme: 07-12-2020</b>
 
 <B>LICENSING:</b><br>
 These scripts are owned by their respective owners. None of the scripts are permitted to be modifified or distributed without my explicit permission. <br>
@@ -26,6 +26,12 @@ I've personally obtained permission to redistribute these scripts. If you like t
 # Scripts-MKS
 Below I will give a brief description of each component of the script. 
 Next to the personal menu a new menu will appear where you will find all the functions this script has to offer.
+
+# Data collection:
+We collect usage data and error logging. <br>
+These data includes: user ID, username, gameversion, Script settings and script version. If it's an error report, then the data will also includes the Error message. <br> We only use this information for support, statistics and finding/resolving bugs.<br><br>
+ 
+You can always optin, optout, request for deletion of your data and witdraw that request via the script menu. After a request for deletion of your data, you'll get an alert in game when the data is deleted.
 
 # Double Credits Event:
 <b>(Instelling: Credits > Automatisch dubbele credits event)</b>

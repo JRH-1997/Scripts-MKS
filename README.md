@@ -16,7 +16,7 @@ Groet Jrh1997
 
 <b><a href="https://github.com/JRH-1997/Scripts-MKS/raw/master/Script-bundle/Scripts-MKS.user.js">Installeer hier het script</a></b>
 <br><br>
-<B>Laatste update Readme: 23-10-2020</b>
+<B>Laatste update Readme: 07-12-2020</b>
 
 <B>Auteursrecht:</b><br>
 Op alle scripts rust het Nederlandse Auteursrecht. Scripts mogen niet zonder toestemming worden bewerkt of verder verspreidt. <br>
@@ -26,6 +26,11 @@ Voor deze onderdelen is toestemming van de derden verkregen om deze te bewerken 
 # Scripts-MKS
 Hieronder zal ik een korte uitleg geven over de verschillende onderdelen in het script. 
 Er zal bovenin de menubalk een extra knop komen waar alle functies in zijn opgenomen. 
+
+# Dataverzameling:
+We verzamelen  gegevens over het gebruik van het script en error logs.<br>
+Deze gegevens omvatten je user ID, username, spelversie, Scriptinstellingen en scriptversie. Als het een error betreft zal de data ook het error bericht bevatten.<br>We gebruiken deze gegevens alleen voor support, statistieken en het vinden en oplossen van fouten.<br><br>
+Je kan ten alle tijden het verzamelen van je gebruikersdata stopzetten, starten, een verzoek indienen tot het verwijderen van je data of dat vezoek weer intrekken. Na een verzoek tot verwijdering van je data, zal je een pop-up krijgen met de mededeling dat je data is verwijderd. 
 
 # Double Credits Event:
 <b>(Instelling: Credits > Automatisch dubbele credits event)</b>
