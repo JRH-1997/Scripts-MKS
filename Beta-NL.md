@@ -15,7 +15,7 @@ Groet Jrh1997
 <br><br>
 <b>De installatielink voor Beta is niet via deze site beschikbaar.</b>
 <br><br>
-<B>Laatste update Readme: 07-12-2020</b>
+<B>Laatste update Readme: 19-03-2020</b>
 
 <B>Auteursrecht:</b><br>
 Op alle scripts rust het Nederlandse Auteursrecht. Scripts mogen niet zonder toestemming worden bewerkt of verder verspreidt. <br>
@@ -24,7 +24,7 @@ Voor deze onderdelen is toestemming van de derden verkregen om deze te bewerken 
 
 # Scripts-MKS
 Hieronder zal ik een korte uitleg geven over de verschillende onderdelen in het script. 
-Er zal bovenin de menubalk een extra knop komen waar alle functies in zijn opgenomen. 
+Er zal bovenin de menubalk een extra knop komen die toegang geeft tot het instellingenscherm.
 
 # Dataverzameling:
 We verzamelen  gegevens over het gebruik van het script en error logs.<br>
@@ -77,13 +77,14 @@ Deze functie heb ik in 2 varianten: als gekleurd label of als tekst, daarnaast n
 Hieronder zie je een voorbeeld van een melding waar een gekleurd label in staat:
 ![Missionlistlabel](AfbeeldingenScriptNL/Missionlistlabel.png)
 <br>
-De Labels zijn er in 4 kleuren, die de grootte van de melding aangeven. De standaard instelling is:
+De Labels zijn er in 5 kleuren, die de grootte van de melding aangeven. De standaard instelling is:
 - Voor meldingen met alleen ambulances: ![LabelAmbulance](AfbeeldingenScriptNL/LabelAmbulance.png)
 - Voor meldingen t/m 4499 credits: ![LabelBlauw](AfbeeldingenScriptNL/LabelBlauw.png)
 - Voor meldingen vanaf 4500 t/m 7999 credits: ![LabelGroen](AfbeeldingenScriptNL/LabelGroen.png)
 - Voor meldingen van 8000 credits en hoger: ![LabelRood](AfbeeldingenScriptNL/LabelRood.png)
+- Lichtblauw label: Standaard is deze verborgen. Deze kan worden ingesteld door het donkerblauwe label op een hoger begingetal te zetten.
 <br>
-De groene en rode labels zijn naar wens aan te passen vanaf wanneer deze getoond worden.
+De donkerblauwe, groene en rode labels zijn naar wens aan te passen vanaf wanneer deze getoond worden.
 <br>
 ### Variant Tekst:
 Hieronder zie je een voorbeeld van een melding waar credits als tekst staan en een voorbeeld van een melding waar alleen een ambulance nodig is. 
@@ -100,13 +101,14 @@ Deze functie geeft in de bovenste balk van de melding het gemiddeld aantal credi
 <br>
 Hierboven zie je een voorbeeld hoe dit er uit ziet. 
 <br>
-De Labels zijn er in 4 kleuren, die de grootte van de melding aangeven. De standaard instelling is:
+De Labels zijn er in 5 kleuren, die de grootte van de melding aangeven. De standaard instelling is:
 - Voor meldingen met alleen ambulances: ![LabelAmbulance](AfbeeldingenScriptNL/LabelAmbulance.png)
 - Voor meldingen t/m 4499 credits: ![LabelBlauw](AfbeeldingenScriptNL/LabelBlauw.png)
 - Voor meldingen vanaf 4500 t/m 7999 credits: ![LabelGroen](AfbeeldingenScriptNL/LabelGroen.png)
 - Voor meldingen van 8000 credits en hoger: ![LabelRood](AfbeeldingenScriptNL/LabelRood.png)
+- Lichtblauw label: Standaard is deze verborgen. Deze kan worden ingesteld door het donkerblauwe label op een hoger begingetal te zetten.
 <br>
-De groene en rode labels zijn naar wens aan te passen vanaf wanneer deze getoond worden.
+De donkerblauwe, groene en rode labels zijn naar wens aan te passen vanaf wanneer deze getoond worden.
 <br>
 
 # Label Alliance
@@ -122,7 +124,7 @@ Optioneel: Het label kan dezelfde kleur krijgen als de credits labels.
 <br>
 
 # Hide AlarmNextShare Button
-<b>(Instelling: Verberg "Alarmeer, deel en volgende" knop)</b>
+<b>(Instelling: Algemeen > Verberg "Alarmeer, deel en volgende" knop)</b>
 <br>
 Deze functie verbergt de "Alarmeer, deel en volgende" knop, optioneel is in te stellen om alleen de bovenste te verwijderen. 
 <br><br>
@@ -185,11 +187,32 @@ Deze functie verbergt meldingen in de meldingenlijst op basis van verschillende 
 - Team meldingen:
     - Alle team meldingen
     - Betrokken team meldingen (waar je een voertuig heen hebt gestuurd)
+- Event meldingen:
     - Betrokken event meldingen (waar je een voertuig heen hebt gestuurd)
+- Op basis van labelkleur:
+	- Voor eigen, team en event meldingen een optie per labelkleur
+<br>
+
+# Sort missionlist
+<b>(Instelling: Sorteer meldingenlijst)</b>
+<br>
+Deze functie sorteert de meldingenlijst. Hierbij zijn de volgende opties:
+- Eigen meldingen
+	- Sorteer op basis van credits van laag naar hoog
+		- Sorteer van hoog naar laag
+- Team meldingen
+	- Sorteer op basis van credits van laag naar hoog
+		- Sorteer van hoog naar laag
+- Event meldingen
+	- Sorteer op basis van credits van laag naar hoog
+		- Sorteer van hoog naar laag
+- Geplande meldingen
+	- Sorteer op basis van credits van laag naar hoog
+		- Sorteer van hoog naar laag
 <br>
 
 # Toplist Rank
-<b>(Instelling: Toplist plaats in menubalk)</b>
+<b>(Instelling: Algemeen > Toplist plaats in menubalk)</b>
 <br>
 Deze functie laat bovenin de menubalk je plaats in de ranglijst zien. Als je er op klikt opent de goede pagina van de ranglijst ook direct.
 <br>

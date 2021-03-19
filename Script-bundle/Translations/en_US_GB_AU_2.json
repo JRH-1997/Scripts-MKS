@@ -1,0 +1,386 @@
+{
+	"On": "On: ",
+	"Off": "Off: ",
+	"AllianceCount_ToShare_Translation": "To share: ",
+	"AllianceCount_Shared_Translation": " Shared: ",
+	"Hotkey_InputKeycode_new_Menu_Translation": "Click on a inputfield and push the desired button:",
+	"Hotkey_Restoredefault_Menu_Translation": "Restore default settings",
+	"HideMap_POI_Header_Translation": "Hide/Show POI by name",
+	"HideMap_POI_All_Translation": "All",
+	"HideMap_POI_Show_POI_Translation": "Show POI",
+	"HideMap_POI_Hide_POI_Translation": "Hide POI",
+	"HideMap_POI_Choose_POI_Translation": "Choose POI:",
+	"HideMap_POI_WarningPOIFilterOn_Translation": "The game's POI must be activated: ",
+	"HideMap_POI_Close_Translation": "Close",
+	"HideMap_POI_POI_On_Translation": "Turn on",
+	"HideMap_POI_POI_Off_Translation": "Turn off",
+	"HideMap_POI_Working_Translation": "Working...",
+	"data_collection_optout_Menu_Translation": "Stop data collection",
+	"data_collection_optin_Menu_Translation": "Start data collection",
+	"data_collection_deleterequest_Menu_Translation": "Request for deletion of data",
+	"data_collection_withdrawdeleterequest_Menu_Translation": "Withdraw request for deletion of data",
+	"data_collection_areyousure_delete_Menu_Translation": "\nAre you sure you would request for deletion of your data? We only use this data for support, statistics and find/resolve bugs.",
+	"data_collection_areyousure_optout_Menu_Translation": "\nAre you sure you would stop the data collection? We only use this data for support, statistics and find/resolve bugs.",
+	"data_collection_areyousure_optin_Menu_Translation": "\nAre you sure you would start data collection? We only use this data for support, statistics and find/resolve bugs.",
+	"data_collection_areyousure_withdraw_Menu_Translation": "\nAre you sure you would withdraw your request for deletionof your data?",
+	"mapkit": "This setting is not availble because you're using maptype MapKit. MapKit is not supported in this script. You could change to maptype OpenStreetMaps in the \"Profile\" menu.",
+	"OnlyAmbulance": "Only Ambulance",
+	"ToEarn": "To earn: ",
+	"LabelAlliance": "ALLIANCE",
+	"undefined": "Undefined",
+	"s": {
+		"title": "Scripts-MKS Settings",
+		"information": "Welcome! Thanks for using this script. If you would like more information, you could always <a class=\"white\" href=\"%SITEURL%\" target=\"blank\">look at the site</a>. Do you have any questions? Please contact me at the Dutch forum, Discordmessage: JRH1997#2625, Github JRH-1997 or ingame message at the dutch game www.meldkamerspel.com: JRH1997<br>If you would change some translations or add descriptions to settings, <a class=\"white\" href=\"%githubtranslations%\" target=\"blank\">feel free to contribute on Github</a>. ",
+		"restoreMessage": "Are you sure you want to restore all settings of the script?",
+		"restoreBtn": "Restore settings",
+		"modules": "Modules",
+		"general": {
+			"title": "General"
+		},
+		"credits": {
+			"title": "Credits"
+		},
+		"alliance": {
+			"title": "Alliance"
+		},
+		"hotkey": {
+			"title": "Hotkeys",
+			"moduledescription": "To change a hotkey, you could click on the inputfield from that hotkey and push the desired button. The new button will be shown and saved automatically."
+		},
+		"hideMap": {
+			"title": "Hide on map"
+		},
+		"hideMissionlist": {
+			"title": "Hide in the missionlist"
+		},
+		"sortMissionlist": {
+			"title": "Sort missionlist"
+		},
+		"general.telemetry": {
+			"title": "Data collection",
+			"description": "We collect usage data and error logging. These data include: user ID, username, gameversion, Script settings and script version. If it's an error report, then the data will also includes the Error message. We only use this information for support, statistics and finding/resolving bugs"
+		},
+		"general.telemetry.setting": {
+			"title": "Allow data collection"
+		},
+		"general.telemetry.deletedata": {
+			"title": "Request for deletion of data",
+			"description": "Would you request to delete your data? If it's on. You could turn it off to withdraw your request."
+		},
+		"general.toplist": {
+			"title": "Toplist",
+			"description": "Show your toplist rank in the navbar"
+		},
+		"general.HideAlarmNextShare": {
+			"title": "Hide Alarm Next Share button"
+		},
+		"general.HideAlarmNextShareOnlyupper": {
+			"title": "Only upper button",
+			"description": "Hide only the upper Alarm Next Share button"
+		},
+		"credits.missionlist": {
+			"title": "Missionlist"
+		},
+		"credits.missionlist.label": {
+			"title": "In missionlist as label",
+			"description": "Shows the average credits in a label in the missionlist"
+		},
+		"credits.missionlist.text": {
+			"title": "In missionlist as text",
+			"description": "Shows the average credits as text in the missionlist"
+		},
+		"credits.missionlist.labelAfter": {
+			"title": "In missionlist as label after the name",
+			"description": "Shows the average credits in a label after the missionname in the missionlist"
+		},
+		"credits.missionlist.textAfter": {
+			"title": "In missionlist as text after the name",
+			"description": "Shows the average credits as text after the missionname in the missionlist"
+		},
+		"credits.missionheader": {
+			"title": "Missionheader"
+		},
+		"credits.missionheader.label": {
+			"title": "In missionheader as label",
+			"description": "Shows the average credits in a label in the missionheader"
+		},
+		"credits.missionheader.text": {
+			"title": "In missionheader as text",
+			"description": "Shows the average credits as text in the missionheader"
+		},
+		"credits.remainingCredits": {
+			"title": "Credits totals"
+		},
+		"credits.remainingCredits.setting": {
+			"title": "Totals above missionlist",
+			"description": "Shows the totals of the missions in categories: <br>Own missions / Planned missions / Alliance Missions"
+		},
+		"credits.remainingCredits.total": {
+			"title": "Grand total after totals",
+			"description": "Shows a grand total after the totals: <br>Own missions / Planned missions / Alliance Missions / Grand total"
+		},
+		"credits.labels": {
+			"title": "Labels"
+		},
+		"credits.labels.blue": {
+			"title": "Dark blue label from: ",
+			"description": "Use the dark blue label from this number of credits. Every value under this will use the light blue or yellow label."
+		},
+		"credits.labels.green": {
+			"title": "Green label from: ",
+			"description": "Use the green label from this number of credits."
+		},
+		"credits.labels.red": {
+			"title": "Red label from: ",
+			"description": "Use the red label from this number of credits."
+		},
+		"credits.DoubleCreditsEvent": {
+			"title": "Automatic double credits event",
+			"description": "Automatically doubles the credits values of the labels, text and totals. Alliance setting will not be affected with this setting"
+		},
+		"alliance.missionlist": {
+			"title": "Label in missionlist",
+			"description": "Show a label with \"ALLIANCE\" from an adjustable value of credits"
+		},
+		"alliance.missionheader": {
+			"title": "Label in missionheader",
+			"description": "Show a label with \"ALLIANCE\" from an adjustable value of credits"
+		},
+		"alliance.value": {
+			"title": "Mission for Alliance from:",
+			"description": "This value is used for the alliance labels, to share missions and hide in missionlist by alliance value"
+		},
+		"alliance.color": {
+			"title": "In the same colors as the credits Labels",
+			"description": "Show the alliance labels in the same colors as the credits labels"
+		},
+		"alliance.count": {
+			"title": "Totals of to share / shared missions above the missionlist"
+		},
+		"hotkey.savePOI": {
+			"title": "Save new POI"
+		},
+		"hotkey.OpenTransportRequests": {
+			"title": "Open Transport request"
+		},
+		"hideMap.vehicles": {
+			"title": "Vehicles"
+		},
+		"hideMap.vehicles.allOwn": {
+			"title": "All own vehicles"
+		},
+		"hideMap.vehicles.notInvolvedOwn": {
+			"title": "All own not involved vehicles",
+			"description": "Not involved vehicles are vehicles that are not onway to a mission at this moment."
+		},
+		"hideMap.vehicles.allAlliance": {
+			"title": "All alliance vehicles"
+		},
+		"hideMap.missions": {
+			"title": "Missions"
+		},
+		"hideMap.missions.own": {
+			"title": "Own Missions"
+		},
+		"hideMap.missions.own.red": {
+			"title": "Red own missions"
+		},
+		"hideMap.missions.own.yellow": {
+			"title": "Yellow own missions"
+		},
+		"hideMap.missions.own.green": {
+			"title": "Green own missions"
+		},
+		"hideMap.missions.own.shared": {
+			"title": "Shared missions"
+		},
+		"hideMap.missions.own.notShared": {
+			"title": "Not shared missions"
+		},
+		"hideMap.missions.own.involved": {
+			"title": "Involved own missions",
+			"description": "Involved missions are missions where you did send a vehicle to."
+		},
+		"hideMap.missions.alliance": {
+			"title": "Alliance missions"
+		},
+		"hideMap.missions.alliance.red": {
+			"title": "Red alliance missions"
+		},
+		"hideMap.missions.alliance.yellow": {
+			"title": "Yellow alliance missions"
+		},
+		"hideMap.missions.alliance.green": {
+			"title": "Green alliance missions"
+		},
+		"hideMap.missions.alliance.involved": {
+			"title": "Involved alliance missions",
+			"description": "Involved missions are missions where you did send a vehicle to."
+		},
+		"hideMap.missions.event": {
+			"title": "Event missions"
+		},
+		"hideMap.missions.event.red": {
+			"title": "Red event missions"
+		},
+		"hideMap.missions.event.yellow": {
+			"title": "Yellow event missions"
+		},
+		"hideMap.missions.event.green": {
+			"title": "Green event missions"
+		},
+		"hideMap.missions.event.involved": {
+			"title": "Involved event missions",
+			"description": "Involved missions are missions where you did send a vehicle to."
+		},
+		"hideMap.poi": {
+			"title": "POI"
+		},
+		"hideMap.poi.poi": {
+			"title": "POI by name",
+			"description": "When you turn this setting on, there will open a window on the map"
+		},
+		"hideMissionlist.own": {
+			"title": "Own missions"
+		},
+		"hideMissionlist.own.all": {
+			"title": "All own missions"
+		},
+		"hideMissionlist.own.involved": {
+			"title": "Involved own missions",
+			"description": "Involved missions are missions where you did send a vehicle to."
+		},
+		"hideMissionlist.own.notInvolved": {
+			"title": "Not involved own missions",
+			"description": "Not involved missions are missions where you didn't send a vehicle to."
+		},
+		"hideMissionlist.own.shared": {
+			"title": "Shared own missions"
+		},
+		"hideMissionlist.own.notShared": {
+			"title": "Not shared own missions"
+		},
+		"hideMissionlist.own.alliance": {
+			"title": "Own missions under alliance value",
+			"description": "You could change the alliance value at the module \"Alliance\""
+		},
+		"hideMissionlist.alliance": {
+			"title": "Alliance missions"
+		},
+		"hideMissionlist.alliance.all": {
+			"title": "All alliance missions"
+		},
+		"hideMissionlist.alliance.involved": {
+			"title": "Involved alliance missions",
+			"description": "Involved missions are missions where you did send a vehicle to."
+		},
+		"hideMissionlist.event": {
+			"title": "Event missions"
+		},
+		"hideMissionlist.event.involved": {
+			"title": "Involved event missions",
+			"description": "Involved missions are missions where you did send a vehicle to."
+		},
+		"hideMissionlist.labelColor": {
+			"title": "By label color"
+		},
+		"hideMissionlist.labelColor.setting": {
+			"title": "By label color",
+			"description": "Easy way to keep to your \"Hide by label color\" settings but turn them off"
+		},
+		"hideMissionlist.labelColor.own": {
+			"title": "Own missions"
+		},
+		"hideMissionlist.labelColor.own.red": {
+			"title": "Own missions, red label"
+		},
+		"hideMissionlist.labelColor.own.green": {
+			"title": "Own missions, green label"
+		},
+		"hideMissionlist.labelColor.own.darkBlue": {
+			"title": "Own missions, dark blue label"
+		},
+		"hideMissionlist.labelColor.own.lightBlue": {
+			"title": "Own missions, light blue label"
+		},
+		"hideMissionlist.labelColor.own.yellow": {
+			"title": "Own missions, yellow label"
+		},
+		"hideMissionlist.labelColor.alliance": {
+			"title": "Alliance missions"
+		},
+		"hideMissionlist.labelColor.alliance.red": {
+			"title": "Alliance missions, red label"
+		},
+		"hideMissionlist.labelColor.alliance.green": {
+			"title": "Alliance missions, green label"
+		},
+		"hideMissionlist.labelColor.alliance.darkBlue": {
+			"title": "Alliance missions, dark blue label"
+		},
+		"hideMissionlist.labelColor.alliance.lightBlue": {
+			"title": "Alliance missions, light blue label"
+		},
+		"hideMissionlist.labelColor.alliance.yellow": {
+			"title": "Alliance missions, yellow label"
+		},
+		"hideMissionlist.labelColor.event": {
+			"title": "Event missions"
+		},
+		"hideMissionlist.labelColor.event.red": {
+			"title": "Event missions, red label"
+		},
+		"hideMissionlist.labelColor.event.green": {
+			"title": "Event missions, green label"
+		},
+		"hideMissionlist.labelColor.event.darkBlue": {
+			"title": "Event missions, dark blue label"
+		},
+		"hideMissionlist.labelColor.event.lightBlue": {
+			"title": "Event missions, light blue label"
+		},
+		"hideMissionlist.labelColor.event.yellow": {
+			"title": "Event missions, yellow label"
+		},
+		"sortMissionlist.own": {
+			"title": "Own missions"
+		},
+		"sortMissionlist.own.credits": {
+			"title": "Sort own missions by credits",
+			"description": "Sort own missions in in the missionlist based by the average credits, sorted from lowest to highest"
+		},
+		"sortMissionlist.own.ownDesc": {
+			"title": "Sort descending"
+		},
+		"sortMissionlist.alliance": {
+			"title": "Alliance missions"
+		},
+		"sortMissionlist.alliance.credits": {
+			"title": "Sort alliance missions by credits",
+			"description": "Sort alliance missions in in the missionlist based by the average credits, sorted from lowest to highest"
+		},
+		"sortMissionlist.alliance.allianceDesc": {
+			"title": "Sort descending"
+		},
+		"sortMissionlist.event": {
+			"title": "Event missions"
+		},
+		"sortMissionlist.event.credits": {
+			"title": "Sort event missions by credits",
+			"description": "Sort event missions in in the missionlist based by the average credits, sorted from lowest to highest"
+		},
+		"sortMissionlist.event.eventDesc": {
+			"title": "Sort descending"
+		},
+		"sortMissionlist.guard": {
+			"title": "Planned missions"
+		},
+		"sortMissionlist.guard.credits": {
+			"title": "Sort planned missions by credits",
+			"description": "Sort planned missions in in the missionlist based by the average credits, sorted from lowest to highest"
+		},
+		"sortMissionlist.guard.guardDesc": {
+			"title": "Sort descending"
+		}
+	}
+}

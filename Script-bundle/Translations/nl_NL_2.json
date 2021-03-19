@@ -1,0 +1,387 @@
+{
+	"On": "Aan: ",
+	"Off": "Uit: ",
+	"AllianceCount_ToShare_Translation": "Te delen: ",
+	"AllianceCount_Shared_Translation": " Gedeeld: ",
+	"HideMap_POI_Header_Translation": "POI verbergen/tonen op naam",
+	"HideMap_POI_All_Translation": "Alles",
+	"HideMap_POI_Show_POI_Translation": "POI Tonen",
+	"HideMap_POI_Hide_POI_Translation": "POI Verbergen",
+	"HideMap_POI_Choose_POI_Translation": "Kies POI:",
+	"HideMap_POI_WarningPOIFilterOn_Translation": "De POI van het spel moeten aan staan: ",
+	"HideMap_POI_Close_Translation": "Sluiten",
+	"HideMap_POI_POI_On_Translation": "Aanzetten",
+	"HideMap_POI_POI_Off_Translation": "Uitzetten",
+	"HideMap_POI_Working_Translation": "Bezig...",
+	"data_collection_areyousure_delete_Menu_Translation": "\nWeet je zeker dat je wilt verzoeken om je data te verwijderen? We gebruiken de data alleen voor support, statistieken en het vinden/verhelpen van fouten.",
+	"data_collection_areyousure_optout_Menu_Translation": "\nWeet je zeker dat je de dataverzameling wilt stoppen? We gebruiken de data alleen voor support, statistieken en het vinden/verhelpen van fouten.",
+	"data_collection_areyousure_optin_Menu_Translation": "\nWeet je zeker dat je de dataverzameling wilt starten? We gebruiken de data alleen voor support, statistieken en het vinden/verhelpen van fouten.",
+	"data_collection_areyousure_withdraw_Menu_Translation": "\nWeet je het zeker dat je het verzoek tot verwijderen van je data wilt intrekkken?",
+	"mapkit": "Deze instelling is niet beschikbaar omdat je gebruik maakt van kaarttype MapKit. Mapkit wordt niet ondersteund in dit script. Je kunt wisselen naar kaarttype OpenStreetMaps in het \"Profiel\" menu.",
+	"OnlyAmbulance": "Alleen Ambulance",
+	"ToEarn": "Te verdienen: ",
+	"LabelAlliance": "TEAM",
+	"undefined": "Onbekend",
+	"s": {
+		"title": "Scripts-MKS Instellingen",
+		"information": "Welkom! Bedankt dat je het script gebruikt. Indien je meer informatie wilt, kan je altijd <a class=\"white\" href=\"%SITEURL%\" target=\"blank\">kijken op de site</a>. Heb je vragen of opmerkingen? Neem alsjeblieft contact op via het forum, Discord bericht: JRH1997#2625, in de meldkamerspel.com discord, Github JRH-1997 of een bericht in het spel zelf: JRH1997",
+		"restoreMessage": "Weet je zeker dat je alle instellingen van het script wilt herstellen?",
+		"restoreBtn": "Herstel instellingen",
+		"modules": "Modules",
+		"general": {
+			"title": "Algemeen"
+		},
+		"credits": {
+			"title": "Credits"
+		},
+		"alliance": {
+			"title": "Team"
+		},
+		"hotkey": {
+			"title": "Sneltoetsen",
+			"moduledescription": "Om een andere sneltoets te kiezen druk je op het invoerveld bij de sneltoets en druk je de gewenste knop in. De nieuwe sneltoets zal automatisch worden weergegeven en opgeslagen."
+		},
+		"hideMap": {
+			"title": "Verberg op kaart"
+		},
+		"hideMissionlist": {
+			"title": "Verberg in meldingenlijst"
+		},
+		"sortMissionlist": {
+			"title": "Sorteer meldingenlijst"
+		},
+		"general.telemetry": {
+			"title": "Dataverzameling",
+			"description": "Wij verzamelen gegevens over het gebruik van het script en error logs. Deze gegevens omvatten je user ID, username, spelversie, Scriptinstellingen en scriptversie. Als het een error betreft zal de data ook het error bericht bevatten. We gebruiken deze gegevens alleen voor support, statistieken en het vinden en oplossen van fouten."
+		},
+		"general.telemetry.setting": {
+			"title": "Sta dataverzameling toe"
+		},
+		"general.telemetry.deletedata": {
+			"title": "Verzoek om je data te verwijderen",
+			"description": "Wil je verzoeken om je data te verwijderen? Als deze optie aan staat, kan je hem uitzetten om het verzoek in te trekken.",
+			"titleRequest": "Verzoek om je data te verwijderen",
+			"descriptionRequest": "Would you request to delete your data? If it's on, you could turn it off to withdraw your request.",
+			"titleRequestDone": "",
+			"descriptionRequestDone": ""
+		},
+		"general.toplist": {
+			"title": "Toplist",
+			"description": "Laat je plaats in de toplist zien in de menubalk."
+		},
+		"general.HideAlarmNextShare": {
+			"title": "Verberg \"alarmeer, deel en volgende\" knop"
+		},
+		"general.HideAlarmNextShareOnlyupper": {
+			"title": "Alleen de bovenste",
+			"description": "Verberg alleen de bovenste \"alarmeer, deel en volgende\" knop."
+		},
+		"credits.missionlist": {
+			"title": "Meldingenlijst"
+		},
+		"credits.missionlist.label": {
+			"title": "In meldingenlijst als label",
+			"description": "Toon de gemiddelde credits in een label in de meldingenlijst"
+		},
+		"credits.missionlist.text": {
+			"title": "In meldingenlijst als tekst",
+			"description": "Toon de gemiddelde credits als tekst in de meldingenlijst"
+		},
+		"credits.missionlist.labelAfter": {
+			"title": "In meldingenlijst als label achter de naam",
+			"description": "Toon de gemiddelde credits in een label achter de meldingsnaam in de meldingenlijst"
+		},
+		"credits.missionlist.textAfter": {
+			"title": "In meldingenlijst als tekst achter de naam",
+			"description": "Toon de gemiddelde credits als tekst achter de meldingsnaam in de meldingenlijst"
+		},
+		"credits.missionheader": {
+			"title": "Meldingstitel"
+		},
+		"credits.missionheader.label": {
+			"title": "In meldingstitel als label",
+			"description": "Toon de gemiddelde credits in een label in de koptekst van het meldingenscherm"
+		},
+		"credits.missionheader.text": {
+			"title": "In meldingstitel als tekst",
+			"description": "Toon de gemiddelde credits als tekst in de koptekst van het meldingenscherm"
+		},
+		"credits.remainingCredits": {
+			"title": "Credits totalen"
+		},
+		"credits.remainingCredits.setting": {
+			"title": "Totalen boven de meldingenlijst",
+			"description": "Geeft de totalen van de categoriën meldingen weer boven aan de meldingenlijst:<br>eigen meldingen / geplande meldingen /  team meldingen"
+		},
+		"credits.remainingCredits.total": {
+			"title": "Eindtotaal achter de totalen",
+			"description": "Geeft achter de totalen bovenaan de meldingenlijst nog het eindtotaal daarvan weer:<br>eigen meldingen / geplande meldingen /  team meldingen / eindtotaal"
+		},
+		"credits.labels": {
+			"title": "Labels"
+		},
+		"credits.labels.blue": {
+			"title": "Donker blauw label vanaf:",
+			"description": "Gebruik het donkerblauwe label vanaf dit aantal credits. Alles onder deze waarde gebruikt het lichtblauwe label of het gele label voor ambulance."
+		},
+		"credits.labels.green": {
+			"title": "Groen label vanaf:",
+			"description": "Gebruik het groene label vanaf dit aantal credits."
+		},
+		"credits.labels.red": {
+			"title": "Rood label vanaf:",
+			"description": "Gebruik het rode label vanaf dit aantal credits."
+		},
+		"credits.DoubleCreditsEvent": {
+			"title": "Automatisch dubbele credits event",
+			"description": "Verdubbelt automatisch de credits in de totalen, labels en teksten als er een dubbel credits event actief is. <br>De teamgrens wordt hierdoor niet beïnvloedt."
+		},
+		"alliance.missionlist": {
+			"title": "Teamlabel in de meldingenlijst",
+			"description": "Toont een label met \"TEAM\" vanaf een in te stellen aantal credits"
+		},
+		"alliance.missionheader": {
+			"title": "Teamlabel in de meldingstitel",
+			"description": "Toont een label met \"TEAM\" vanaf een in te stellen aantal credits"
+		},
+		"alliance.value": {
+			"title": "Teammelding vanaf:",
+			"description": "Met deze waarde wordt rekening gehouden bij de teamlabels, te delen meldingen en bij het verbergen in de meldingenlijst op basis van de teamgrens."
+		},
+		"alliance.color": {
+			"title": "Zelfde kleuren",
+			"description": "Toon de teamlabels in dezelfde kleuren als de creditslabels"
+		},
+		"alliance.count": {
+			"title": "Te delen / gedeelde meldingen",
+			"description": "Toont totalen van de te delen / gedeelde meldingen boven de meldingenlijst"
+		},
+		"hotkey.savePOI": {
+			"title": "Opslaan nieuwe POI",
+			"description": "Slaat bij het plaatsen van POI de nieuwe POI meteen op door het gebruiken van deze sneltoets."
+		},
+		"hotkey.OpenTransportRequests": {
+			"title": "Open spraakaanvraag op hoofdscherm",
+			"description": "Deze sneltoets opent een spraakaanvraag vanaf het hoofdscherm. Bij het openen van een uitbreidingsspraakaanvraag wordt de spraakaanvraag ook verborgen in je lijst."
+		},
+		"hideMap.vehicles": {
+			"title": "Voertuigen"
+		},
+		"hideMap.vehicles.allOwn": {
+			"title": "Alle eigen voertuigen"
+		},
+		"hideMap.vehicles.notInvolvedOwn": {
+			"title": "Alle eigen voertuigen die niet onderweg zijn naar een melding"
+		},
+		"hideMap.vehicles.allAlliance": {
+			"title": "Alle team voertuigen"
+		},
+		"hideMap.missions": {
+			"title": "Meldingen"
+		},
+		"hideMap.missions.own": {
+			"title": "Eigen meldingen"
+		},
+		"hideMap.missions.own.red": {
+			"title": "Rode eigen meldingen"
+		},
+		"hideMap.missions.own.yellow": {
+			"title": "Gele eigen meldingen"
+		},
+		"hideMap.missions.own.green": {
+			"title": "Groene eigen meldingen"
+		},
+		"hideMap.missions.own.shared": {
+			"title": "Gedeelde meldingen"
+		},
+		"hideMap.missions.own.notShared": {
+			"title": "Niet gedeelde meldingen"
+		},
+		"hideMap.missions.own.involved": {
+			"title": "Betrokken eigen meldingen",
+			"description": "Betrokken meldingen zijn meldingen waar je al een voertuig naar toe hebt gestuurd."
+		},
+		"hideMap.missions.alliance": {
+			"title": "Team meldingen"
+		},
+		"hideMap.missions.alliance.red": {
+			"title": "Rode team meldingen"
+		},
+		"hideMap.missions.alliance.yellow": {
+			"title": "Gele team meldingen"
+		},
+		"hideMap.missions.alliance.green": {
+			"title": "Groene team meldingen"
+		},
+		"hideMap.missions.alliance.involved": {
+			"title": "Betrokken team meldingen",
+			"description": "Betrokken meldingen zijn meldingen waar je al een voertuig naar toe hebt gestuurd."
+		},
+		"hideMap.missions.event": {
+			"title": "Event meldingen"
+		},
+		"hideMap.missions.event.red": {
+			"title": "Rode event meldingen"
+		},
+		"hideMap.missions.event.yellow": {
+			"title": "Gele event meldingen"
+		},
+		"hideMap.missions.event.green": {
+			"title": "Groene event meldingen"
+		},
+		"hideMap.missions.event.involved": {
+			"title": "Betrokken event meldingen",
+			"description": "Betrokken meldingen zijn meldingen waar je al een voertuig naar toe hebt gestuurd."
+		},
+		"hideMap.poi": {
+			"title": "POI"
+		},
+		"hideMap.poi.poi": {
+			"title": "POI op naam",
+			"description": "Als je deze optie aanzet zal er een venster op de kaart worden weergegeven."
+		},
+		"hideMissionlist.own": {
+			"title": "Eigen meldingen"
+		},
+		"hideMissionlist.own.all": {
+			"title": "Alle eigen meldingen"
+		},
+		"hideMissionlist.own.involved": {
+			"title": "Betrokken eigen meldingen",
+			"description": "Betrokken meldingen zijn meldingen waar je al een voertuig naar toe hebt gestuurd."
+		},
+		"hideMissionlist.own.notInvolved": {
+			"title": "Niet betrokken eigen meldingen",
+			"description": "Niet betrokken meldingen zijn meldingen waar je nog geen voertuig naar toe hebt gestuurd"
+		},
+		"hideMissionlist.own.shared": {
+			"title": "Gedeelde eigen meldingen"
+		},
+		"hideMissionlist.own.notShared": {
+			"title": "Niet gedeelde eigen meldingen"
+		},
+		"hideMissionlist.own.alliance": {
+			"title": "Eigen meldingen onder teamgrens",
+			"description": "Je kan de teamgrens aanpassen in de module \"Team\""
+		},
+		"hideMissionlist.alliance": {
+			"title": "Team meldingen"
+		},
+		"hideMissionlist.alliance.all": {
+			"title": "Alle team meldingen"
+		},
+		"hideMissionlist.alliance.involved": {
+			"title": "Betrokken team meldingen",
+			"description": "Betrokken meldingen zijn meldingen waar je al een voertuig naar toe hebt gestuurd."
+		},
+		"hideMissionlist.event": {
+			"title": "Event meldingen"
+		},
+		"hideMissionlist.event.involved": {
+			"title": "Betrokken event meldingen",
+			"description": "Betrokken meldingen zijn meldingen waar je al een voertuig naar toe hebt gestuurd."
+		},
+		"hideMissionlist.labelColor": {
+			"title": "Op basis van label kleur",
+			"description": "Verberg meldingen op basis van de credits label kleuren. De labels zijn in de \"Credits-tab\" instelbaar. Je hoeft de labels zelf niet te gebruiken om deze optie te gebruiken"
+		},
+		"hideMissionlist.labelColor.setting": {
+			"title": "Op basis van label kleur",
+			"description": "Makkelijke manier om je \"Verberg op basis van label kleur\" instellingen te bewaren, maar toch uit te schakelen."
+		},
+		"hideMissionlist.labelColor.own": {
+			"title": "Eigen meldingen"
+		},
+		"hideMissionlist.labelColor.own.red": {
+			"title": "Eigen meldingen, rood label"
+		},
+		"hideMissionlist.labelColor.own.green": {
+			"title": "Eigen meldingen, groen label"
+		},
+		"hideMissionlist.labelColor.own.darkBlue": {
+			"title": "Eigen meldingen, donkerblauw label"
+		},
+		"hideMissionlist.labelColor.own.lightBlue": {
+			"title": "Eigen meldingen, lichtblauw label"
+		},
+		"hideMissionlist.labelColor.own.yellow": {
+			"title": "Eigen meldingen, geel label"
+		},
+		"hideMissionlist.labelColor.alliance": {
+			"title": "Team meldingen"
+		},
+		"hideMissionlist.labelColor.alliance.red": {
+			"title": "Team meldingen, rood label"
+		},
+		"hideMissionlist.labelColor.alliance.green": {
+			"title": "Team meldingen, groen label"
+		},
+		"hideMissionlist.labelColor.alliance.darkBlue": {
+			"title": "Team meldingen, donkerblauw label"
+		},
+		"hideMissionlist.labelColor.alliance.lightBlue": {
+			"title": "Team meldingen, lichtblauw label"
+		},
+		"hideMissionlist.labelColor.alliance.yellow": {
+			"title": "Team meldingen, geel label"
+		},
+		"hideMissionlist.labelColor.event": {
+			"title": "Event meldingen"
+		},
+		"hideMissionlist.labelColor.event.red": {
+			"title": "Event meldingen, rood label"
+		},
+		"hideMissionlist.labelColor.event.green": {
+			"title": "Event meldingen, groen label"
+		},
+		"hideMissionlist.labelColor.event.darkBlue": {
+			"title": "Event meldingen, donkerblauw label"
+		},
+		"hideMissionlist.labelColor.event.lightBlue": {
+			"title": "Event meldingen, lichtblauw label"
+		},
+		"hideMissionlist.labelColor.event.yellow": {
+			"title": "Event meldingen, geel label"
+		},
+		"sortMissionlist.own": {
+			"title": "Eigen meldingen"
+		},
+		"sortMissionlist.own.credits": {
+			"title": "Sorteer eigen meldingen op credits",
+			"description": "Sorteert de eigen meldingen in de meldingenlijst op basis van de te verdienen credits van laag naar hoog"
+		},
+		"sortMissionlist.own.ownDesc": {
+			"title": "Sorteer van hoog naar laag"
+		},
+		"sortMissionlist.alliance": {
+			"title": "Team meldingen"
+		},
+		"sortMissionlist.alliance.credits": {
+			"title": "Sorteer team meldingen op credits",
+			"description": "Sorteert de team meldingen in de meldingenlijst op basis van de te verdienen credits van laag naar hoog"
+		},
+		"sortMissionlist.alliance.allianceDesc": {
+			"title": "Sorteer van hoog naar laag"
+		},
+		"sortMissionlist.event": {
+			"title": "Event meldingen"
+		},
+		"sortMissionlist.event.credits": {
+			"title": "Sorteer event meldingen op credits",
+			"description": "Sorteert de event meldingen in de meldingenlijst op basis van de te verdienen credits van laag naar hoog"
+		},
+		"sortMissionlist.event.eventDesc": {
+			"title": "Sorteer van hoog naar laag"
+		},
+		"sortMissionlist.guard": {
+			"title": "Geplande meldingen"
+		},
+		"sortMissionlist.guard.credits": {
+			"title": "Sorteer geplande meldingen op credits",
+			"description": "Sorteert de geplande meldingen in de meldingenlijst op basis van de te verdienen credits van laag naar hoog"
+		},
+		"sortMissionlist.guard.guardDesc": {
+			"title": "Sorteer van hoog naar laag"
+		}
+	}
+}
