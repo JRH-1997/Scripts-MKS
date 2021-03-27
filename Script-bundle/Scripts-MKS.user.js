@@ -6,8 +6,8 @@
 // @include      /^https?:\/\/(?:w{3}\.)?(?:(policie\.)?operacni-stredisko\.cz|(politi\.)?alarmcentral-spil\.dk|(polizei\.)?leitstellenspiel\.de|missionchief\.gr|(?:(police\.)?missionchief-australia|(police\.)?missionchief|(poliisi\.)?hatakeskuspeli|missionchief-japan|missionchief-korea|(politiet\.)?nodsentralspillet|(politie\.)?meldkamerspel|operador193|jogo-operador112|jocdispecerat112|dispecerske-centrum|112-merkez|dyspetcher101-game)\.com|(police\.)?missionchief\.co\.uk|centro-de-mando\.es|centro-de-mando\.mx|(police\.)?operateur112\.fr|(polizia\.)?operatore112\.it|(policja\.)?operatorratunkowy\.pl|dispetcher112\.ru|(polis\.)?larmcentralen-spelet\.se)\/.*$/
 // @grant        GM_addStyle
 // @namespacen
-// @downloadURL  https://github.com/JRH-1997/Scripts-MKS/raw/dev/Script-bundle/Scripts-MKS.user.js
-// @updateURL    https://github.com/JRH-1997/Scripts-MKS/raw/dev/Script-bundle/Scripts-MKS.user.js
+// @downloadURL  https://github.com/JRH-1997/Scripts-MKS/raw/Dev/Script-bundle/Scripts-MKS.user.js
+// @updateURL    https://github.com/JRH-1997/Scripts-MKS/raw/Dev/Script-bundle/Scripts-MKS.user.js
 // ==/UserScript==
 var $jscomp=$jscomp||{};$jscomp.scope={};$jscomp.createTemplateTagFirstArg=function(e){return e.raw=e};$jscomp.createTemplateTagFirstArgWithRaw=function(e,u){e.raw=u;return e};$jscomp.arrayIteratorImpl=function(e){var u=0;return function(){return u<e.length?{done:!1,value:e[u++]}:{done:!0}}};$jscomp.arrayIterator=function(e){return{next:$jscomp.arrayIteratorImpl(e)}};$jscomp.makeIterator=function(e){var u="undefined"!=typeof Symbol&&Symbol.iterator&&e[Symbol.iterator];return u?u.call(e):$jscomp.arrayIterator(e)};
 $jscomp.arrayFromIterator=function(e){for(var u,h=[];!(u=e.next()).done;)h.push(u.value);return h};$jscomp.arrayFromIterable=function(e){return e instanceof Array?e:$jscomp.arrayFromIterator($jscomp.makeIterator(e))};$jscomp.ASSUME_ES5=!1;$jscomp.ASSUME_NO_NATIVE_MAP=!1;$jscomp.ASSUME_NO_NATIVE_SET=!1;$jscomp.SIMPLE_FROUND_POLYFILL=!1;$jscomp.ISOLATE_POLYFILLS=!1;$jscomp.FORCE_POLYFILL_PROMISE=!1;$jscomp.FORCE_POLYFILL_PROMISE_WHEN_NO_UNHANDLED_REJECTION=!1;
