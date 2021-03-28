@@ -15,7 +15,7 @@ Groet Jrh1997
 <br><br>
 <b>De installatielink voor Beta is niet via deze site beschikbaar.</b>
 <br><br>
-<B>Laatste update Readme: 19-03-2020</b>
+<B>Laatste update Readme: 28-03-2020</b>
 
 <B>Auteursrecht:</b><br>
 Op alle scripts rust het Nederlandse Auteursrecht. Scripts mogen niet zonder toestemming worden bewerkt of verder verspreidt. <br>
@@ -52,7 +52,7 @@ Deze functie laat zien wat je meldingen in je meldingenlijst gemiddeld bij elkaa
 <br>
 Op de afbeelding hierboven kan je zien hoe dit wordt weergegeven. De getallen staan voor de volgende categorieën van links naar rechts:
 -	Eigen meldingen, inclusief besteld vervoer. 
--	Geplande inzetten (alleen in UK wordt deze niet weergegeven). 
+-	Geplande inzetten.
 -	Teammeldingen, inclusief teamevent.
 -	Eindtotaal (optioneel, staat nog niet op de afbeelding)
 <br>

@@ -16,7 +16,7 @@ Greetings Jrh1997
 
 <b>The installation link is not available on the site</b>
 <br><br>
-<B>Last updated: Readme: 19-03-2020</b>
+<B>Last updated: Readme: 28-03-2020</b>
 
 <B>LICENSING:</b><br>
 These scripts are owned by their respective owners. None of the scripts are permitted to be modifified or distributed without my explicit permission. <br>
@@ -55,7 +55,7 @@ This option shows the average earnings for your missions added up in three diffe
 <br>
 The image above shows how this is being displayed. The amounts shown are the following categories from left to right:
 -   Personal missions, including scheduled transport missions.
--	Planned missions (Not displayed in the UK version)
+-	Planned missions
 -   Alliance Missions, including alliance event missions.
 -	Total, previous three added together (Optional, Not shown in image yet).
 <br>
