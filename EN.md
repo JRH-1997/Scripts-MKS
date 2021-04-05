@@ -16,7 +16,7 @@ Greetings Jrh1997
 
 <b><a href="https://github.com/JRH-1997/Scripts-MKS/raw/master/Script-bundle/Scripts-MKS.user.js">Click here to install the script package.</a></b>
 <br><br>
-<B>Last updated: Readme: 07-12-2020</b>
+<B>Last updated: Readme: 05-04-2021</b>
 
 <B>LICENSING:</b><br>
 These scripts are owned by their respective owners. None of the scripts are permitted to be modifified or distributed without my explicit permission. <br>
@@ -25,7 +25,7 @@ I've personally obtained permission to redistribute these scripts. If you like t
 
 # Scripts-MKS
 Below I will give a brief description of each component of the script. 
-Next to the personal menu a new menu will appear where you will find all the functions this script has to offer.
+Next to the personal menu a new button will appear which will give access to the settings.
 
 # Data collection:
 We collect usage data and error logging. <br>
@@ -55,7 +55,7 @@ This option shows the average earnings for your missions added up in three diffe
 <br>
 The image above shows how this is being displayed. The amounts shown are the following categories from left to right:
 -   Personal missions, including scheduled transport missions.
--	Planned missions (Not displayed in the UK version)
+-	Planned missions
 -   Alliance Missions, including alliance event missions.
 -	Total, previous three added together (Optional, Not shown in image yet).
 <br>
@@ -80,13 +80,14 @@ It comes in two variations: Colored label or plain text, including the variation
 In the image below you can see an example of a mission with the colored label:
 ![Missionlistlabel](AfbeeldingenScriptNL/Missionlistlabel.png)
 <br>
-The labels come in four different colors, representing the average earned amount per mission. The default settings:
+The labels come in five different colors, representing the average earned amount per mission. The default settings:
 - Ambulance Only missions: ![LabelAmbulance](AfbeeldingenScriptNL/LabelAmbulance.png)
 - Missions up to 4499 credits: ![LabelBlauw](AfbeeldingenScriptNL/LabelBlauw.png)
 - Missions from 4500 up to 7999 credits: ![LabelGroen](AfbeeldingenScriptNL/LabelGroen.png)
 - Missions from 8000 credits or higher: ![LabelRood](AfbeeldingenScriptNL/LabelRood.png)
+- Light blue label: By default this label is not used. You could activate this label by change the dark blue label to a higher number.
 <br>
-The green and red labels are customizable from when they are displayed.
+The dark blue, green and red labels are customizable from when they are displayed.
 <br>
 
 ### Variantion Text:
@@ -104,13 +105,14 @@ This options added the average earnings for the mission in the missionheader.
 <br>
 In the image above you can see an example.
 <br>
-The labels come in four different colors, representing the average earned amount per mission. The default settings:
+The labels come in five different colors, representing the average earned amount per mission. The default settings:
 - Ambulance Only missions: ![LabelAmbulance](AfbeeldingenScriptNL/LabelAmbulance.png)
 - Missions up to 4499 credits: ![LabelBlauw](AfbeeldingenScriptNL/LabelBlauw.png)
 - Missions from 4500 up to 7999 credits: ![LabelGroen](AfbeeldingenScriptNL/LabelGroen.png)
 - Missions from 8000 credits or higher: ![LabelRood](AfbeeldingenScriptNL/LabelRood.png)
+- Light blue label: By default this label is not used. You could activate this label by change the dark blue label to a higher number.
 <br>
-The green and red labels are customizable from when they are displayed.
+The dark blue, green and red labels are customizable from when they are displayed.
 <br>
 
 # Label Alliance
@@ -126,7 +128,7 @@ Optional:  The label can be in the same colors as the Credits labels.
 <br>
 
 # Hide AlarmNextShare Button
-<b>(Setting: Hide "Alert, share and next" button)</b>
+<b>(Setting: General > Hide "Alert, share and next" button)</b>
 <br>
 This function hides the "Alert, share and next" button, optionally set to remove only the top one.
 <br><br>
@@ -157,7 +159,7 @@ This feature can hide different parts of the map.
 <br><br>
 The following parts can be hidden:
 - Missions: 
-    - Personal Missions:
+    - Own Missions:
 		- By state (Red/Yellow/Green)
 		- Involved missions (If you have sent a vehicle to the missions)
 		- Shared or not shared
@@ -178,7 +180,7 @@ The following parts can be hidden:
 <b>(Settings: Hide from missionlist)</b>
 <br>
 This options hides missions from the mission list based on one or more of these options:
-- Personal Missions:
+- Own Missions:
     - All personal missions
     - Involved own missions ( own missions you have a vehicle enroute/on scene )
 	- Not involved own missions 
@@ -188,11 +190,32 @@ This options hides missions from the mission list based on one or more of these 
 - Alliance Missions:
     - All alliance missions
     - Involved alliance missions (alliance missions you have a vehicle enroute/on scene)
+- Event Missions:
     - Involved event missions (event missions you have a vehicle enroute/on scene)
+- By label color:
+	- For own, alliance and event missions, there will be options for all label colors.
+<br>
+
+# Sort missionlist
+<b>(Setting: Sort missionlist)</b>
+<br>
+This will sort mission in the missionlist:
+- Own Missions
+	- Sort based on credits from lowest to highest
+		- Sort from highest to lowest
+- Alliance Missions
+	- Sort based on credits from lowest to highest
+		- Sort from highest to lowest
+- Event Missions
+	- Sort based on credits from lowest to highest
+		- Sort from highest to lowest
+- Planned Missions
+	- Sort based on credits from lowest to highest
+		- Sort from highest to lowest
 <br>
 
 # Toplist Rank
-<b>(Settings: Toplist rank in header)</b>
+<b>(Settings: General > Toplist rank in header)</b>
 <br>
 This function shows your place in the rankings at the top of the menu bar. If you click on it, the correct page of the rankings will also open immediately.
 <br>

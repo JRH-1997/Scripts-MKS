@@ -15,7 +15,7 @@ Groet Jrh1997
 <br><br>
 <b>De installatielink voor Beta is niet via deze site beschikbaar.</b>
 <br><br>
-<B>Laatste update Readme: 28-03-2020</b>
+<B>Laatste update Readme: 28-03-2021</b>
 
 <B>Auteursrecht:</b><br>
 Op alle scripts rust het Nederlandse Auteursrecht. Scripts mogen niet zonder toestemming worden bewerkt of verder verspreidt. <br>
