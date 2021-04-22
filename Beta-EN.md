@@ -16,7 +16,7 @@ Greetings Jrh1997
 
 <b>The installation link is not available on the site</b>
 <br><br>
-<B>Last updated: Readme: 28-03-2021</b>
+<B>Last updated: Readme: 22-04-2021</b>
 
 <B>LICENSING:</b><br>
 These scripts are owned by their respective owners. None of the scripts are permitted to be modifified or distributed without my explicit permission. <br>
@@ -145,6 +145,11 @@ Below you see two images. The first is as it is now and the second is if you are
 This feature provides keyboard shortcuts supplementing the default keyboard shortcuts already in the game:
 - Saving a new POI
 - Opening a radio call
+- Opening mission in 4 categories:
+	- Own missions
+	- Alliance missions
+	- Event missions
+	- Planned missions
 <br><br>
 It seems to me that saving a new POI speaks for itself, if more explanation is needed, then I would like to hear it. <br>
 I will explain something more about opening radio calls:

@@ -157,6 +157,18 @@
 		"hotkey.OpenTransportRequests": {
 			"title": "Transportanfrage öffnen"
 		},
+		"hotkey.openOwnMission": {
+			"title": "Eigene Einsätze öffnen "
+		},
+		"hotkey.openAllianceMission": {
+			"title": "Verband Einsätze öffnen "
+		},
+		"hotkey.openEventMission": {
+			"title": "Event Einsätze öffnen "
+		},
+		"hotkey.openPlannedMission": {
+			"title": "Geplante Einsätze öffnen "
+		},
 		"hideMap.vehicles": {
 			"title": "Fahrzeuge"
 		},

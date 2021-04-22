@@ -15,7 +15,7 @@ Groet Jrh1997
 <br><br>
 <b>De installatielink voor Beta is niet via deze site beschikbaar.</b>
 <br><br>
-<B>Laatste update Readme: 28-03-2021</b>
+<B>Laatste update Readme: 22-04-2021</b>
 
 <B>Auteursrecht:</b><br>
 Op alle scripts rust het Nederlandse Auteursrecht. Scripts mogen niet zonder toestemming worden bewerkt of verder verspreidt. <br>
@@ -141,6 +141,11 @@ Hieronder zie je 2 afbeeldingen. De eerste is zoals het nu is en de tweede is al
 Deze functie geeft sneltoetsen voor het indrukken van knoppen in het spel:
 - Opslaan van een nieuwe POI
 - Openen van een spraakaanvraag
+- Openen van meldingen in 4 categoriën:
+	- Eigen meldingen
+	- Teammeldingen
+	- Event meldingen
+	- Geplande inzetten
 <br><br>
 Het lijkt mij dat opslaan van een nieuwe POI voor zichzelf spreekt, is er meer uitleg nodig, dan hoor ik het graag. <br>
 Het openen van spraakaanvragen zal ik nog iets uitleggen:

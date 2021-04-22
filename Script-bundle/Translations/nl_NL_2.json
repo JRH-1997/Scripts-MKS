@@ -164,6 +164,22 @@
 			"title": "Open spraakaanvraag op hoofdscherm",
 			"description": "Deze sneltoets opent een spraakaanvraag vanaf het hoofdscherm. Bij het openen van een uitbreidingsspraakaanvraag wordt de spraakaanvraag ook verborgen in je lijst."
 		},
+		"hotkey.openOwnMission": {
+			"title": "Open eigen melding",
+			"description": "Opent de eerste niet verborgen eigen melding in je meldingenlijst."
+		},
+		"hotkey.openAllianceMission": {
+			"title": "Open teammelding",
+			"description": "Opent de eerste niet verborgen teammelding in je meldingenlijst."
+		},
+		"hotkey.openEventMission": {
+			"title": "Open event melding",
+			"description": "Opent de eerste niet verborgen teammelding in je meldingenlijst."
+		},
+		"hotkey.openPlannedMission": {
+			"title": "Open geplande inzet",
+			"description": "Opent de eerste niet verborgen geplande inzet in je meldingenlijst."
+		},
 		"hideMap.vehicles": {
 			"title": "Voertuigen"
 		},

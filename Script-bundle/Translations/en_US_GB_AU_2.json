@@ -163,6 +163,22 @@
 		"hotkey.OpenTransportRequests": {
 			"title": "Open Transport request"
 		},
+		"hotkey.openOwnMission": {
+			"title": "Open own mission",
+			"description": "Open the first not hided own mission in the missionlist."
+		},
+		"hotkey.openAllianceMission": {
+			"title": "Open alliance mission",
+			"description": "Open the first not hided alliance mission in the missionlist."
+		},
+		"hotkey.openEventMission": {
+			"title": "Open event mission",
+			"description": "Open the first not hided event mission in the missionlist."
+		},
+		"hotkey.openPlannedMission": {
+			"title": "Open planned mission",
+			"description": "Open the first not hided planned mission in the missionlist."
+		},
 		"hideMap.vehicles": {
 			"title": "Vehicles"
 		},
