@@ -27,6 +27,8 @@
 		"information": "Welcome! Thanks for using this script. If you would like more information, you could always <a class=\"white\" href=\"%SITEURL%\" target=\"blank\">look at the site</a>. Do you have any questions? Please contact me at the Dutch forum, Discordmessage: JRH1997#2625, Github JRH-1997 or ingame message at the dutch game www.meldkamerspel.com: JRH1997<br>If you would change some translations or add descriptions to settings, <a class=\"white\" href=\"%githubtranslations%\" target=\"blank\">feel free to contribute on Github</a>. ",
 		"restoreMessage": "Are you sure you want to restore all settings of the script?",
 		"restoreBtn": "Standardeinstellungen wiederherstellen",
+		"importBtn": "Einstellungen importieren",
+		"exportBtn": "Einstellungen exportieren",
 		"modules": "Modules",
 		"general": {
 			"title": "Allgemein"

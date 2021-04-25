@@ -27,6 +27,8 @@
 		"information": "Welkom! Bedankt dat je het script gebruikt. Indien je meer informatie wilt, kan je altijd <a class=\"white\" href=\"%SITEURL%\" target=\"blank\">kijken op de site</a>. Heb je vragen of opmerkingen? Neem alsjeblieft contact op via het forum, Discord bericht: JRH1997#2625, in de meldkamerspel.com discord, Github JRH-1997 of een bericht in het spel zelf: JRH1997",
 		"restoreMessage": "Weet je zeker dat je alle instellingen van het script wilt herstellen?",
 		"restoreBtn": "Herstel instellingen",
+		"importBtn": "Importeer instellingen",
+		"exportBtn": "Exporteer instellingen",
 		"modules": "Modules",
 		"general": {
 			"title": "Algemeen"
