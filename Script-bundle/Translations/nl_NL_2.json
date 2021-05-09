@@ -176,7 +176,7 @@
 		},
 		"hotkey.openEventMission": {
 			"title": "Open event melding",
-			"description": "Opent de eerste niet verborgen teammelding in je meldingenlijst."
+			"description": "Opent de eerste niet verborgen eventmelding in je meldingenlijst."
 		},
 		"hotkey.openPlannedMission": {
 			"title": "Open geplande inzet",
