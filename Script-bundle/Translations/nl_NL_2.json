@@ -361,6 +361,10 @@
 		"hideMissionlist.labelColor.event.yellow": {
 			"title": "Event meldingen, geel label"
 		},
+		"sortMissionlist.oldSort": {
+			"title": "Oude standaard sortering van het spel. (Nog niet beschikbaar)",
+			"description": "Gebruik de oude standaard sortering van het spel (eigen meldingen - besteld vervoer - geplande inzetten - Teammeldingen - team eventmeldingen)"
+		},
 		"sortMissionlist.own": {
 			"title": "Eigen meldingen"
 		},
@@ -369,6 +373,9 @@
 			"description": "Sorteert de eigen meldingen in de meldingenlijst op basis van de te verdienen credits van laag naar hoog"
 		},
 		"sortMissionlist.own.ownDesc": {
+			"title": "Sorteer van hoog naar laag"
+		},
+		"sortMissionlist.own.desc": {
 			"title": "Sorteer van hoog naar laag"
 		},
 		"sortMissionlist.alliance": {
@@ -381,6 +388,9 @@
 		"sortMissionlist.alliance.allianceDesc": {
 			"title": "Sorteer van hoog naar laag"
 		},
+		"sortMissionlist.alliance.desc": {
+			"title": "Sorteer van hoog naar laag"
+		},
 		"sortMissionlist.event": {
 			"title": "Event meldingen"
 		},
@@ -391,6 +401,9 @@
 		"sortMissionlist.event.eventDesc": {
 			"title": "Sorteer van hoog naar laag"
 		},
+		"sortMissionlist.event.desc": {
+			"title": "Sorteer van hoog naar laag"
+		},
 		"sortMissionlist.guard": {
 			"title": "Geplande meldingen"
 		},
@@ -399,6 +412,9 @@
 			"description": "Sorteert de geplande meldingen in de meldingenlijst op basis van de te verdienen credits van laag naar hoog"
 		},
 		"sortMissionlist.guard.guardDesc": {
+			"title": "Sorteer van hoog naar laag"
+		},
+		"sortMissionlist.guard.desc": {
 			"title": "Sorteer van hoog naar laag"
 		}
 	}

@@ -360,6 +360,10 @@
 		"hideMissionlist.labelColor.event.yellow": {
 			"title": "Event missions, yellow label"
 		},
+		"sortMissionlist.oldSort": {
+			"title": "Old standard ingame missionsorting",
+			"description": "Use the old standard mission sorting from the game (own mission - transport missions - planned missions - alliance missions - alliance event missions)"
+		},
 		"sortMissionlist.own": {
 			"title": "Own missions"
 		},
@@ -368,6 +372,9 @@
 			"description": "Sort own missions in in the missionlist based by the average credits, sorted from lowest to highest"
 		},
 		"sortMissionlist.own.ownDesc": {
+			"title": "Sort descending"
+		},
+		"sortMissionlist.own.desc": {
 			"title": "Sort descending"
 		},
 		"sortMissionlist.alliance": {
@@ -380,6 +387,9 @@
 		"sortMissionlist.alliance.allianceDesc": {
 			"title": "Sort descending"
 		},
+		"sortMissionlist.alliance.desc": {
+			"title": "Sort descending"
+		},
 		"sortMissionlist.event": {
 			"title": "Event missions"
 		},
@@ -390,6 +400,9 @@
 		"sortMissionlist.event.eventDesc": {
 			"title": "Sort descending"
 		},
+		"sortMissionlist.event.desc": {
+			"title": "Sort descending"
+		},
 		"sortMissionlist.guard": {
 			"title": "Planned missions"
 		},
@@ -398,6 +411,9 @@
 			"description": "Sort planned missions in in the missionlist based by the average credits, sorted from lowest to highest"
 		},
 		"sortMissionlist.guard.guardDesc": {
+			"title": "Sort descending"
+		},
+		"sortMissionlist.guard.desc": {
 			"title": "Sort descending"
 		}
 	}
