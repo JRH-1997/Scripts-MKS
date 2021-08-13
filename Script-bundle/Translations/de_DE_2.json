@@ -3,6 +3,7 @@
 	"Off": "Aus: ",
 	"AllianceCount_ToShare_Translation": "Freizugeben: ",
 	"AllianceCount_Shared_Translation": " Freigegeben: ",
+	"AllianceCount_Involved_Translation": "Alliance enroute / at mission: ",
 	"HideMap_POI_Header_Translation": "POI ein-/ausblenden nach Namen",
 	"HideMap_POI_All_Translation": "Alles",
 	"HideMap_POI_Show_POI_Translation": "POI anzeigen",
@@ -109,11 +110,11 @@
 		},
 		"credits.remainingCredits.setting": {
 			"title": "Summen über der Einsatzliste",
-			"description": "Credits-Summe über der Einsätzeliste: <br>Eigene Einsätze / Geplante Einsätze / Verbands-Einsätze"
+			"description": "Credits-Summe über der Einsätzeliste: <br>Eigene Einsätze / Geplante Einsätze / Verbands-Einsätze / Event Einsätze"
 		},
 		"credits.remainingCredits.total": {
 			"title": "Gesamtsumme hinter Credits-Summe",
-			"description": "Credits-Summe über der einsätzeliste mit Gesamtsumme: <br>Eigene Einsätze / Geplante Einsätze / Verbands-Einsätze / Gesamtsumme"
+			"description": "Credits-Summe über der einsätzeliste mit Gesamtsumme: <br>Eigene Einsätze / Geplante Einsätze / Verbands-Einsätze / Event Einsätze / Gesamtsumme"
 		},
 		"credits.labels": {
 			"title": "Labels"
@@ -152,6 +153,9 @@
 		},
 		"alliance.count": {
 			"title": "Summen der freizugebenen / freigegebenen Einsätze"
+		},
+		"alliance.countInvolved": {
+			"title": "Totals of the involved alliance missions"						
 		},
 		"hotkey.savePOI": {
 			"title": "Neuen POI speichern"
@@ -350,8 +354,24 @@
 		"hideMissionlist.labelColor.event.yellow": {
 			"title": "Event Einsätze, gelb markiert"
 		},
+		"hideMissionlist.filterTypes": {
+			"title": "By ingame filtertypes"
+		},
+		"hideMissionlist.filterTypes.setting": {
+			"title": "By ingame filtertypes",
+			"description": "Easy way to keep to your \"Hide by ingame filtertypes\" settings but turn them off"
+		},
+		"hideMissionlist.filterTypes.own": {
+			"title": "Own missions"
+		},
+		"hideMissionlist.filterTypes.alliance": {
+			"title": "Alliance missions"
+		},
+		"hideMissionlist.filterTypes.event": {
+			"title": "Event missions"
+		},
 		"sortMissionlist.oldSort": {
-			"title": "Old standard ingame missionsorting",
+			"title": "Old standard ingame missionsorting (not yet functional)",
 			"description": "Use the old standard mission sorting from the game (own mission - transport missions - planned missions - alliance missions - alliance event missions)"
 		},
 		"sortMissionlist.own": {

@@ -3,6 +3,7 @@
 	"Off": "Uit: ",
 	"AllianceCount_ToShare_Translation": "Te delen: ",
 	"AllianceCount_Shared_Translation": " Gedeeld: ",
+	"AllianceCount_Involved_Translation": "Team aanrijdend / aanwezig: ",
 	"HideMap_POI_Header_Translation": "POI verbergen/tonen op naam",
 	"HideMap_POI_All_Translation": "Alles",
 	"HideMap_POI_Show_POI_Translation": "POI Tonen",
@@ -113,11 +114,11 @@
 		},
 		"credits.remainingCredits.setting": {
 			"title": "Totalen boven de meldingenlijst",
-			"description": "Geeft de totalen van de categoriën meldingen weer boven aan de meldingenlijst:<br>eigen meldingen / geplande meldingen /  team meldingen"
+			"description": "Geeft de totalen van de categoriën meldingen weer boven aan de meldingenlijst:<br>eigen meldingen / geplande meldingen /  team meldingen / event meldingen"
 		},
 		"credits.remainingCredits.total": {
 			"title": "Eindtotaal achter de totalen",
-			"description": "Geeft achter de totalen bovenaan de meldingenlijst nog het eindtotaal daarvan weer:<br>eigen meldingen / geplande meldingen /  team meldingen / eindtotaal"
+			"description": "Geeft achter de totalen bovenaan de meldingenlijst nog het eindtotaal daarvan weer:<br>eigen meldingen / geplande meldingen /  team meldingen /  event meldingen / eindtotaal"
 		},
 		"credits.labels": {
 			"title": "Labels"
@@ -157,6 +158,10 @@
 		"alliance.count": {
 			"title": "Te delen / gedeelde meldingen",
 			"description": "Toont totalen van de te delen / gedeelde meldingen boven de meldingenlijst"
+		},
+		"alliance.countInvolved": {
+			"title": "Totalen van betrokken teammeldingen",
+			"description": "Totalen van teammeldingen waar je aanrijdend / aanwezig bent (aantal / credits)"
 		},
 		"hotkey.savePOI": {
 			"title": "Opslaan nieuwe POI",
@@ -361,8 +366,25 @@
 		"hideMissionlist.labelColor.event.yellow": {
 			"title": "Event meldingen, geel label"
 		},
+		"hideMissionlist.filterTypes": {
+			"title": "Op basis van de ingame filter types",
+			"description": "Verberg meldingen op basis van de ingame filter types. De filterTypes zijn gelijk aan de standaard filtertypes voor de kaart van het spel"
+		},
+		"hideMissionlist.filterTypes.setting": {
+			"title": "Op basis van de ingame filter types",
+			"description": "Makkelijke manier om je \"Verberg op basis van de ingame filter types\" instellingen te bewaren, maar toch uit te schakelen."
+		},
+		"hideMissionlist.filterTypes.own": {
+			"title": "Eigen meldingen"
+		},
+		"hideMissionlist.filterTypes.alliance": {
+			"title": "Teammeldingen"
+		},
+		"hideMissionlist.filterTypes.event": {
+			"title": "Event meldingen"
+		},
 		"sortMissionlist.oldSort": {
-			"title": "Oude standaard sortering van het spel. (Nog niet beschikbaar)",
+			"title": "Oude standaard sortering van het spel. (Nog niet functioneel)",
 			"description": "Gebruik de oude standaard sortering van het spel (eigen meldingen - besteld vervoer - geplande inzetten - Teammeldingen - team eventmeldingen)"
 		},
 		"sortMissionlist.own": {

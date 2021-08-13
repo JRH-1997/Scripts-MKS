@@ -3,6 +3,7 @@
 	"Off": "Off: ",
 	"AllianceCount_ToShare_Translation": "To share: ",
 	"AllianceCount_Shared_Translation": " Shared: ",
+	"AllianceCount_Involved_Translation": "Alliance enroute / at mission: ",
 	"Hotkey_InputKeycode_new_Menu_Translation": "Click on a inputfield and push the desired button:",
 	"Hotkey_Restoredefault_Menu_Translation": "Restore default settings",
 	"HideMap_POI_Header_Translation": "Hide/Show POI by name",
@@ -115,11 +116,11 @@
 		},
 		"credits.remainingCredits.setting": {
 			"title": "Totals above missionlist",
-			"description": "Shows the totals of the missions in categories: <br>Own missions / Planned missions / Alliance Missions"
+			"description": "Shows the totals of the missions in categories: <br>Own missions / Planned missions / Alliance Missions / Event Missions"
 		},
 		"credits.remainingCredits.total": {
 			"title": "Grand total after totals",
-			"description": "Shows a grand total after the totals: <br>Own missions / Planned missions / Alliance Missions / Grand total"
+			"description": "Shows a grand total after the totals: <br>Own missions / Planned missions / Alliance Missions / Event Missions / Grand total"
 		},
 		"credits.labels": {
 			"title": "Labels"
@@ -360,8 +361,24 @@
 		"hideMissionlist.labelColor.event.yellow": {
 			"title": "Event missions, yellow label"
 		},
+		"hideMissionlist.filterTypes": {
+			"title": "By ingame filtertypes"
+		},
+		"hideMissionlist.filterTypes.setting": {
+			"title": "By ingame filtertypes",
+			"description": "Easy way to keep to your \"Hide by ingame filtertypes\" settings but turn them off"
+		},
+		"hideMissionlist.filterTypes.own": {
+			"title": "Own missions"
+		},
+		"hideMissionlist.filterTypes.alliance": {
+			"title": "Alliance missions"
+		},
+		"hideMissionlist.filterTypes.event": {
+			"title": "Event missions"
+		},
 		"sortMissionlist.oldSort": {
-			"title": "Old standard ingame missionsorting",
+			"title": "Old standard ingame missionsorting (not yet functional)",
 			"description": "Use the old standard mission sorting from the game (own mission - transport missions - planned missions - alliance missions - alliance event missions)"
 		},
 		"sortMissionlist.own": {

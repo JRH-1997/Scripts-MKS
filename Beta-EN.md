@@ -16,7 +16,7 @@ Greetings Jrh1997
 
 <b>The installation link is not available on the site</b>
 <br><br>
-<B>Last updated: Readme: 22-04-2021</b>
+<B>Last updated: Readme: 13-08-2021</b>
 
 <B>LICENSING:</b><br>
 These scripts are owned by their respective owners. None of the scripts are permitted to be modifified or distributed without my explicit permission. <br>
@@ -49,7 +49,7 @@ The function is on by default. It can be turned off in the menu.
 <br>
 <b>(Original by LennardFTD. Permission to redistribute.)</b>
 <br>
-This option shows the average earnings for your missions added up in three different categories.
+This option shows the average earnings for your missions added up in four different categories.
 <br>
 ![RemainingCredits](AfbeeldingenScriptNL/RemainingCreditsEN.png)
 <br>
@@ -57,6 +57,7 @@ The image above shows how this is being displayed. The amounts shown are the fol
 -   Personal missions, including scheduled transport missions.
 -	Planned missions
 -   Alliance Missions, including alliance event missions.
+-	Event Mission (Not shown in image yet)
 -	Total, previous three added together (Optional, Not shown in image yet).
 <br>
 An "Ambulance Only" mission is added to the amounts for 250 credits each. This is because that is the amount for a ambulance only mission without transporting the patient. More patients, fly car or transporting a patients has higher earnings.
@@ -68,6 +69,13 @@ An "Ambulance Only" mission is added to the amounts for 250 credits each. This i
 This function shows number and credits total of the to share and shared missions.<br> 
 The credits value from when it is count as a to share mission is the same as the value of the label. You can change this in the menu. <br>
 ![TotalSharedToShare](AfbeeldingenScriptNL/TotalSharedToShareNewEN.png)
+
+# Totals of the involved alliance missions
+<b>(Setting: Alliance > Totals of the involved alliance missions)</b><br>
+<br>
+This function shows the totals of the alliance mission you are enroute or on location.<br>
+It will show it as his example: "Alliance enroute / on location: 'number' / 'credits'"<br>
+
 
 # Credits Missionlist: 
 <b>(Settings: Credits > In missionlist, as text or label)</b><br>
@@ -199,6 +207,8 @@ This options hides missions from the mission list based on one or more of these 
     - Involved event missions (event missions you have a vehicle enroute/on scene)
 - By label color:
 	- For own, alliance and event missions, there will be options for all label colors.
+- By ingame filter type
+	- For own, alliance and event missions, there willl be options for all filter types.
 <br>
 
 # Sort missionlist
