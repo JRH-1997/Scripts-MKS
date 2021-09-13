@@ -16,7 +16,7 @@ Groet Jrh1997
 
 <b><a href="https://github.com/JRH-1997/Scripts-MKS/raw/master/Script-bundle/Scripts-MKS.user.js">Installeer hier het script</a></b>
 <br><br>
-<B>Laatste update Readme: 05-04-2021</b>
+<B>Laatste update Readme: 13-09-2021</b>
 
 <B>Auteursrecht:</b><br>
 Op alle scripts rust het Nederlandse Auteursrecht. Scripts mogen niet zonder toestemming worden bewerkt of verder verspreidt. <br>
@@ -42,12 +42,13 @@ Deze functie berekent automatisch de dubbele credits bij de volgende modules als
 
 <br><br>
 Deze functie staat standaard aan. De functie is uit te zetten in het menu. 
+
 # RemainingCredits: 
 <b>(Instelling: Credits > Totalen boven meldingenlijst)</b>
 <br>
 <b>(Met dank aan LennardTFD voor het originele Duitse basisscript. Ik heb toestemming om het te delen. )</b>
 <br>
-Deze functie laat zien wat je meldingen in je meldingenlijst gemiddeld bij elkaar opleveren verdeeld in 3 categorieën. 
+Deze functie laat zien wat je meldingen in je meldingenlijst gemiddeld bij elkaar opleveren verdeeld in 4 categorieën. 
 <br>
 ![RemainingCredits](AfbeeldingenScriptNL/RemainingCredits.png)
 <br>
@@ -55,6 +56,7 @@ Op de afbeelding hierboven kan je zien hoe dit wordt weergegeven. De getallen st
 -	Eigen meldingen, inclusief besteld vervoer. 
 -	Geplande inzetten.
 -	Teammeldingen, inclusief teamevent.
+-	Event meldingen (staat niet op de afbeelding)
 -	Eindtotaal (optioneel, staat nog niet op de afbeelding)
 <br>
 Een alleen ambulance melding wordt voor 250 credits meegenomen, omdat dit het aantal credits is dat een patiënt zonder vervoer oplevert. Met meer patiënten, wel vervoer of MMT is de opbrengst dus hoger. 
@@ -66,6 +68,12 @@ Een alleen ambulance melding wordt voor 250 credits meegenomen, omdat dit het aa
 Deze functie geeft totalen van het aantal en totaal credits van de te delen en gedeelde meldingen. <br>Het aantal te delen wordt bepaald aan de hand van het ingestelde aantal credits in het scriptmenu onder Team. <br>
 De opbouw is: "Te delen: 'aantal' / 'credits' | Gedeeld: 'aantal' / 'credits'"<br>
 ![TotalSharedToShare](AfbeeldingenScriptNL/TotalSharedToShareNewNL.png)
+
+# Totalen van de betrokken teammeldingen
+<b>(Instelling: Team > Totalen van betrokken teammeldingen)</b><br>
+<br>
+Deze functie geeft de totalen van de teammeldingen weer waar je aanwezig bent of aanrijdend bent.<br>
+De opbouw is: "Team aanrijdend / aanwezig: 'aantal' / 'credits'"<br>
 
 # Credits Missionlist: 
 <b>(Instelling: Credits > In meldingslijst als label/text (achter de naam))</b><br>
@@ -142,6 +150,11 @@ Hieronder zie je 2 afbeeldingen. De eerste is zoals het nu is en de tweede is al
 Deze functie geeft sneltoetsen voor het indrukken van knoppen in het spel:
 - Opslaan van een nieuwe POI
 - Openen van een spraakaanvraag
+- Openen van meldingen in 4 categoriën:
+	- Eigen meldingen
+	- Teammeldingen
+	- Event meldingen
+	- Geplande inzetten
 <br><br>
 Het lijkt mij dat opslaan van een nieuwe POI voor zichzelf spreekt, is er meer uitleg nodig, dan hoor ik het graag. <br>
 Het openen van spraakaanvragen zal ik nog iets uitleggen:
@@ -192,6 +205,8 @@ Deze functie verbergt meldingen in de meldingenlijst op basis van verschillende 
     - Betrokken event meldingen (waar je een voertuig heen hebt gestuurd)
 - Op basis van labelkleur:
 	- Voor eigen, team en event meldingen een optie per labelkleur
+- Op basis van de ingame filter opties
+	- Voor eigen, team en event meldingen een optie per filter type
 <br>
 
 # Sort missionlist
