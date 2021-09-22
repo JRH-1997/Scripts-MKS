@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         vehicleChanges
 // @version      1.3.1
-// @description  Wijzig de instellingen van alle haakarmbakken en OvD-G * Origineel van DrTraxx *
+// @description  Change settings of vehicles * Original of DrTraxx *
 // @author       DrTraxx / JRH1997
 // @include      /^https?:\/\/(w{3}\.)?(?:(polizei\.)?leitstellenspiel\.de|(politie\.)?meldkamerspel\.com|(police\.)?missionchief\.co.uk)\/$/
 // @grant        GM_addStyle
