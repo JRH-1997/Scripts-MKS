@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         vehicleChanges
-// @version      1.3.0
+// @version      1.3.1
 // @description  Wijzig de instellingen van alle haakarmbakken en OvD-G * Origineel van DrTraxx *
 // @author       DrTraxx / JRH1997
-// @include      /^https?:\/\/(w{3}\.)?(?:(polizei\.)?leitstellenspiel\.de|(politie\.)?meldkamerspel\.com)\/$/
+// @include      /^https?:\/\/(w{3}\.)?(?:(polizei\.)?leitstellenspiel\.de|(politie\.)?meldkamerspel\.com|(police\.)?missionchief\.co.uk)\/$/
 // @grant        GM_addStyle
 // ==/UserScript==
 /* global $, I18n, GM_addStyle, GM_info */
@@ -87,6 +87,75 @@
 				},
 				hospital_free_space: {
 					title: "Aantal bedden dat vrij moet worden gehouden in het ziekenhuis",
+					type: "select",
+					options: [
+						{ value: 0, label: "0" },
+						{ value: 1, label: "1" },
+						{ value: 2, label: "2" },
+						{ value: 3, label: "3" },
+						{ value: 4, label: "4" },
+						{ value: 5, label: "5" },
+					],
+					dependsOn: "hospital_automatic"
+				},
+			},
+		}
+	};	
+	I18n.translations.en_GB.vehicleChanges = {
+		ids: {
+			segLeader: [34],
+		},
+		close: "Close",
+		title: "Vehicle settings",
+		tabs: {
+			segLeader: "Ambulance Officer",
+		},
+		settingsForAll: "Settings for all %{category}",
+		setSettings: "Set settings",
+		settings: {
+			segLeader: {
+				hospital_automatic: {
+					title: "Automatically assign a hospital to EMS",
+					type: "checkbox",
+				},
+				hospital_own: {
+					title: "Only transport to own facilities",
+					type: "checkbox",
+					dependsOn: "hospital_automatic"
+				},
+				hospital_right_building_extension: {
+					title: "Only transport to hospitals with treatment capability",
+					type: "checkbox",
+					dependsOn: "hospital_automatic"
+				},
+				hospital_max_price: {
+					title: "Maximum accepted fee",
+					type: "select",
+					options: [
+						{ value: 0, label: "0 %" },
+						{ value: 10, label: "10 %" },
+						{ value: 20, label: "20 %" },
+						{ value: 30, label: "30 %" },
+						{ value: 40, label: "40 %" },
+						{ value: 50, label: "50 %" },
+					],
+					dependsOn: "hospital_automatic"
+				},
+				hospital_max_distance: {
+					title: "Max. distance to the hospital",
+					type: "select",
+					options: [
+						{ value: 1, label: "1 km" },
+						{ value: 5, label: "5 km" },
+						{ value: 20, label: "20 km" },
+						{ value: 50, label: "50 km" },
+						{ value: 100, label: "100 km" },
+						{ value: 200, label: "200 km" },
+					],
+					dependsOn: "hospital_automatic"
+				},
+				hospital_free_space: {
+					title: "Number of beds held as a reserve",
 					type: "select",
 					options: [
 						{ value: 0, label: "0" },
