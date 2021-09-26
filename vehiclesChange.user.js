@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         vehicleChanges NL / UK
-// @version      1.3.2
+// @version      1.3.3
 // @description  Change settings of vehicles * Original of DrTraxx *
 // @author       DrTraxx / JRH1997
 // @include      /^https?:\/\/(w{3}\.)?(?:(politie\.)?meldkamerspel\.com|(police\.)?missionchief\.co.uk)\/$/
@@ -340,11 +340,11 @@ overflow-y: auto;
 			vehiclesToSet = vehiclesToSet.filter((a) => Object.entries(postContent).some(([key, value]) =>
 				key === "vehicle_type_ignore_default_aao" ||
 				key === "personal_max" && postContent[key] != a.max_personnel_override ||
-				key === "start_delay" && v.alarm_delay != postContent[key] ||
-				key === "ignore_aao" && v[key] != postContent[key] ||
-				key === "working_hour_start" && v[key] != postContent[key] ||
-				key === "working_hour_end" && v[key] != postContent[key] ||
-				key === "vehicle_type_caption" && v[key] != postContent[key]
+				key === "start_delay" && a.alarm_delay != postContent[key] ||
+				key === "ignore_aao" && a[key] != postContent[key] ||
+				key === "working_hour_start" && a[key] != postContent[key] ||
+				key === "working_hour_end" && a[key] != postContent[key] ||
+				key === "vehicle_type_caption" && a[key] != postContent[key]
 			))
 		}
 
@@ -364,6 +364,7 @@ overflow-y: auto;
 				.css({ "width": percent + "%" })
 				.text(count.toLocaleString() + " / " + vehiclesToSet.length.toLocaleString());
 			await $.post("/vehicles/" + e.id, { "vehicle": postContent, "authenticity_token": $("meta[name=csrf-token]").attr("content"), "_method": "put" });
+			if(count === vehiclesToSet.length) await loadApi();
 		}
 	}
 
