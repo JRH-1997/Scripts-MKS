@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         vehicleChanges
-// @version      1.3.1
+// @name         vehicleChanges NL / UK
+// @version      1.3.2
 // @description  Change settings of vehicles * Original of DrTraxx *
 // @author       DrTraxx / JRH1997
-// @include      /^https?:\/\/(w{3}\.)?(?:(polizei\.)?leitstellenspiel\.de|(politie\.)?meldkamerspel\.com|(police\.)?missionchief\.co.uk)\/$/
+// @include      /^https?:\/\/(w{3}\.)?(?:(politie\.)?meldkamerspel\.com|(police\.)?missionchief\.co.uk)\/$/
 // @grant        GM_addStyle
 // ==/UserScript==
 /* global $, I18n, GM_addStyle, GM_info */
@@ -21,6 +21,7 @@
 		tabs: {
 			container: "Haakarmbakken",
 			segLeader: "OvD-G",
+			GeneralSettings: "Algemene voertuiginstellingen"
 		},
 		settingsForAll: "Instelling voor alle %{category}",
 		setSettings: "Instellingen verwerken",
@@ -99,8 +100,43 @@
 					dependsOn: "hospital_automatic"
 				},
 			},
-		}
-	};	
+		},
+		GeneralSettings: {
+			personal_max: {
+				title: "Voertuig modus",
+				type: "select",
+				options: [],
+			},
+			start_delay: {
+				title: "Tijd (in seconden) dat het voertuig na de alarmering de post verlaat",
+				type: "number",
+			},
+			ignore_aao: {
+				title: "In de 'Inzetvoorstellen' negeren",
+				type: "checkbox",
+			},
+			working_hour_start: {
+				title: "Inzettijd - begin",
+				type: "select",
+				options: new Array(24).map((_, i) => ({ value: i, label: `${i}:00` })),
+			},
+			working_hour_end: {
+				title: "Inzettijd - eind",
+				type: "select",
+				options: new Array(24).map((_, i) => ({ value: i, label: `${i}:00` })),
+			},
+			vehicle_type_caption: {
+				title: "Eigen voertuigtype",
+				type: "text",
+			},
+			vehicle_type_ignore_default_aao: {
+				title: "Alleen als eigen voertuigtype alarmeren. (Als deze optie is geselecteerd wordt het voertuig alleen gealarmeerd als het eigen type. Als dit voertuig ook moet worden gealarmeerd als het originele type moet deze optie niet worden geselecteerd)",
+				type: "checkbox",
+			},
+		},
+		GeneralSettingsVehicleSelection: "Selecteer voertuigtype",
+		GeneralSettingsDescription: "Voor elke instelling staat een extra vinkje om aan te geven welke instelling(en) je graag wilt wijzigen. <br>Selecteer de vinkjes die je wilt en pas de instellingen aan zoals gewenst.<br>Alleen voertuigen die afwijken van de geselecteerde instellingen zullen worden aangepast. Bij de instelling voor 'Alleen eigen voertuigcategorie' zullen alle voertuigen worden ingesteld, aangezien die data niet beschikbaar is."
+	};
 	I18n.translations.en_GB.vehicleChanges = {
 		ids: {
 			segLeader: [34],
@@ -109,6 +145,7 @@
 		title: "Vehicle settings",
 		tabs: {
 			segLeader: "Ambulance Officer",
+			GeneralSettings: "General vehicle settings"
 		},
 		settingsForAll: "Settings for all %{category}",
 		setSettings: "Set settings",
@@ -168,10 +205,46 @@
 					dependsOn: "hospital_automatic"
 				},
 			},
-		}
+		},
+		GeneralSettings: {
+			personal_max: {
+				title: "Max. crew members",
+				type: "select",
+				options: [],
+			},
+			start_delay: {
+				title: "Response delay (Time in seconds)",
+				type: "number",
+			},
+			ignore_aao: {
+				title: "Exclude in the Alarm and Response Plan",
+				type: "checkbox",
+			},
+			working_hour_start: {
+				title: "Shift - start time",
+				type: "select",
+				options: new Array(24).map((_, i) => ({ value: i, label: `${i}:00` })),
+			},
+			working_hour_end: {
+				title: "Shift - end time",
+				type: "select",
+				options: new Array(24).map((_, i) => ({ value: i, label: `${i}:00` })),
+			},
+			vehicle_type_caption: {
+				title: "Own vehicle category",
+				type: "text",
+			},
+			vehicle_type_ignore_default_aao: {
+				title: "Only dispatch vehicle as own vehicle class. (If this box is ticked then the vehicle will only be dispatched as the custom class. If you wish to still have this vehicle dispatched as it’s original class as well, leave this unticked)",
+				type: "checkbox",
+			},
+		},
+		GeneralSettingsVehicleSelection: "Select vehicletype",
+		GeneralSettingsDescription: "Each setting has a checkbox to select the setting you want to change. This function will only change vehicles that has other settings then the settings you selected. Only the setting of 'Dispatch only as own vehicle class' will set all vehicles because that data is not available"
 	};
 
 	let aVehicles = [];
+	let vehicleTypes = [];
 	const category = {
 		segLeader: [],
 		container: [],
@@ -182,6 +255,8 @@
 	async function loadApi() {
 		const ids = Object.entries(t("ids"));
 
+
+		vehicleTypes = await $.getJSON(`https://proxy.lss-manager.de/v4/api/${I18n.locale}/vehicles.json`);
 		aVehicles = await $.getJSON("/api/vehicles");
 		for (const i in aVehicles) {
 			const e = aVehicles[i];
@@ -189,9 +264,9 @@
 				if (value.includes(e.vehicle_type)) category[key].push(e);
 			});
 		}
-		console.debug("aVehicles", aVehicles);
+		//console.debug("aVehicles", aVehicles);
 		ids.forEach(([key]) => {
-			console.debug(key, category[key]);
+			//console.debug(key, category[key]);
 		});
 	}
 
@@ -216,43 +291,62 @@ overflow-y: auto;
 	$("body")
 		.prepend(
 			`<div class="modal fade bd-example-modal-lg" id="veChModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-           <div class="modal-dialog modal-lg" role="document">
-             <div class="modal-content">
-               <div class="modal-header">
-                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                   <span aria-hidden="true">&#x274C;</span>
-                 </button>
-                 <h3 class="modal-title"><center>${t("title")}</center></h3>
-                 <div class="btn-group hidden" id="veChBtnGrp">
-                 ${Object.entries(t("ids"))
-		.map(([key]) =>
-			`<a class="btn btn-primary btn-xs" id="veChBtn${key}">${t(`tabs.${key}`)}</a>`
-		).join("")
-	}
-                 </div>
-               </div>
-                 <div class="modal-body" id="veChModalBody">
-                 </div>
-                 <div class="modal-footer">
-                   <button type="button" class="btn btn-danger" data-dismiss="modal">${t("close")}</button>
-                   <div class="pull-left">v ${GM_info.script.version}</div>
-                 </div>
-           </div>
-         </div>`);
+           		<div class="modal-dialog modal-lg" role="document">
+		            <div class="modal-content">
+        		    	<div class="modal-header">
+                	 		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                   				<span aria-hidden="true">&#x274C;</span>
+			                </button>
+            			    <h3 class="modal-title"><center>${t("title")}</center></h3>
+                 			<div class="btn-group hidden" id="veChBtnGrp">
+                 				${Object.entries(t("ids"))
+				.map(([key]) =>
+					`<a class="btn btn-primary btn-xs" id="veChBtn${key}">${t(`tabs.${key}`)}</a>`
+				).join("")
+			}
+								<a class="btn btn-primary btn-xs" id="veChBtnGeneralSettings">${t(`tabs.GeneralSettings`)}</a>
+                 			</div>
+               			</div>
+                 	<div class="modal-body" id="veChModalBody"></div>
+                	<div class="modal-footer">
+                		<button type="button" class="btn btn-danger" data-dismiss="modal">${t("close")}</button>
+	                   	<div class="pull-left">v ${GM_info.script.version}</div>
+    	            </div>
+        	   	</div>
+        	</div>`
+		);
 
 	$("ul .dropdown-menu[aria-labelledby='menu_profile'] >> a[href='/missionSpeed']")
 		.parent()
 		.after(`<li role="presentation"><a data-toggle="modal" data-target="#veChModal" style="cursor:pointer" id="veChOpenModal"><span class="glyphicon glyphicon-cog"></span> ${t("title")}</a></li>`);
 
 	async function progress(type) {
-		const vehiclesToSet = category[type];
+		let vehiclesToSet = type !== "GeneralSettings" ? category[type] : aVehicles.filter((a) => a.vehicle_type === parseInt($("#GeneralSettingsVehicleSelection").val()));
 		const postContent = {};
 		let count = 0;
-
-		Object.entries(t(`settings.${type}`)).forEach(([key, { type: settingType }]) => {
-			postContent[key] = settingType === "checkbox" ? $(`#${type}${key}`)[0].checked ? 1 : 0
-				: settingType === "select" ? $(`#${type}${key}`).val() : "";
-		});
+		if (type !== "GeneralSettings") {
+			Object.entries(t(`settings.${type}`)).forEach(([key, { type: settingType }]) => {
+				postContent[key] = settingType === "checkbox" ? $(`#${type}${key}`)[0].checked ? 1 : 0
+					: settingType === "select" ? $(`#${type}${key}`).val() : "";
+			});
+		}
+		else {
+			Object.entries(t(`GeneralSettings`)).forEach(([key, { type: settingType }]) => {
+				if ($(`#${type}active${key}`)[0].checked) {
+					postContent[key] = settingType === "checkbox" ? $(`#${type}${key}`)[0].checked ? 1 : 0
+						: settingType === "select" ? $(`#${type}${key}`).val() : settingType === "number" ? parseInt($(`#${type}${key}`).val()) : settingType === "text" ? $(`#${type}${key}`).val() : "";
+				}
+			});
+			vehiclesToSet = vehiclesToSet.filter((a) => Object.entries(postContent).some(([key, value]) =>
+				key === "vehicle_type_ignore_default_aao" ||
+				key === "personal_max" && postContent[key] != a.max_personnel_override ||
+				key === "start_delay" && v.alarm_delay != postContent[key] ||
+				key === "ignore_aao" && v[key] != postContent[key] ||
+				key === "working_hour_start" && v[key] != postContent[key] ||
+				key === "working_hour_end" && v[key] != postContent[key] ||
+				key === "vehicle_type_caption" && v[key] != postContent[key]
+			))
+		}
 
 		$("#veChModalBody")
 			.append(`<div class="progress" style="margin-top:2em">
@@ -279,37 +373,122 @@ overflow-y: auto;
 		await loadApi();
 		$("#veChBtnGrp").removeClass("hidden");
 	});
+	const settings = t(`GeneralSettings`);
+	$("body").on("click", `#veChBtnGeneralSettings`, function () {
+		let key = "GeneralSettings";
+		$("#veChModalBody")
+			.html(`<h4>${t(`tabs.${key}`)}</h4>
+			<div>                                
+				<label for="GeneralSettingsVehicleSelection">${t("GeneralSettingsVehicleSelection")}</label>
+				<br>
+				<select class="custom-select" id="GeneralSettingsVehicleSelection">
+					${[["", { caption: "" }], ...Object.entries(vehicleTypes)].map(([value, { caption: label }], i) => `<option ${i === 0 ? "selected" : ""} value="${value}">${label}</option>`).join("")}
+				</select>
+			</div>
+			<div id="GeneralSettingsTableDiv"/>
+            <br>
+            <a class="btn btn-success" id="veChSaveAll" bullet_point="${key}" style="margin-top:2em">${t("setSettings")}</a>`);
+	});
+
+	$("body").on("change", `#GeneralSettingsVehicleSelection`, function () {
+		const type = $("#GeneralSettingsVehicleSelection").val();
+		const vehicle = vehicleTypes[type];
+		if (!vehicle) return;
+		let options = [];
+		for (let i = vehicle.minPersonnel; i <= vehicle.maxPersonnel; i++) {
+			options.push({ value: i, label: i })
+		}
+		settings.personal_max.options = options;
+		let key = "GeneralSettings";
+		$("#GeneralSettingsTableDiv").html(`
+		<div>
+			${t("GeneralSettingsDescription")}
+		</div>
+		<table id="GeneralSettingsTable" class="table table-striped"><tbody>
+			${Object.entries(settings)
+				.map(([settingKey, { title, type, options, dependsOn }]) =>
+					`<tr>
+						<td>
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" value="" id="${key}active${settingKey}">
+							</div>
+						</td>
+						<td>
+							${type === "checkbox" ? `
+								<div class="form-check${dependsOn ? " hidden" : ""}">
+									<input class="form-check-input" disabled="true" type="checkbox" value="" id="${key}${settingKey}">
+									<label class="form-check-label" for="${key}${settingKey}">
+										${title}
+									</label>
+								</div>` : type === "select" ? `
+								<div${dependsOn ? ` class="hidden"` : ""}>                                
+									<label for="${key}${settingKey}">${title}</label>
+									<br>
+									<select class="custom-select" disabled="true" id="${key}${settingKey}">
+										${options.map(({ label, value }, i) => `<option ${i === 0 ? "selected" : ""} value="${value}">${label}</option>`).join("")}
+									</select>
+								</div>` : type === "number" ? `
+								<div class="form-check${dependsOn ? " hidden" : ""}">
+									<input class="form-check-input" disabled="true" type="number" value="" id="${key}${settingKey}">
+									<label class="form-check-label" for="${key}${settingKey}">
+										${title}
+									</label>
+								</div>` : type === "text" ? `
+								<div class="form-check${dependsOn ? " hidden" : ""}">
+									<input class="form-check-input" disabled="true" type="text" value="" id="${key}${settingKey}">
+									<label class="form-check-label" for="${key}${settingKey}">
+										${title}
+									</label>
+								</div>` : ""
+					}
+						</td>
+					</tr>`
+				).join("")
+			}
+		</tbody></table>
+		`)
+	});
+	Object.entries(settings).forEach(([settingKey]) => {
+		let key = "GeneralSettings";
+		$("body").on("click", `#${key}active${settingKey}`, function () {
+			if ($(`#${key}active${settingKey}`)[0].checked) {
+				document.getElementById(`${key}${settingKey}`).removeAttribute("disabled");
+			} else {
+				document.getElementById(`${key}${settingKey}`).setAttribute("disabled", true);
+			}
+		});
+	});
 	const ids = Object.keys(t("ids"));
 	ids.forEach((key) => {
 		const settings = Object.entries(t(`settings.${key}`));
 		$("body").on("click", `#veChBtn${key}`, function () {
 			$("#veChModalBody")
 				.html(`<h4>${t("settingsForAll", { category: t(`tabs.${key}`) })} (${category[key].length.toLocaleString()})</h4>
-                ${settings
-		.map(([settingKey, { title, type, options, dependsOn }]) => {
-			if (type === "checkbox") {
-				return `
-                                <div class="form-check${dependsOn ? " hidden" : ""}">
-                                    <input class="form-check-input" type="checkbox" value="" id="${key}${settingKey}">
-                                    <label class="form-check-label" for="${key}${settingKey}">
-                                        ${title}
-                                    </label>
-                                </div>`;
-			}
-			if (type === "select") {
-				return `
-                                <div${dependsOn ? ` class="hidden"` : ""}>                                
-                                    <label for="${key}${settingKey}">${title}</label>
-                                    <br>
-                                    <select class="custom-select" id="${key}${settingKey}">
-                                        ${options.map(({ label, value }, i) => `<option ${i === 0 ? "selected" : ""} value="${value}">${label}</option>`).join("")}
-                                    </select>
-                                </div>`;
-			}
-		}).join("")
-	}
-                    <br>
-                    <a class="btn btn-success" id="veChSaveAll" bullet_point="${key}" style="margin-top:2em">${t("setSettings")}</a>`);
+			${settings
+						.map(([settingKey, { title, type, options, dependsOn }]) => {
+							if (type === "checkbox") {
+								return `
+							<div class="form-check${dependsOn ? " hidden" : ""}">
+								<input class="form-check-input" type="checkbox" value="" id="${key}${settingKey}">
+								<label class="form-check-label" for="${key}${settingKey}">
+									${title}
+								</label>
+							</div>`;
+							}
+							if (type === "select") {
+								return `
+							<div${dependsOn ? ` class="hidden"` : ""}>                                
+								<label for="${key}${settingKey}">${title}</label>
+								<br>
+								<select class="custom-select" id="${key}${settingKey}">
+									${options.map(({ label, value }, i) => `<option ${i === 0 ? "selected" : ""} value="${value}">${label}</option>`).join("")}
+								</select>
+							</div>`;
+							}
+						}).join("")
+					}
+				<br>
+				<a class="btn btn-success" id="veChSaveAll" bullet_point="${key}" style="margin-top:2em">${t("setSettings")}</a>`);
 
 		});
 		settings.forEach(([settingKey, { type, options, dependsOn }]) => {
