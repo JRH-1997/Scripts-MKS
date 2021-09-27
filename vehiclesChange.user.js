@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         vehicleChanges NL / UK
-// @version      1.3.3
+// @version      1.3.4
 // @description  Change settings of vehicles * Original of DrTraxx *
 // @author       DrTraxx / JRH1997
 // @include      /^https?:\/\/(w{3}\.)?(?:(politie\.)?meldkamerspel\.com|(police\.)?missionchief\.co.uk)\/$/
@@ -350,7 +350,7 @@ overflow-y: auto;
 
 		$("#veChModalBody")
 			.append(`<div class="progress" style="margin-top:2em">
-                       <div class="progress-bar bg-success" role="progressbar" style="width: 0%;color: black" aria-valuenow="0" aria-valuemin="0" aria-valuemax="${vehiclesToSet.length}" id="veChPrgs">0 / ${vehiclesToSet.length.toLocaleString()}</div>
+                       <div class="progress-bar bg-success" role="progressbar" style="width: ${vehiclesToSet.length === 0 ? "100" : "0"}%;color: black" aria-valuenow="0" aria-valuemin="0" aria-valuemax="${vehiclesToSet.length}" id="veChPrgs">0 / ${vehiclesToSet.length.toLocaleString()}</div>
                      </div>`);
 		console.debug("progress", type, vehiclesToSet);
 		console.debug("postContent", postContent);
@@ -364,8 +364,10 @@ overflow-y: auto;
 				.css({ "width": percent + "%" })
 				.text(count.toLocaleString() + " / " + vehiclesToSet.length.toLocaleString());
 			await $.post("/vehicles/" + e.id, { "vehicle": postContent, "authenticity_token": $("meta[name=csrf-token]").attr("content"), "_method": "put" });
-			if(count === vehiclesToSet.length) await loadApi();
+			if (type === "GeneralSettings" && count === vehiclesToSet.length) await loadApi();
+			if (type === "GeneralSettings") setTimeout(() => { $("#veChBtnGeneralSettings").click(); }, 3000);
 		}
+		if (type === "GeneralSettings" && vehiclesToSet.length === 0) setTimeout(() => { $("#veChBtnGeneralSettings").click(); }, 3000);
 	}
 
 	$("body").on("click", "#veChOpenModal", async function () {
@@ -517,6 +519,7 @@ overflow-y: auto;
 	});
 
 	$("body").on("click", "#veChSaveAll", function () {
+		$(this).attr("disabled", true);
 		progress($(this).attr("bullet_point"));
 	});
 
