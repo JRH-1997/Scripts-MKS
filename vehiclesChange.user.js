@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         vehicleChanges NL / UK
-// @version      1.3.4
+// @version      1.3.5
 // @description  Change settings of vehicles * Original of DrTraxx *
 // @author       DrTraxx / JRH1997
 // @include      /^https?:\/\/(w{3}\.)?(?:(politie\.)?meldkamerspel\.com|(police\.)?missionchief\.co.uk)\/$/
@@ -365,7 +365,7 @@ overflow-y: auto;
 				.text(count.toLocaleString() + " / " + vehiclesToSet.length.toLocaleString());
 			await $.post("/vehicles/" + e.id, { "vehicle": postContent, "authenticity_token": $("meta[name=csrf-token]").attr("content"), "_method": "put" });
 			if (type === "GeneralSettings" && count === vehiclesToSet.length) await loadApi();
-			if (type === "GeneralSettings") setTimeout(() => { $("#veChBtnGeneralSettings").click(); }, 3000);
+			if (type === "GeneralSettings" && count === vehiclesToSet.length) setTimeout(() => { $("#veChBtnGeneralSettings").click(); }, 3000);
 		}
 		if (type === "GeneralSettings" && vehiclesToSet.length === 0) setTimeout(() => { $("#veChBtnGeneralSettings").click(); }, 3000);
 	}
