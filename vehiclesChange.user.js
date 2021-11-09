@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         vehicleChanges NL / UK
-// @version      1.3.5
+// @version      1.3.6
 // @description  Change settings of vehicles * Original of DrTraxx *
 // @author       DrTraxx / JRH1997
 // @include      /^https?:\/\/(w{3}\.)?(?:(politie\.)?meldkamerspel\.com|(police\.)?missionchief\.co.uk)\/$/
@@ -118,12 +118,12 @@
 			working_hour_start: {
 				title: "Inzettijd - begin",
 				type: "select",
-				options: new Array(24).map((_, i) => ({ value: i, label: `${i}:00` })),
+				options: new Array(24).fill().map((_, i) => ({ value: i, label: `${i}:00` })),
 			},
 			working_hour_end: {
 				title: "Inzettijd - eind",
 				type: "select",
-				options: new Array(24).map((_, i) => ({ value: i, label: `${i}:00` })),
+				options: new Array(24).fill().map((_, i) => ({ value: i, label: `${i}:00` })),
 			},
 			vehicle_type_caption: {
 				title: "Eigen voertuigtype",
@@ -223,12 +223,12 @@
 			working_hour_start: {
 				title: "Shift - start time",
 				type: "select",
-				options: new Array(24).map((_, i) => ({ value: i, label: `${i}:00` })),
+				options: new Array(24).fill().map((_, i) => ({ value: i, label: `${i}:00` })),
 			},
 			working_hour_end: {
 				title: "Shift - end time",
 				type: "select",
-				options: new Array(24).map((_, i) => ({ value: i, label: `${i}:00` })),
+				options: new Array(24).fill().map((_, i) => ({ value: i, label: `${i}:00` })),
 			},
 			vehicle_type_caption: {
 				title: "Own vehicle category",
@@ -402,6 +402,7 @@ overflow-y: auto;
 			options.push({ value: i, label: i })
 		}
 		settings.personal_max.options = options;
+		console.log()
 		let key = "GeneralSettings";
 		$("#GeneralSettingsTableDiv").html(`
 		<div>
