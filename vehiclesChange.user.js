@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         vehicleChanges NL / UK
-// @version      1.3.6
+// @version      1.3.7
 // @description  Change settings of vehicles * Original of DrTraxx *
 // @author       DrTraxx / JRH1997
 // @include      /^https?:\/\/(w{3}\.)?(?:(politie\.)?meldkamerspel\.com|(police\.)?missionchief\.co.uk)\/$/
@@ -103,7 +103,7 @@
 		},
 		GeneralSettings: {
 			personal_max: {
-				title: "Voertuig modus",
+				title: "Maximale personenaantal",
 				type: "select",
 				options: [],
 			},
