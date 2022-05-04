@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         vehicleChanges NL / UK
-// @version      1.3.7
+// @version      1.3.8
 // @description  Change settings of vehicles * Original of DrTraxx *
 // @author       DrTraxx / JRH1997
 // @include      /^https?:\/\/(w{3}\.)?(?:(politie\.)?meldkamerspel\.com|(police\.)?missionchief\.co.uk)\/$/
@@ -13,7 +13,7 @@
 	const t = (translateString, options) => I18n.translate(`vehicleChanges.${translateString}`, options);
 	I18n.translations.nl_NL.vehicleChanges = {
 		ids: {
-			container: [27, 32, 45, 29, 51, 61],
+			container: [27, 32, 45, 29, 51, 61, 69],
 			segLeader: [38, 57],
 		},
 		close: "Sluiten",
@@ -139,6 +139,7 @@
 	};
 	I18n.translations.en_GB.vehicleChanges = {
 		ids: {
+			container: [41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
 			segLeader: [34],
 		},
 		close: "Close",
@@ -150,6 +151,25 @@
 		settingsForAll: "Settings for all %{category}",
 		setSettings: "Set settings",
 		settings: {
+			container: {
+				tractive_random: {
+					title: "Random tow vehicle",
+					type: "checkbox",
+				},
+				tractive_building_random: {
+					title: "Enable tow vehicle from other station",
+					type: "checkbox",
+					dependsOn: "tractive_random"
+				},
+				vehicle_mode: {
+					title: "Mode",
+					type: "select",
+					options: [
+						{ value: 2, label: "Keep PM at the scene" },
+						{ value: 3, label: "Send PM back to station" }
+					],
+				},
+			},
 			segLeader: {
 				hospital_automatic: {
 					title: "Automatically assign a hospital to EMS",
