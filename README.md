@@ -27,11 +27,6 @@ Voor deze onderdelen is toestemming van de derden verkregen om deze te bewerken 
 Hieronder zal ik een korte uitleg geven over de verschillende onderdelen in het script. 
 Er zal bovenin de menubalk een extra knop komen die toegang geeft tot het instellingenscherm.
 
-# Dataverzameling:
-We verzamelen  gegevens over het gebruik van het script en error logs.<br>
-Deze gegevens omvatten je user ID, username, spelversie, Scriptinstellingen en scriptversie. Als het een error betreft zal de data ook het error bericht bevatten.<br>We gebruiken deze gegevens alleen voor support, statistieken en het vinden en oplossen van fouten.<br><br>
-Je kan ten alle tijden het verzamelen van je gebruikersdata stopzetten, starten, een verzoek indienen tot het verwijderen van je data of dat vezoek weer intrekken. Na een verzoek tot verwijdering van je data, zal je een pop-up krijgen met de mededeling dat je data is verwijderd. 
-
 # Double Credits Event:
 <b>(Instelling: Credits > Automatisch dubbele credits event)</b>
 <br>
