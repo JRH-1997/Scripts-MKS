@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         vehicleChanges NL / UK
-// @version      1.3.8
+// @version      1.3.9
 // @description  Change settings of vehicles * Original of DrTraxx *
 // @author       DrTraxx / JRH1997
 // @include      /^https?:\/\/(w{3}\.)?(?:(politie\.)?meldkamerspel\.com|(police\.)?missionchief\.co.uk)\/$/
@@ -145,6 +145,7 @@
 		close: "Close",
 		title: "Vehicle settings",
 		tabs: {
+			container: "Pods",
 			segLeader: "Ambulance Officer",
 			GeneralSettings: "General vehicle settings"
 		},
