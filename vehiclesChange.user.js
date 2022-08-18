@@ -1,12 +1,14 @@
 // ==UserScript==
-// @name         vehicleChanges NL / UK
-// @version      1.3.9
+// @name         vehicleChanges NL / UK / FR
+// @version      1.4.0
 // @description  Change settings of vehicles * Original of DrTraxx *
 // @author       DrTraxx / JRH1997
 // @match        https://politie.meldkamerspel.com/
 // @match        https://www.meldkamerspel.com/
 // @match        https://www.missionchief.co.uk/
 // @match        https://police.missionchief.co.uk/
+// @match        https://www.operateur112.fr/
+// @match        https://police.operateur112.fr/
 // @grant        GM_addStyle
 // ==/UserScript==
 /* global $, I18n, GM_addStyle, GM_info */
@@ -265,6 +267,111 @@
 		},
 		GeneralSettingsVehicleSelection: "Select vehicletype",
 		GeneralSettingsDescription: "Each setting has a checkbox to select the setting you want to change. This function will only change vehicles that has other settings than the settings you selected. Only the setting of 'Dispatch only as own vehicle class' will set all vehicles because that data is not available"
+	};
+	I18n.translations.fr_FR.vehicleChanges = {
+		ids: {
+			segLeader: [29]
+		},
+		close: "Fermer",
+		title: "Paramétrage des véhicules",
+		tabs: {
+			segLeader: "Paramètres spécifiques aux DSM",
+			GeneralSettings: "Paramètres génériques"
+		},
+		settingsForAll: "%{category}",
+		setSettings: "Tout sauvegarder",
+		settings: {
+			segLeader: {
+				hospital_automatic: {
+					title: "Assigner automatiquement les ambulances aux hopîtaux",
+					type: "checkbox",
+				},
+				hospital_own: {
+					title: "Transporter uniquement dans un établissement possédé",
+					type: "checkbox",
+					dependsOn: "hospital_automatic"
+				},
+				hospital_right_building_extension: {
+					title: "Transporter uniquement dans un établissement compatible",
+					type: "checkbox",
+					dependsOn: "hospital_automatic"
+				},
+				hospital_max_price: {
+					title: "Taxe maximum acceptée",
+					type: "select",
+					options: [
+						{ value: 0, label: "0 %" },
+						{ value: 10, label: "10 %" },
+						{ value: 20, label: "20 %" },
+						{ value: 30, label: "30 %" },
+						{ value: 40, label: "40 %" },
+						{ value: 50, label: "50 %" },
+					],
+					dependsOn: "hospital_automatic"
+				},
+				hospital_max_distance: {
+					title: "Distance maximum de l'hôpital",
+					type: "select",
+					options: [
+						{ value: 1, label: "1 km" },
+						{ value: 5, label: "5 km" },
+						{ value: 20, label: "20 km" },
+						{ value: 50, label: "50 km" },
+						{ value: 100, label: "100 km" },
+						{ value: 200, label: "200 km" },
+					],
+					dependsOn: "hospital_automatic"
+				},
+				hospital_free_space: {
+					title: "Nombre de lits en réserve",
+					type: "select",
+					options: [
+						{ value: 0, label: "0" },
+						{ value: 1, label: "1" },
+						{ value: 2, label: "2" },
+						{ value: 3, label: "3" },
+						{ value: 4, label: "4" },
+						{ value: 5, label: "5" },
+					],
+					dependsOn: "hospital_automatic"
+				},
+			},
+		},
+		GeneralSettings: {
+			personal_max: {
+				title: "Nombre max. d’équipiers",
+				type: "select",
+				options: [],
+			},
+			start_delay: {
+				title: "Temps de réponse (Temps en secondes)",
+				type: "number",
+			},
+			ignore_aao: {
+				title: "Exclure de la Régulation d’alertes et d’interventions",
+				type: "checkbox",
+			},
+			working_hour_start: {
+				title: "Service - heure de début",
+				type: "select",
+				options: new Array(24).fill().map((_, i) => ({ value: i, label: `${i}:00` })),
+			},
+			working_hour_end: {
+				title: "Service - heure de fin",
+				type: "select",
+				options: new Array(24).fill().map((_, i) => ({ value: i, label: `${i}:00` })),
+			},
+			vehicle_type_caption: {
+				title: "Catégorie de véhicule propre",
+				type: "text",
+			},
+			vehicle_type_ignore_default_aao: {
+				title: "Déployer ce véhicule uniquement en tant que sa propre catégorie. (Si cette option est activée, le véhicule sera uniquement déployé en tant que classe personnalisée. Si vous souhaitez aussi le déployer sous sa classe d’origine, ne cochez pas cette option)",
+				type: "checkbox",
+			},
+		},
+		GeneralSettingsVehicleSelection: "Sélectionner un type de véhicule",
+		GeneralSettingsDescription: "Sélectionnez les paramètres que vous voulez changer. Cette fonction ne changera que les véhicules dont les paramètres sont différents de ceux sélectionnés. Seul le paramétrage 'Déployer ce véhicule uniquement en tant que sa propre catégorie' modifiera tous les véhicules car la donnée n'est pas accessible"
 	};
 
 	let aVehicles = [];
