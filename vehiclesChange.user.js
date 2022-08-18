@@ -3,7 +3,10 @@
 // @version      1.3.9
 // @description  Change settings of vehicles * Original of DrTraxx *
 // @author       DrTraxx / JRH1997
-// @include      /^https?:\/\/(w{3}\.)?(?:(politie\.)?meldkamerspel\.com|(police\.)?missionchief\.co.uk)\/$/
+// @match        https://politie.meldkamerspel.com/
+// @match        https://www.meldkamerspel.com/
+// @match        https://www.missionchief.co.uk/
+// @match        https://police.missionchief.co.uk/
 // @grant        GM_addStyle
 // ==/UserScript==
 /* global $, I18n, GM_addStyle, GM_info */
@@ -261,7 +264,7 @@
 			},
 		},
 		GeneralSettingsVehicleSelection: "Select vehicletype",
-		GeneralSettingsDescription: "Each setting has a checkbox to select the setting you want to change. This function will only change vehicles that has other settings then the settings you selected. Only the setting of 'Dispatch only as own vehicle class' will set all vehicles because that data is not available"
+		GeneralSettingsDescription: "Each setting has a checkbox to select the setting you want to change. This function will only change vehicles that has other settings than the settings you selected. Only the setting of 'Dispatch only as own vehicle class' will set all vehicles because that data is not available"
 	};
 
 	let aVehicles = [];
