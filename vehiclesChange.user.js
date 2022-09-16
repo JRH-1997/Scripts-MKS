@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         vehicleChanges NL / UK / FR
-// @version      1.4.0
+// @version      1.4.1
 // @description  Change settings of vehicles * Original of DrTraxx *
 // @author       DrTraxx / JRH1997
 // @match        https://politie.meldkamerspel.com/
@@ -387,7 +387,7 @@
 		const ids = Object.entries(t("ids"));
 
 
-		vehicleTypes = await $.getJSON(`https://proxy.lss-manager.de/v4/api/${I18n.locale}/vehicles.json`);
+		vehicleTypes = await $.getJSON(`https://api.lss-manager.de/${I18n.locale}/vehicles.json`);
 		aVehicles = await $.getJSON("/api/vehicles");
 		for (const i in aVehicles) {
 			const e = aVehicles[i];
