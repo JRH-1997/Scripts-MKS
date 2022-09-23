@@ -1,12 +1,14 @@
 // ==UserScript==
-// @name         vehicleChanges NL / UK / FR
-// @version      1.4.1
+// @name         vehicleChanges NL / UK / FR / US
+// @version      1.4.2
 // @description  Change settings of vehicles * Original of DrTraxx *
 // @author       DrTraxx / JRH1997
 // @match        https://politie.meldkamerspel.com/
 // @match        https://www.meldkamerspel.com/
 // @match        https://www.missionchief.co.uk/
 // @match        https://police.missionchief.co.uk/
+// @match        https://www.missionchief.com/
+// @match        https://police.missionchief.com/
 // @match        https://www.operateur112.fr/
 // @match        https://police.operateur112.fr/
 // @grant        GM_addStyle
@@ -232,6 +234,52 @@
 				},
 			},
 		},
+		GeneralSettings: {
+			personal_max: {
+				title: "Max. crew members",
+				type: "select",
+				options: [],
+			},
+			start_delay: {
+				title: "Response delay (Time in seconds)",
+				type: "number",
+			},
+			ignore_aao: {
+				title: "Exclude in the Alarm and Response Plan",
+				type: "checkbox",
+			},
+			working_hour_start: {
+				title: "Shift - start time",
+				type: "select",
+				options: new Array(24).fill().map((_, i) => ({ value: i, label: `${i}:00` })),
+			},
+			working_hour_end: {
+				title: "Shift - end time",
+				type: "select",
+				options: new Array(24).fill().map((_, i) => ({ value: i, label: `${i}:00` })),
+			},
+			vehicle_type_caption: {
+				title: "Own vehicle category",
+				type: "text",
+			},
+			vehicle_type_ignore_default_aao: {
+				title: "Only dispatch vehicle as own vehicle class. (If this box is ticked then the vehicle will only be dispatched as the custom class. If you wish to still have this vehicle dispatched as it’s original class as well, leave this unticked)",
+				type: "checkbox",
+			},
+		},
+		GeneralSettingsVehicleSelection: "Select vehicletype",
+		GeneralSettingsDescription: "Each setting has a checkbox to select the setting you want to change. This function will only change vehicles that has other settings than the settings you selected. Only the setting of 'Dispatch only as own vehicle class' will set all vehicles because that data is not available"
+	};
+	I18n.translations.en_US.vehicleChanges = {
+		ids: {},
+		close: "Close",
+		title: "Vehicle settings",
+		tabs: {
+			GeneralSettings: "General vehicle settings"
+		},
+		settingsForAll: "Settings for all %{category}",
+		setSettings: "Set settings",
+		settings: {		},
 		GeneralSettings: {
 			personal_max: {
 				title: "Max. crew members",
