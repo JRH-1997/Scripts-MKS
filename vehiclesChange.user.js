@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         vehicleChanges NL / UK / FR / US
-// @version      1.4.3
+// @version      1.5.0
 // @description  Change settings of vehicles * Original of DrTraxx *
 // @author       DrTraxx / JRH1997
 // @match        https://politie.meldkamerspel.com/
@@ -22,12 +22,14 @@
 		ids: {
 			container: [27, 32, 45, 29, 51, 61, 69],
 			segLeader: [38, 57],
+			ovdp: [35],
 		},
 		close: "Sluiten",
 		title: "Voertuiginstellingen",
 		tabs: {
 			container: "Haakarmbakken",
 			segLeader: "OvD-G",
+			ovdp: "OvD-P",
 			GeneralSettings: "Algemene voertuiginstellingen"
 		},
 		settingsForAll: "Instelling voor alle %{category}",
@@ -106,6 +108,64 @@
 					],
 					dependsOn: "hospital_automatic"
 				},
+			},
+			ovdp: {
+				vehicle_extra_information_attributes: {
+					category: true,
+					police_cell_automatic: {
+						title: "Spraakaanvragen van gevangentransport automatisch afhandelen",
+						type: "checkbox",
+					},
+					police_cell_own: {
+						title: "Gevangenen alleen naar eigen cellen sturen",
+						type: "checkbox",
+						dependsOn: "police_cell_automatic"
+					},
+					police_cell_max_price: {
+						title: "Maximale vergoedingen van teamgenoten",
+						type: "select",
+						options: [
+							{ value: 0, label: "0 %" },
+							{ value: 10, label: "10 %" },
+							{ value: 20, label: "20 %" },
+							{ value: 30, label: "30 %" },
+							{ value: 40, label: "40 %" },
+							{ value: 50, label: "50 %" },
+						],
+						dependsOn: "police_cell_automatic"
+					},
+					police_cell_max_distance: {
+						title: "Maximale afstand tot aan een cel",
+						type: "select",
+						options: [
+							{ value: 1, label: "1 km" },
+							{ value: 5, label: "5 km" },
+							{ value: 20, label: "20 km" },
+							{ value: 50, label: "50 km" },
+							{ value: 100, label: "100 km" },
+							{ value: 200, label: "200 km" },
+						],
+						dependsOn: "police_cell_automatic"
+					},
+					police_cell_free_space: {
+						title: "Aantal cellen dat vrij moet worden gehouden in een gebouw",
+						type: "select",
+						options: [
+							{ value: 0, label: "0" },
+							{ value: 1, label: "1" },
+							{ value: 2, label: "2" },
+							{ value: 3, label: "3" },
+							{ value: 4, label: "4" },
+							{ value: 5, label: "5" },
+						],
+						dependsOn: "police_cell_automatic"
+					},
+				},
+				prisoner_transportation_delay: {
+					title: "Aangepaste vertaging voor automatische gevangentransport (tijd in minuten)",
+					type: "number",
+					dependsOn: "police_cell_automatic"
+				}
 			},
 		},
 		GeneralSettings: {
@@ -272,7 +332,7 @@
 	};
 	I18n.translations.en_US.vehicleChanges = {
 		ids: {
-			segLeader: [29,60],
+			segLeader: [29, 60],
 		},
 		close: "Close",
 		title: "Vehicle settings",
@@ -487,6 +547,7 @@
 		segLeader: [],
 		container: [],
 		grtw: [],
+		ovdp: [],
 		waterBin: [],
 	};
 
@@ -563,9 +624,22 @@ overflow-y: auto;
 		const postContent = {};
 		let count = 0;
 		if (type !== "GeneralSettings") {
-			Object.entries(t(`settings.${type}`)).forEach(([key, { type: settingType }]) => {
-				postContent[key] = settingType === "checkbox" ? $(`#${type}${key}`)[0].checked ? 1 : 0
-					: settingType === "select" ? $(`#${type}${key}`).val() : "";
+			Object.entries(t(`settings.${type}`)).forEach(([key, { type: settingType, category }]) => {
+				if (category) {
+					let cat = key;
+                    postContent[cat] = {};
+					Object.entries(t(`settings.${type}.${cat}`))
+						.filter(([key]) => key !== "category")
+						.forEach(([key, { type: settingType, category }]) => {
+							postContent[cat][key] = settingType === "checkbox" ? $(`#${type}${key}`)[0].checked ? 1 : 0
+								: settingType === "select" ? $(`#${type}${key}`).val() :
+									settingType === "number" ? isNaN(parseInt($(`#${type}${key}`).val())) ? null : parseInt($(`#${type}${key}`).val()) : "";
+						});
+				}
+				else {
+					postContent[key] = settingType === "checkbox" ? $(`#${type}${key}`)[0].checked ? 1 : 0
+						: settingType === "select" ? $(`#${type}${key}`).val() : settingType === "number" ? isNaN(parseInt($(`#${type}${key}`).val())) ? null : parseInt($(`#${type}${key}`).val()) : "";
+				}
 			});
 		}
 		else {
@@ -592,7 +666,7 @@ overflow-y: auto;
                      </div>`);
 		console.debug("progress", type, vehiclesToSet);
 		console.debug("postContent", postContent);
-
+		
 		for (const i in vehiclesToSet) {
 			count++;
 			const percent = Math.round(count / vehiclesToSet.length * 100);
@@ -619,7 +693,7 @@ overflow-y: auto;
 		let key = "GeneralSettings";
 		$("#veChModalBody")
 			.html(`<h4>${t(`tabs.${key}`)}</h4>
-			<div>                                
+			<div>
 				<label for="GeneralSettingsVehicleSelection">${t("GeneralSettingsVehicleSelection")}</label>
 				<br>
 				<select class="custom-select" id="GeneralSettingsVehicleSelection">
@@ -663,7 +737,7 @@ overflow-y: auto;
 										${title}
 									</label>
 								</div>` : type === "select" ? `
-								<div${dependsOn ? ` class="hidden"` : ""}>                                
+								<div${dependsOn ? ` class="hidden"` : ""}>
 									<label for="${key}${settingKey}">${title}</label>
 									<br>
 									<select class="custom-select" disabled="true" id="${key}${settingKey}">
@@ -707,25 +781,63 @@ overflow-y: auto;
 			$("#veChModalBody")
 				.html(`<h4>${t("settingsForAll", { category: t(`tabs.${key}`) })} (${category[key].length.toLocaleString()})</h4>
 			${settings
-						.map(([settingKey, { title, type, options, dependsOn }]) => {
-							if (type === "checkbox") {
-								return `
+						.map(([settingKey, setting]) => {
+
+							if (setting.category === true) {
+								return Object.entries(setting)
+									.filter(([settingKey]) => settingKey !== "category")
+									.map(([settingKey, { title, type, options, dependsOn }]) => {
+										if (type === "checkbox") {
+											return `
+									<div class="form-check${dependsOn ? " hidden" : ""}">
+										<input class="form-check-input" type="checkbox" value="" id="${key}${settingKey}">
+										<label class="form-check-label" for="${key}${settingKey}">
+											${title}
+										</label>
+									</div>`;
+										}
+										if (type === "select") {
+											return `
+									<div${dependsOn ? ` class="hidden"` : ""}>
+										<label for="${key}${settingKey}">${title}</label>
+										<br>
+										<select class="custom-select" id="${key}${settingKey}">
+											${options.map(({ label, value }, i) => `<option ${i === 0 ? "selected" : ""} value="${value}">${label}</option>`).join("")}
+										</select>
+									</div>`;
+										}
+									}).join("")
+							}
+							else {
+								let { title, type, options, dependsOn } = setting;
+								if (type === "checkbox") {
+									return `
 							<div class="form-check${dependsOn ? " hidden" : ""}">
 								<input class="form-check-input" type="checkbox" value="" id="${key}${settingKey}">
 								<label class="form-check-label" for="${key}${settingKey}">
 									${title}
 								</label>
 							</div>`;
-							}
-							if (type === "select") {
-								return `
-							<div${dependsOn ? ` class="hidden"` : ""}>                                
+								}
+								if (type === "select") {
+									return `
+							<div${dependsOn ? ` class="hidden"` : ""}>
 								<label for="${key}${settingKey}">${title}</label>
 								<br>
 								<select class="custom-select" id="${key}${settingKey}">
 									${options.map(({ label, value }, i) => `<option ${i === 0 ? "selected" : ""} value="${value}">${label}</option>`).join("")}
 								</select>
 							</div>`;
+								}
+								if (type === "number") {
+									return `
+							<div class="form-check${dependsOn ? " hidden" : ""}">
+								<input class="form-check-input" type="number" value="" id="${key}${settingKey}">
+								<label class="form-check-label" for="${key}${settingKey}">
+									${title}
+								</label>
+							</div>`;
+								}
 							}
 						}).join("")
 					}
@@ -733,26 +845,65 @@ overflow-y: auto;
 				<a class="btn btn-success" id="veChSaveAll" bullet_point="${key}" style="margin-top:2em">${t("setSettings")}</a>`);
 
 		});
-		settings.forEach(([settingKey, { type, options, dependsOn }]) => {
-			if (type === "checkbox") {
-				$("body").on("click", `#${key}${dependsOn}`, function () {
-					if ($(`#${key}${dependsOn}`)[0].checked) {
-						$(`#${key}${settingKey}`).parent().removeClass("hidden");
-					} else {
-						$(`#${key}${settingKey}`).parent().addClass("hidden");
-						$(`#${key}${settingKey}`)[0].checked = false;
-					}
-				});
+		settings.forEach(([settingKey, setting]) => {
+			if (setting.category === true) {
+				Object.entries(setting)
+					.filter(([settingKey]) => settingKey !== "category")
+					.forEach(([settingKey, { type, options, dependsOn }]) => {
+						if (type === "checkbox") {
+							$("body").on("click", `#${key}${dependsOn}`, function () {
+								if ($(`#${key}${dependsOn}`)[0].checked) {
+									$(`#${key}${settingKey}`).parent().removeClass("hidden");
+								} else {
+									$(`#${key}${settingKey}`).parent().addClass("hidden");
+									$(`#${key}${settingKey}`)[0].checked = false;
+								}
+							});
+						}
+						if (type === "select") {
+							$("body").on("click", `#${key}${dependsOn}`, function () {
+								if ($(`#${key}${dependsOn}`)[0].checked) {
+									$(`#${key}${settingKey}`).parent().removeClass("hidden");
+								} else {
+									$(`#${key}${settingKey}`).parent().addClass("hidden");
+									$(`#${key}${settingKey}`).val(options[0]?.value);
+								}
+							});
+						}
+					});
 			}
-			if (type === "select") {
-				$("body").on("click", `#${key}${dependsOn}`, function () {
-					if ($(`#${key}${dependsOn}`)[0].checked) {
-						$(`#${key}${settingKey}`).parent().removeClass("hidden");
-					} else {
-						$(`#${key}${settingKey}`).parent().addClass("hidden");
-						$(`#${key}${settingKey}`).val(options[0]?.value);
-					}
-				});
+			else {
+				let { type, options, dependsOn } = setting;
+				if (type === "checkbox") {
+					$("body").on("click", `#${key}${dependsOn}`, function () {
+						if ($(`#${key}${dependsOn}`)[0].checked) {
+							$(`#${key}${settingKey}`).parent().removeClass("hidden");
+						} else {
+							$(`#${key}${settingKey}`).parent().addClass("hidden");
+							$(`#${key}${settingKey}`)[0].checked = false;
+						}
+					});
+				}
+				if (type === "select") {
+					$("body").on("click", `#${key}${dependsOn}`, function () {
+						if ($(`#${key}${dependsOn}`)[0].checked) {
+							$(`#${key}${settingKey}`).parent().removeClass("hidden");
+						} else {
+							$(`#${key}${settingKey}`).parent().addClass("hidden");
+							$(`#${key}${settingKey}`).val(options[0]?.value);
+						}
+					});
+				}
+				if (type === "number") {
+					$("body").on("click", `#${key}${dependsOn}`, function () {
+						if ($(`#${key}${dependsOn}`)[0].checked) {
+							$(`#${key}${settingKey}`).parent().removeClass("hidden");
+						} else {
+							$(`#${key}${settingKey}`).parent().addClass("hidden");
+							$(`#${key}${settingKey}`).val();
+						}
+					});
+				}
 			}
 		});
 	});
