@@ -1,0 +1,437 @@
+{
+	"On": "On: ",
+	"Off": "Off: ",
+	"AllianceCount_ToShare_Translation": "Do udostępnienia: ",
+	"AllianceCount_Shared_Translation": " Udostępnione: ",
+	"AllianceCount_Involved_Translation": "Sojusz w drodze / na misji: ",
+	"Hotkey_InputKeycode_new_Menu_Translation": "Click on a inputfield and push the desired button:",
+	"Hotkey_Restoredefault_Menu_Translation": "Przywróć ustawienia domyślne",
+	"HideMap_POI_Header_Translation": "Ukryj/Pokaż UM po nazwie",
+	"HideMap_POI_All_Translation": "Wszystkie",
+	"HideMap_POI_Show_POI_Translation": "Pokaż UM",
+	"HideMap_POI_Hide_POI_Translation": "Ukryj UM",
+	"HideMap_POI_Choose_POI_Translation": "Wybierz UM:",
+	"HideMap_POI_WarningPOIFilterOn_Translation": "UM w grze muszą być aktywne: ",
+	"HideMap_POI_Close_Translation": "Zamknij",
+	"HideMap_POI_POI_On_Translation": "Włącz",
+	"HideMap_POI_POI_Off_Translation": "Wyłącz",
+	"HideMap_POI_Working_Translation": "Pracuje...",
+	"data_collection_optout_Menu_Translation": "Nie zbieraj danych",
+	"data_collection_optin_Menu_Translation": "Zbieraj dane",
+	"data_collection_deleterequest_Menu_Translation": "Zażądaj usunięcia danych",
+	"data_collection_withdrawdeleterequest_Menu_Translation": "Wycofaj żądanie usunięcia danych",
+	"data_collection_areyousure_delete_Menu_Translation": "\nCzy na pewno chcesz usunięcia swoich danych? Używamy tych danych wyłącznie do wsparcia, statystyk i wyszukiwania/rozwiązywania błędów.",
+	"data_collection_areyousure_optout_Menu_Translation": "\nCzy na pewno chcesz zatrzymać zbieranie danych? Używamy tych danych wyłącznie do wsparcia, statystyk i wyszukiwania/rozwiązywania błędów.",
+	"data_collection_areyousure_optin_Menu_Translation": "\nCzy na pewno chcesz zbierać dane? Używamy tych danych wyłącznie do wsparcia, statystyk i wyszukiwania/rozwiązywania błędów.",
+	"data_collection_areyousure_withdraw_Menu_Translation": "\nCzy na pewno wycofałbyś żądanie usunięcia swoich danych?",
+	"mapkit": "To ustawienie jest niedostępne, ponieważ używasz map \"MapKit\", które nie są obsługiwane w tym skrypcie. Możesz zmienić typ mapy na \"OpenStreetMaps\" w menu \"Profil\".",
+	"OnlyAmbulance": "Tylko pogotowie",
+	"ToEarn": "Do zarobienia: ",
+	"LabelAlliance": "SOJUSZ",
+	"undefined": "Niezdefiniowane",
+	"s": {
+		"title": "Scripts-MKS Ustawienia",
+		"information": "Witam! Dzięki za używanie tego skryptu. Jeśli chcesz uzyskać więcej informacji, zawsze możesz <a class=\"white\" href=\"%SITEURL%\" target=\"blank\">zajrzeć na moją stronę</a>. Masz jakieś pytania? Proszę skontaktuj się ze mną w języku holenderskim w wiadomości Discord: JRH1997#2625, na Github'ie JRH-1997 lub w grze na holenderskim serverze www.meldkamerspel.com: JRH1997<br>Jeśli chcesz zmienić niektóre tłumaczenia lub dodać opisy do ustawień, <a class=\"white\" href=\"%githubtranslations%\" target=\"blank\">nie krępuj się współtworzyć na Githubie</a>. ",
+		"restoreMessage": "Czy na pewno chcesz przywrócić wszystkie ustawienia skryptu?",
+		"restoreBtn": "Przywróć ustawienia",
+		"importBtn": "Importuj ustawienia",
+		"exportBtn": "Eksportuj ustawienia",
+		"modules": "Moduły",
+		"general": {
+			"title": "Ogólne"
+		},
+		"credits": {
+			"title": "Kredyty"
+		},
+		"alliance": {
+			"title": "Sojusz"
+		},
+		"hotkey": {
+			"title": "Skróty klawiszowe",
+			"moduledescription": "Aby zmienić klawisz skrótu, możesz kliknąć pole wprowadzania tego skrótu i nacisnąć żądany przycisk. Nowy przycisk zostanie wprowadzony i zapisany automatycznie."
+		},
+		"hideMap": {
+			"title": "Ukryj na mapie"
+		},
+		"hideMissionlist": {
+			"title": "Ukryj się na liście misji"
+		},
+		"sortMissionlist": {
+			"title": "Sortuj listę misji"
+		},
+		"general.telemetry": {
+			"title": "Zbieranie danych",
+			"description": "Gromadzimy dane o użytkowaniu i błędach. Dane te obejmują: identyfikator użytkownika, nazwę użytkownika, wersję gry, ustawienia skryptu i wersję skryptu. Jeśli jest to raport o błędzie, dane będą również zawierać komunikat o nim. Używamy tych informacji wyłącznie do wsparcia, statystyk i wyszukiwania/rozwiązywania błędów"
+		},
+		"general.telemetry.setting": {
+			"title": "Zezwól na gromadzenie danych"
+		},
+		"general.telemetry.deletedata": {
+			"title": "Żądaj usunięcia danych",
+			"description": "Chciałbyś zażądać usunięcia danych? W takim razie włącz to, aby wycofać swoje żądanie wystaczy to wyłączyć."
+		},
+		"general.toplist": {
+			"title": "Ranking",
+			"description": "Wyświetla twoją pozycję w rankingu na pasku nawigacyjnym"
+		},
+		"general.HideAlarmNextShare": {
+			"title": "Ukryj przycisk \"Wyślij, udostępnij i przejdź do następnej misji\""
+		},
+		"general.HideAlarmNextShareOnlyupper": {
+			"title": "Pokaż tylko w stopce misji",
+			"description": "ukryj tylko górny przycisk \"Wyślij, udostępnij i przejdź do następnej misji\""
+		},
+		"credits.missionlist": {
+			"title": "Lista misji"
+		},
+		"credits.missionlist.label": {
+			"title": "Etykieta",
+			"description": "Pokazuje średnie kredyty jako etykietę"
+		},
+		"credits.missionlist.text": {
+			"title": "Tekst",
+			"description": "Pokazuje średnie kredyty jako tekst"
+		},
+		"credits.missionlist.labelAfter": {
+			"title": "Etykieta po nazwie misji",
+			"description": "Pokazuje średnie kredyty jako etykietę po nazwie misji"
+		},
+		"credits.missionlist.textAfter": {
+			"title": "Tekst po nazwie misji",
+			"description": "Pokazuje średnie kredyty jako tekst po nazwie misji"
+		},
+		"credits.missionheader": {
+			"title": "Nagłówek misji"
+		},
+		"credits.missionheader.label": {
+			"title": "Etykieta",
+			"description": "Pokazuje średnie kredyty jako etykietę"
+		},
+		"credits.missionheader.text": {
+			"title": "Tekst",
+			"description": "Pokazuje średnie kredyty jako tekst"
+		},
+		"credits.remainingCredits": {
+			"title": "Sumy kredytów"
+		},
+		"credits.remainingCredits.setting": {
+			"title": "Sumy nad listą misji",
+			"description": "Pokazuje sumy z misji w kategoriach: <br>Misje własne / Misje planowane / Misje sojuszu / Misje wydarzenia"
+		},
+		"credits.remainingCredits.total": {
+			"title": "Suma całkowita po sumach",
+			"description": "Pokazuje sumę całkowita po sumach"
+		},
+		"credits.labels": {
+			"title": "Etykiety"
+		},
+		"credits.labels.blue": {
+			"title": "Ciemnoniebieska etykieta od: ",
+			"description": "Używa ciemnoniebieskiej etykiety od tej liczby kredytów. Każda wartość poniżej tej wartości będzie miała jasnoniebieską lub żółtą etykietę."
+		},
+		"credits.labels.green": {
+			"title": "Zielona etykieta od: ",
+			"description": "Używa zielonej etykiety od tej liczby kredytów."
+		},
+		"credits.labels.red": {
+			"title": "Czerwona etykieta od: ",
+			"description": "Używa czerwonej etykiety od tej liczby kredytów."
+		},
+		"credits.DoubleCreditsEvent": {
+			"title": "Automatyczne podwajanie kredytów",
+			"description": "Automatycznie podwaja wartości kredytów etykiet, tekstów i sum podczas wydażenia podwójnych kredytów. To ustawienie nie wpływa na ustawienia sojuszu"
+		},
+		"alliance.missionlist": {
+			"title": "Etykieta na liście misji",
+			"description": "Pokazuje etykietę z napisem \"SOJUSZ\" od podanej wartości na liście misji"
+		},
+		"alliance.missionheader": {
+			"title": "Etykieta w nagłówku misji",
+			"description": "Pokazuje etykietę z napisem \"SOJUSZ\" od podanej wartości w nagłówku misji"
+		},
+		"alliance.value": {
+			"title": "Misja dla Sojuszu od:",
+			"description": "Ta wartość jest używana do etykiet sojuszu, udostępniania misji i ukrywania na liście misji sojuszu"
+		},
+		"alliance.color": {
+			"title": "W tych samych kolorach co etykiety kredytów",
+			"description": "Pokazuje etykiety sojuszy w tych samych kolorach, co etykiety kredytów"
+		},
+		"alliance.count": {
+			"title": "Sumy do udostępnienia/udostępnione nad listą misji"
+		},
+		"hotkey.savePOI": {
+			"title": "Zapisz nowe UM"
+		},
+		"hotkey.OpenTransportRequests": {
+			"title": "Otwórz żądanie transportu"
+		},
+		"hotkey.openOwnMission": {
+			"title": "Otwórz misję własną",
+			"description": "Otwiera pierwszą nieukrytą misję własną na liście misji."
+		},
+		"hotkey.openAllianceMission": {
+			"title": "Otwórz misję sojuszu",
+			"description": "Otwiera pierwszą nieukrytą misję sojuszu na liście misji."
+		},
+		"hotkey.openEventMission": {
+			"title": "Otwórz misję wydarzenia",
+			"description": "Otwiera pierwszą nieukrytą misję wydarzenia na liście misji."
+		},
+		"hotkey.openPlannedMission": {
+			"title": "Otwórz misję planowaną",
+			"description": "Otwiera pierwszą nieukrytą misję planowaną na liście misji."
+		},
+		"hideMap.vehicles": {
+			"title": "Pojazdy"
+		},
+		"hideMap.vehicles.allOwn": {
+			"title": "Wszystkie własne pojazdy"
+		},
+		"hideMap.vehicles.notInvolvedOwn": {
+			"title": "Wszystkie własne, nieużywane pojazdy",
+			"description": "Nieużywane pojazdy to pojazdy, które nie są w drodze do misji w tym momencie."
+		},
+		"hideMap.vehicles.allAlliance": {
+			"title": "Wszystkie pojazdy sojuszu"
+		},
+		"hideMap.missions": {
+			"title": "Misje"
+		},
+		"hideMap.missions.own": {
+			"title": "Misje własne"
+		},
+		"hideMap.missions.own.red": {
+			"title": "Czerwone misje własne"
+		},
+		"hideMap.missions.own.yellow": {
+			"title": "Żółte misje własne"
+		},
+		"hideMap.missions.own.green": {
+			"title": "Zielone misje własne"
+		},
+		"hideMap.missions.own.shared": {
+			"title": "Udostępnione misje"
+		},
+		"hideMap.missions.own.notShared": {
+			"title": "Nieudostępnione misje"
+		},
+		"hideMap.missions.own.involved": {
+			"title": "Rozpoczęte misje własne",
+			"description": "Rozpoczęte misje to misje, gdzie wysłałeś już pojazdy."
+		},
+		"hideMap.missions.alliance": {
+			"title": "Misje sojuszu"
+		},
+		"hideMap.missions.alliance.red": {
+			"title": "Czerwone misje sojuszu"
+		},
+		"hideMap.missions.alliance.yellow": {
+			"title": "Żółte misje sojuszu"
+		},
+		"hideMap.missions.alliance.green": {
+			"title": "Zielone misje sojuszu"
+		},
+		"hideMap.missions.alliance.involved": {
+			"title": "Rozpoczęte misje sojuszu",
+			"description": "Rozpoczęte misje to misje, gdzie wysłałeś już pojazdy."
+		},
+		"hideMap.missions.event": {
+			"title": "Misje wydarzenia"
+		},
+		"hideMap.missions.event.red": {
+			"title": "Czerwone misje wydarzenia"
+		},
+		"hideMap.missions.event.yellow": {
+			"title": "Żółte misje wydarzenia"
+		},
+		"hideMap.missions.event.green": {
+			"title": "Zielone misje wydarzenia"
+		},
+		"hideMap.missions.event.involved": {
+			"title": "Rozpoczęte misje wydarzenia",
+			"description": "Rozpoczęte misje to misje, gdzie wysłałeś już pojazdy."
+		},
+		"hideMap.poi": {
+			"title": "UM"
+		},
+		"hideMap.poi.poi": {
+			"title": "UM po nazwie",
+			"description": "Po włączeniu tego ustawienia otworzy się okno na mapie"
+		},
+		"hideMissionlist.own": {
+			"title": "Misje własne"
+		},
+		"hideMissionlist.own.all": {
+			"title": "Wszystkie misje własne"
+		},
+		"hideMissionlist.own.involved": {
+			"title": "Rozpoczęte misje własne",
+			"description": "Rozpoczęte misje to misje, gdzie wysłałeś już pojazdy."
+		},
+		"hideMissionlist.own.notInvolved": {
+			"title": "Nie rozpoczęte misje własne",
+			"description": "Nie rozpoczęte misje to misje, gdzie wysłałeś jeszcze pojazdów."
+		},
+		"hideMissionlist.own.shared": {
+			"title": "Udostępnione misje własne"
+		},
+		"hideMissionlist.own.notShared": {
+			"title": "Nieudostępnione shared misje własne"
+		},
+		"hideMissionlist.own.alliance": {
+			"title": "Misje własne poniżej wartości sojuszu",
+			"description": "Możesz zmienić wartość sojuszu w module \"Sojusz\""
+		},
+		"hideMissionlist.alliance": {
+			"title": "Misje sojuszu"
+		},
+		"hideMissionlist.alliance.all": {
+			"title": "Wszystkie misje sojuszu"
+		},
+		"hideMissionlist.alliance.involved": {
+			"title": "Rozpoczęte alliance missions",
+			"description": "Rozpoczęte misje to misje, gdzie wysłałeś już pojazdy."
+		},
+		"hideMissionlist.event": {
+			"title": "Misje wydarzenia"
+		},
+		"hideMissionlist.event.involved": {
+			"title": "Rozpoczęte misje wydarzenia",
+			"description": "Rozpoczęte misje to misje, gdzie wysłałeś już pojazdy."
+		},
+		"hideMissionlist.labelColor": {
+			"title": "Ukryj według koloru etykiety"
+		},
+		"hideMissionlist.labelColor.setting": {
+			"title": "Ukryj według koloru etykiety",
+			"description": "Prosty sposób na zachowanie ustawienia \"Ukryj według koloru etykiety\" i wyłączenie poszczególnych"
+		},
+		"hideMissionlist.labelColor.own": {
+			"title": "Misje własne"
+		},
+		"hideMissionlist.labelColor.own.red": {
+			"title": "Czerwona etykieta"
+		},
+		"hideMissionlist.labelColor.own.green": {
+			"title": "Zielona etykieta"
+		},
+		"hideMissionlist.labelColor.own.darkBlue": {
+			"title": "Ciemnoniebieska etykieta"
+		},
+		"hideMissionlist.labelColor.own.lightBlue": {
+			"title": "Jasnoniebieska etykieta"
+		},
+		"hideMissionlist.labelColor.own.yellow": {
+			"title": "Żółta etykieta"
+		},
+		"hideMissionlist.labelColor.alliance": {
+			"title": "Misje sojszu"
+		},
+		"hideMissionlist.labelColor.alliance.red": {
+			"title": "Czerwona etykieta"
+		},
+		"hideMissionlist.labelColor.alliance.green": {
+			"title": "Zielona etykieta"
+		},
+		"hideMissionlist.labelColor.alliance.darkBlue": {
+			"title": "Ciemnoniebieska etykieta"
+		},
+		"hideMissionlist.labelColor.alliance.lightBlue": {
+			"title": "Jasnoniebieska etykieta"
+		},
+		"hideMissionlist.labelColor.alliance.yellow": {
+			"title": "Żółta etykieta"
+		},
+		"hideMissionlist.labelColor.event": {
+			"title": "Misje wydarzenia"
+		},
+		"hideMissionlist.labelColor.event.red": {
+			"title": "Czerwona etykieta"
+		},
+		"hideMissionlist.labelColor.event.green": {
+			"title": "Zielona etykieta"
+		},
+		"hideMissionlist.labelColor.event.darkBlue": {
+			"title": "Ciemnoniebieska etykieta"
+		},
+		"hideMissionlist.labelColor.event.lightBlue": {
+			"title": "Jasnoniebieska etykieta"
+		},
+		"hideMissionlist.labelColor.event.yellow": {
+			"title": "Żółta etykieta"
+		},
+		"hideMissionlist.filterTypes": {
+			"title": "Ukryj według typów filtrów w grze"
+		},
+		"hideMissionlist.filterTypes.setting": {
+			"title": "Ukryj według typów filtrów w grze",
+			"description": "Prosty sposób na zachowanie ustawienia \"Ukryj według typów filtrów w grze\" i wyłączenie poszczególnych"
+		},
+		"hideMissionlist.filterTypes.own": {
+			"title": "Misje własne"
+		},
+		"hideMissionlist.filterTypes.alliance": {
+			"title": "Misje sojuszu"
+		},
+		"hideMissionlist.filterTypes.event": {
+			"title": "Misje wydarzenia"
+		},
+		"sortMissionlist.oldSort": {
+			"title": "Stary standard sortowania misji z gry (już nie działa)",
+			"description": "Użyj starego standardu sortowania misji z gry (misja własna - misje transportowe - misje planowane - misje sojuszu - misje wydarzenia sojuszu)"
+		},
+		"sortMissionlist.own": {
+			"title": "Misje własne"
+		},
+		"sortMissionlist.own.credits": {
+			"title": "Sortuj misje własne według kredytów",
+			"description": "Sortuje misje własne na liście misji na podstawie średnich kredytów, posortowanych od najniższej do najwyższej"
+		},
+		"sortMissionlist.own.ownDesc": {
+			"title": "Sortuj malejąco"
+		},
+		"sortMissionlist.own.desc": {
+			"title": "Sortuj malejąco"
+		},
+		"sortMissionlist.alliance": {
+			"title": "Misje sojuszu"
+		},
+		"sortMissionlist.alliance.credits": {
+			"title": "Sortuj misje sojuszu według kredytów",
+			"description": "Sortuje misje sojuszu na liście misji na podstawie średnich kredytów, posortowanych od najniższej do najwyższej"
+		},
+		"sortMissionlist.alliance.allianceDesc": {
+			"title": "Sortuj malejąco"
+		},
+		"sortMissionlist.alliance.desc": {
+			"title": "Sortuj malejąco"
+		},
+		"sortMissionlist.event": {
+			"title": "Misje wydarzenia"
+		},
+		"sortMissionlist.event.credits": {
+			"title": "Sortuj misje wydarzenia według kredytów",
+			"description": "Sortuje misje wydarzenia na liście misji na podstawie średnich kredytów, posortowanych od najniższej do najwyższej"
+		},
+		"sortMissionlist.event.eventDesc": {
+			"title": "Sortuj malejąco"
+		},
+		"sortMissionlist.event.desc": {
+			"title": "Sortuj malejąco"
+		},
+		"sortMissionlist.guard": {
+			"title": "Misje planowane"
+		},
+		"sortMissionlist.guard.credits": {
+			"title": "Sortuj misje planowane według kredytów",
+			"description": "Sortuje misje planowane na liście misji na podstawie średnich kredytów, posortowanych od najniższej do najwyższej"
+		},
+		"sortMissionlist.guard.guardDesc": {
+			"title": "Sortuj malejąco"
+		},
+		"sortMissionlist.guard.desc": {
+			"title": "Sortuj malejąco"
+		}
+	}
+}
