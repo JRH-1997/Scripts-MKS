@@ -79,7 +79,7 @@
 		},
 		"general.HideAlarmNextShareOnlyupper": {
 			"title": "Pokaż tylko w stopce misji",
-			"description": "ukryj tylko górny przycisk \"Wyślij, udostępnij i przejdź do następnej misji\""
+			"description": "Ukryj tylko górny przycisk \"Wyślij, udostępnij i przejdź do następnej misji\""
 		},
 		"credits.missionlist": {
 			"title": "Lista misji"
@@ -119,7 +119,7 @@
 			"description": "Pokazuje sumy z misji w kategoriach: <br>Misje własne / Misje planowane / Misje sojuszu / Misje wydarzenia"
 		},
 		"credits.remainingCredits.total": {
-			"title": "Suma całkowita po sumach",
+			"title": "Suma całkowita",
 			"description": "Pokazuje sumę całkowita po sumach"
 		},
 		"credits.labels": {
@@ -139,7 +139,7 @@
 		},
 		"credits.DoubleCreditsEvent": {
 			"title": "Automatyczne podwajanie kredytów",
-			"description": "Automatycznie podwaja wartości kredytów etykiet, tekstów i sum podczas wydażenia podwójnych kredytów. To ustawienie nie wpływa na ustawienia sojuszu"
+			"description": "Automatycznie podwaja wartości kredytów w etykietach, tekstach i sumach podczas wydażenia podwójnych kredytów. To ustawienie nie wpływa na ustawienia sojuszu"
 		},
 		"alliance.missionlist": {
 			"title": "Etykieta na liście misji",
