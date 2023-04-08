@@ -36,6 +36,7 @@
 		"restoreBtn": "Przywróć ustawienia",
 		"importBtn": "Importuj ustawienia",
 		"exportBtn": "Eksportuj ustawienia",
+		"updateBtn": "Aktualizuj skrypt",
 		"modules": "Moduły",
 		"general": {
 			"title": "Ogólne"
@@ -159,6 +160,10 @@
 		},
 		"alliance.count": {
 			"title": "Sumy do udostępnienia/udostępnione nad listą misji"
+		},
+		"alliance.countInvolved": {
+			"title": "Suma rozpoczętych misji sojuszniczych",
+			"description": "Sumy z misji sojuszu, gdzie jedziesz/jesteś obecny (liczba / kredyty)"
 		},
 		"hotkey.savePOI": {
 			"title": "Zapisz nowe UM"
