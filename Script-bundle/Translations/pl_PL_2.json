@@ -121,7 +121,7 @@
 		},
 		"credits.remainingCredits.total": {
 			"title": "Suma całkowita",
-			"description": "Pokazuje sumę całkowita po sumach"
+			"description": "Pokazuje sumę całkowitą po sumach"
 		},
 		"credits.labels": {
 			"title": "Etykiety"
