@@ -31,7 +31,7 @@
 	"undefined": "Niezdefiniowane",
 	"s": {
 		"title": "Scripts-MKS Ustawienia",
-		"information": "Witam! Dzięki za używanie tego skryptu. Jeśli chcesz uzyskać więcej informacji, zawsze możesz <a class=\"white\" href=\"%SITEURL%\" target=\"blank\">zajrzeć na moją stronę</a>. Masz jakieś pytania? Proszę skontaktuj się ze mną w języku holenderskim w wiadomości Discord: JRH1997#2625, na Github'ie JRH-1997 lub w grze na holenderskim serverze www.meldkamerspel.com: JRH1997<br>Jeśli chcesz zmienić niektóre tłumaczenia lub dodać opisy do ustawień, <a class=\"white\" href=\"%githubtranslations%\" target=\"blank\">nie krępuj się współtworzyć na Githubie</a>. ",
+		"information": "Witam! Dzięki za używanie tego skryptu. Jeśli chcesz uzyskać więcej informacji, zawsze możesz <a class=\"white\" href=\"%SITEURL%\" target=\"blank\">zajrzeć na moją stronę</a>. Masz jakieś pytania? Proszę skontaktuj się ze mną w języku holenderskim w wiadomości Discord: JRH1997#2625, na Github'ie JRH-1997 lub w grze na holenderskim serwerze www.meldkamerspel.com: JRH1997<br>Jeśli chcesz zmienić niektóre tłumaczenia lub dodać opisy do ustawień, <a class=\"white\" href=\"%githubtranslations%\" target=\"blank\">nie krępuj się współtworzyć na Githubie</a>. ",
 		"restoreMessage": "Czy na pewno chcesz przywrócić wszystkie ustawienia skryptu?",
 		"restoreBtn": "Przywróć ustawienia",
 		"importBtn": "Importuj ustawienia",
