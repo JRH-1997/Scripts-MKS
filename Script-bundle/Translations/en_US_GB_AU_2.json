@@ -283,6 +283,10 @@
 			"title": "Own missions under alliance value",
 			"description": "You could change the alliance value at the module \"Alliance\""
 		},
+		"hideMissionlist.own.ignorePlannedHospital": {
+			"title": "Ignore planned missions and patient transfer missions",
+			"description": "When you turn this setting on, the planned missions and patient transfer missions will be ignored with the settings before this."
+		},
 		"hideMissionlist.alliance": {
 			"title": "Alliance missions"
 		},

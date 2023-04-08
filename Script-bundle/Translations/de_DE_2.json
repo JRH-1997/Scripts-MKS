@@ -155,7 +155,7 @@
 			"title": "Summen der freizugebenen / freigegebenen Einsätze"
 		},
 		"alliance.countInvolved": {
-			"title": "Totals of the involved alliance missions"						
+			"title": "Totals of the involved alliance missions"
 		},
 		"hotkey.savePOI": {
 			"title": "Neuen POI speichern"
@@ -275,6 +275,10 @@
 		"hideMissionlist.own.alliance": {
 			"title": "Own missions under alliance value",
 			"description": "You could change the alliance value at the module \"Verband\""
+		},
+		"hideMissionlist.own.ignorePlannedHospital": {
+			"title": "Ignore planned missions and patient transfer missions",
+			"description": "When you turn this setting on, the planned missions and patient transfer missions will be ignored with the settings before this."
 		},
 		"hideMissionlist.alliance": {
 			"title": "Verbands Einsätze"

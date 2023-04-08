@@ -290,6 +290,10 @@
 		"hideMissionlist.alliance": {
 			"title": "Team meldingen"
 		},
+		"hideMissionlist.own.ignorePlannedHospital": {
+			"title": "Negeer geplande inzetten en besteld vervoer",
+			"description": "Als je deze optie aanzet zullen de geplande inzetten en besteld vervoer inzetten worden genegeerd bij voorgaande instellingen."
+		},
 		"hideMissionlist.alliance.all": {
 			"title": "Alle team meldingen"
 		},

@@ -288,10 +288,10 @@
 			"title": "Misje własne poniżej wartości sojuszu",
 			"description": "Możesz zmienić wartość sojuszu w module \"Sojusz\""
 		},
-		"hideMissionlist.own.alliance.ignorePlannedHospital": {
-    		"title": "Ignoruj misje planowane i misje transportu pacjentów",
-        	"description": "Po włączeniu tego ustawienia misje planowane i misje transportu pacjentów będą ignorowane wraz z wcześniejszymi ustawieniami."
-  		},
+		"hideMissionlist.own.ignorePlannedHospital": {
+			"title": "Ignoruj misje planowane i misje transportu pacjentów",
+			"description": "Po włączeniu tego ustawienia misje planowane i misje transportu pacjentów będą ignorowane wraz z wcześniejszymi ustawieniami."
+		},
 		"hideMissionlist.alliance": {
 			"title": "Misje sojuszu"
 		},
