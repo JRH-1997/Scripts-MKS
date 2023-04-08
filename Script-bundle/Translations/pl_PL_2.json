@@ -3,8 +3,8 @@
 	"Off": "Off: ",
 	"AllianceCount_ToShare_Translation": "Do udostępnienia: ",
 	"AllianceCount_Shared_Translation": " Udostępnione: ",
-	"AllianceCount_Involved_Translation": "Sojusz w drodze / na misji: ",
-	"Hotkey_InputKeycode_new_Menu_Translation": "Click on a inputfield and push the desired button:",
+	"AllianceCount_Involved_Translation": "Misje sojuszu w drodze / na misji: ",
+	"Hotkey_InputKeycode_new_Menu_Translation": "Kliknij w pole wprowadzania i naciśnij żądany przycisk:",
 	"Hotkey_Restoredefault_Menu_Translation": "Przywróć ustawienia domyślne",
 	"HideMap_POI_Header_Translation": "Ukryj/Pokaż UM po nazwie",
 	"HideMap_POI_All_Translation": "Wszystkie",
@@ -31,11 +31,12 @@
 	"undefined": "Niezdefiniowane",
 	"s": {
 		"title": "Scripts-MKS Ustawienia",
-		"information": "Witam! Dzięki za używanie tego skryptu. Jeśli chcesz uzyskać więcej informacji, zawsze możesz <a class=\"white\" href=\"%SITEURL%\" target=\"blank\">zajrzeć na moją stronę</a>. Masz jakieś pytania? Proszę skontaktuj się ze mną w języku holenderskim w wiadomości Discord: JRH1997#2625, na Github'ie JRH-1997 lub w grze na holenderskim serverze www.meldkamerspel.com: JRH1997<br>Jeśli chcesz zmienić niektóre tłumaczenia lub dodać opisy do ustawień, <a class=\"white\" href=\"%githubtranslations%\" target=\"blank\">nie krępuj się współtworzyć na Githubie</a>. ",
+		"information": "Witam! Dzięki za używanie tego skryptu. Jeśli chcesz uzyskać więcej informacji, zawsze możesz <a class=\"white\" href=\"%SITEURL%\" target=\"blank\">zajrzeć na moją stronę</a>. Masz jakieś pytania? Proszę skontaktuj się ze mną w języku holenderskim w wiadomości Discord: JRH1997#2625, na Github'ie JRH-1997 lub w grze na holenderskim serwerze www.meldkamerspel.com: JRH1997<br>Jeśli chcesz zmienić niektóre tłumaczenia lub dodać opisy do ustawień, <a class=\"white\" href=\"%githubtranslations%\" target=\"blank\">nie krępuj się współtworzyć na Githubie</a>. ",
 		"restoreMessage": "Czy na pewno chcesz przywrócić wszystkie ustawienia skryptu?",
 		"restoreBtn": "Przywróć ustawienia",
 		"importBtn": "Importuj ustawienia",
 		"exportBtn": "Eksportuj ustawienia",
+		"updateBtn": "Aktualizuj skrypt",
 		"modules": "Moduły",
 		"general": {
 			"title": "Ogólne"
@@ -54,7 +55,7 @@
 			"title": "Ukryj na mapie"
 		},
 		"hideMissionlist": {
-			"title": "Ukryj się na liście misji"
+			"title": "Ukryj na liście misji"
 		},
 		"sortMissionlist": {
 			"title": "Sortuj listę misji"
@@ -79,7 +80,7 @@
 		},
 		"general.HideAlarmNextShareOnlyupper": {
 			"title": "Pokaż tylko w stopce misji",
-			"description": "ukryj tylko górny przycisk \"Wyślij, udostępnij i przejdź do następnej misji\""
+			"description": "Ukryj tylko górny przycisk \"Wyślij, udostępnij i przejdź do następnej misji\""
 		},
 		"credits.missionlist": {
 			"title": "Lista misji"
@@ -119,8 +120,8 @@
 			"description": "Pokazuje sumy z misji w kategoriach: <br>Misje własne / Misje planowane / Misje sojuszu / Misje wydarzenia"
 		},
 		"credits.remainingCredits.total": {
-			"title": "Suma całkowita po sumach",
-			"description": "Pokazuje sumę całkowita po sumach"
+			"title": "Suma całkowita",
+			"description": "Pokazuje sumę całkowitą po sumach"
 		},
 		"credits.labels": {
 			"title": "Etykiety"
@@ -139,7 +140,7 @@
 		},
 		"credits.DoubleCreditsEvent": {
 			"title": "Automatyczne podwajanie kredytów",
-			"description": "Automatycznie podwaja wartości kredytów etykiet, tekstów i sum podczas wydażenia podwójnych kredytów. To ustawienie nie wpływa na ustawienia sojuszu"
+			"description": "Automatycznie podwaja wartości kredytów w etykietach, tekstach i sumach podczas wydażenia podwójnych kredytów. To ustawienie nie wpływa na ustawienia sojuszu"
 		},
 		"alliance.missionlist": {
 			"title": "Etykieta na liście misji",
@@ -159,6 +160,10 @@
 		},
 		"alliance.count": {
 			"title": "Sumy do udostępnienia/udostępnione nad listą misji"
+		},
+		"alliance.countInvolved": {
+			"title": "Suma rozpoczętych misji sojuszniczych",
+			"description": "Sumy z misji sojuszu, gdzie jedziesz/jesteś obecny (liczba / kredyty)"
 		},
 		"hotkey.savePOI": {
 			"title": "Zapisz nowe UM"
@@ -283,6 +288,10 @@
 			"title": "Misje własne poniżej wartości sojuszu",
 			"description": "Możesz zmienić wartość sojuszu w module \"Sojusz\""
 		},
+		"hideMissionlist.own.alliance.ignorePlannedHospital": {
+    		"title": "Ignoruj misje planowane i misje transportu pacjentów",
+        	"description": "Po włączeniu tego ustawienia misje planowane i misje transportu pacjentów będą ignorowane wraz z wcześniejszymi ustawieniami."
+  		},
 		"hideMissionlist.alliance": {
 			"title": "Misje sojuszu"
 		},
@@ -290,7 +299,7 @@
 			"title": "Wszystkie misje sojuszu"
 		},
 		"hideMissionlist.alliance.involved": {
-			"title": "Rozpoczęte alliance missions",
+			"title": "Rozpoczęte misje sojuszu",
 			"description": "Rozpoczęte misje to misje, gdzie wysłałeś już pojazdy."
 		},
 		"hideMissionlist.event": {
