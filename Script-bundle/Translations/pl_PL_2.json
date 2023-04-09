@@ -207,54 +207,54 @@
 			"title": "Misje własne"
 		},
 		"hideMap.missions.own.red": {
-			"title": "Czerwone misje własne"
+			"title": "Czerwone"
 		},
 		"hideMap.missions.own.yellow": {
-			"title": "Żółte misje własne"
+			"title": "Żółte"
 		},
 		"hideMap.missions.own.green": {
-			"title": "Zielone misje własne"
+			"title": "Zielone"
 		},
 		"hideMap.missions.own.shared": {
-			"title": "Udostępnione misje"
+			"title": "Udostępnione"
 		},
 		"hideMap.missions.own.notShared": {
-			"title": "Nieudostępnione misje"
+			"title": "Nieudostępnione"
 		},
 		"hideMap.missions.own.involved": {
-			"title": "Rozpoczęte misje własne",
+			"title": "Rozpoczęte",
 			"description": "Rozpoczęte misje to misje, gdzie wysłałeś już pojazdy."
 		},
 		"hideMap.missions.alliance": {
 			"title": "Misje sojuszu"
 		},
 		"hideMap.missions.alliance.red": {
-			"title": "Czerwone misje sojuszu"
+			"title": "Czerwone"
 		},
 		"hideMap.missions.alliance.yellow": {
-			"title": "Żółte misje sojuszu"
+			"title": "Żółte"
 		},
 		"hideMap.missions.alliance.green": {
-			"title": "Zielone misje sojuszu"
+			"title": "Zielone"
 		},
 		"hideMap.missions.alliance.involved": {
-			"title": "Rozpoczęte misje sojuszu",
+			"title": "Rozpoczęte",
 			"description": "Rozpoczęte misje to misje, gdzie wysłałeś już pojazdy."
 		},
 		"hideMap.missions.event": {
 			"title": "Misje wydarzenia"
 		},
 		"hideMap.missions.event.red": {
-			"title": "Czerwone misje wydarzenia"
+			"title": "Czerwone"
 		},
 		"hideMap.missions.event.yellow": {
-			"title": "Żółte misje wydarzenia"
+			"title": "Żółte"
 		},
 		"hideMap.missions.event.green": {
-			"title": "Zielone misje wydarzenia"
+			"title": "Zielone"
 		},
 		"hideMap.missions.event.involved": {
-			"title": "Rozpoczęte misje wydarzenia",
+			"title": "Rozpoczęte",
 			"description": "Rozpoczęte misje to misje, gdzie wysłałeś już pojazdy."
 		},
 		"hideMap.poi": {
@@ -268,21 +268,21 @@
 			"title": "Misje własne"
 		},
 		"hideMissionlist.own.all": {
-			"title": "Wszystkie misje własne"
+			"title": "Wszystkie"
 		},
 		"hideMissionlist.own.involved": {
-			"title": "Rozpoczęte misje własne",
+			"title": "Rozpoczęte",
 			"description": "Rozpoczęte misje to misje, gdzie wysłałeś już pojazdy."
 		},
 		"hideMissionlist.own.notInvolved": {
-			"title": "Nie rozpoczęte misje własne",
+			"title": "Nie rozpoczęte",
 			"description": "Nie rozpoczęte misje to misje, gdzie wysłałeś jeszcze pojazdów."
 		},
 		"hideMissionlist.own.shared": {
-			"title": "Udostępnione misje własne"
+			"title": "Udostępnione"
 		},
 		"hideMissionlist.own.notShared": {
-			"title": "Nieudostępnione shared misje własne"
+			"title": "Nieudostępnione"
 		},
 		"hideMissionlist.own.alliance": {
 			"title": "Misje własne poniżej wartości sojuszu",
@@ -296,17 +296,17 @@
 			"title": "Misje sojuszu"
 		},
 		"hideMissionlist.alliance.all": {
-			"title": "Wszystkie misje sojuszu"
+			"title": "Wszystkie "
 		},
 		"hideMissionlist.alliance.involved": {
-			"title": "Rozpoczęte misje sojuszu",
+			"title": "Rozpoczęte",
 			"description": "Rozpoczęte misje to misje, gdzie wysłałeś już pojazdy."
 		},
 		"hideMissionlist.event": {
 			"title": "Misje wydarzenia"
 		},
 		"hideMissionlist.event.involved": {
-			"title": "Rozpoczęte misje wydarzenia",
+			"title": "Rozpoczęte",
 			"description": "Rozpoczęte misje to misje, gdzie wysłałeś już pojazdy."
 		},
 		"hideMissionlist.labelColor": {
@@ -394,8 +394,8 @@
 			"title": "Misje własne"
 		},
 		"sortMissionlist.own.credits": {
-			"title": "Sortuj misje własne według kredytów",
-			"description": "Sortuje misje własne na liście misji na podstawie średnich kredytów, posortowanych od najniższej do najwyższej"
+			"title": "Sortuj misje kredytów",
+			"description": "Sortuje na liście misji na podstawie średnich kredytów, posortowanych od najniższej do najwyższej"
 		},
 		"sortMissionlist.own.ownDesc": {
 			"title": "Sortuj malejąco"
@@ -407,8 +407,8 @@
 			"title": "Misje sojuszu"
 		},
 		"sortMissionlist.alliance.credits": {
-			"title": "Sortuj misje sojuszu według kredytów",
-			"description": "Sortuje misje sojuszu na liście misji na podstawie średnich kredytów, posortowanych od najniższej do najwyższej"
+			"title": "Sortuj według kredytów",
+			"description": "Sortuje na liście misji na podstawie średnich kredytów, posortowanych od najniższej do najwyższej"
 		},
 		"sortMissionlist.alliance.allianceDesc": {
 			"title": "Sortuj malejąco"
