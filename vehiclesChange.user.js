@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         vehicleChanges NL / UK / FR / US
-// @version      1.5.0
+// @version      1.5.1
 // @description  Change settings of vehicles * Original of DrTraxx *
 // @author       DrTraxx / JRH1997
 // @match        https://politie.meldkamerspel.com/
@@ -333,11 +333,13 @@
 	I18n.translations.en_US.vehicleChanges = {
 		ids: {
 			segLeader: [29, 60],
+			ovdp: [47],
 		},
 		close: "Close",
 		title: "Vehicle settings",
 		tabs: {
 			segLeader: "EMS Chief/Mobile Command",
+			ovdp: "Police Supervisor/Sheriff",
 			GeneralSettings: "General vehicle settings"
 		},
 		settingsForAll: "Settings for all %{category}",
@@ -397,6 +399,64 @@
 					],
 					dependsOn: "hospital_automatic"
 				},
+			},
+			ovdp: {
+				vehicle_extra_information_attributes: {
+					category: true,
+					police_cell_automatic: {
+						title: "Assign Cells Automatically to Prisoner Transports",
+						type: "checkbox",
+					},
+					police_cell_own: {
+						title: "Only Use Own Cells",
+						type: "checkbox",
+						dependsOn: "police_cell_automatic"
+					},
+					police_cell_max_price: {
+						title: "Maximum Fees",
+						type: "select",
+						options: [
+							{ value: 0, label: "0 %" },
+							{ value: 10, label: "10 %" },
+							{ value: 20, label: "20 %" },
+							{ value: 30, label: "30 %" },
+							{ value: 40, label: "40 %" },
+							{ value: 50, label: "50 %" },
+						],
+						dependsOn: "police_cell_automatic"
+					},
+					police_cell_max_distance: {
+						title: "Max. Distance to Cell",
+						type: "select",
+						options: [
+							{ value: 1, label: "1 km" },
+							{ value: 5, label: "5 km" },
+							{ value: 20, label: "20 km" },
+							{ value: 50, label: "50 km" },
+							{ value: 100, label: "100 km" },
+							{ value: 200, label: "200 km" },
+						],
+						dependsOn: "police_cell_automatic"
+					},
+					police_cell_free_space: {
+						title: "Cells to Leave Empty in Stations",
+						type: "select",
+						options: [
+							{ value: 0, label: "0" },
+							{ value: 1, label: "1" },
+							{ value: 2, label: "2" },
+							{ value: 3, label: "3" },
+							{ value: 4, label: "4" },
+							{ value: 5, label: "5" },
+						],
+						dependsOn: "police_cell_automatic"
+					},
+				},
+				prisoner_transportation_delay: {
+					title: "Custom delay for automatic prisoner transportation (time in minutes)",
+					type: "number",
+					dependsOn: "police_cell_automatic"
+				}
 			},
 		},
 		GeneralSettings: {
