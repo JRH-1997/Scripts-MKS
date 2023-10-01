@@ -4,6 +4,7 @@
 	"AllianceCount_ToShare_Translation": "To share: ",
 	"AllianceCount_Shared_Translation": " Shared: ",
 	"AllianceCount_Involved_Translation": "Alliance enroute / at mission: ",
+	"AllianceCount_EventInvolved_Translation": "Event enroute / at mission: ",
 	"Hotkey_InputKeycode_new_Menu_Translation": "Click on a inputfield and push the desired button:",
 	"Hotkey_Restoredefault_Menu_Translation": "Restore default settings",
 	"HideMap_POI_Header_Translation": "Hide/Show POI by name",
@@ -159,6 +160,12 @@
 		},
 		"alliance.count": {
 			"title": "Totals of to share / shared missions above the missionlist"
+		},
+		"alliance.countInvolved": {
+			"title": "Totals of the involved alliance missions"
+		},
+		"alliance.countEventInvolved": {
+			"title": "Totals of the involved event missions"
 		},
 		"hotkey.savePOI": {
 			"title": "Save new POI"

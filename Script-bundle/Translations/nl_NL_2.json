@@ -4,6 +4,7 @@
 	"AllianceCount_ToShare_Translation": "Te delen: ",
 	"AllianceCount_Shared_Translation": " Gedeeld: ",
 	"AllianceCount_Involved_Translation": "Team aanrijdend / aanwezig: ",
+	"AllianceCount_EventInvolved_Translation": "Event aanrijdend / aanwezig: ",
 	"HideMap_POI_Header_Translation": "POI verbergen/tonen op naam",
 	"HideMap_POI_All_Translation": "Alles",
 	"HideMap_POI_Show_POI_Translation": "POI Tonen",
@@ -162,6 +163,10 @@
 		"alliance.countInvolved": {
 			"title": "Totalen van betrokken teammeldingen",
 			"description": "Totalen van teammeldingen waar je aanrijdend / aanwezig bent (aantal / credits)"
+		},
+		"alliance.countEventInvolved": {
+			"title": "Totalen van betrokken eventmeldingen",
+			"description": "Totalen van eventmeldingen waar je aanrijdend / aanwezig bent (aantal / credits)"
 		},
 		"hotkey.savePOI": {
 			"title": "Opslaan nieuwe POI",

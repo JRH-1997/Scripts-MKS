@@ -4,6 +4,7 @@
 	"AllianceCount_ToShare_Translation": "Freizugeben: ",
 	"AllianceCount_Shared_Translation": " Freigegeben: ",
 	"AllianceCount_Involved_Translation": "Alliance enroute / at mission: ",
+	"AllianceCount_EventInvolved_Translation": "Event enroute / at mission: ",
 	"HideMap_POI_Header_Translation": "POI ein-/ausblenden nach Namen",
 	"HideMap_POI_All_Translation": "Alles",
 	"HideMap_POI_Show_POI_Translation": "POI anzeigen",
@@ -156,6 +157,9 @@
 		},
 		"alliance.countInvolved": {
 			"title": "Totals of the involved alliance missions"
+		},
+		"alliance.countEventInvolved": {
+			"title": "Totals of the involved event missions"
 		},
 		"hotkey.savePOI": {
 			"title": "Neuen POI speichern"

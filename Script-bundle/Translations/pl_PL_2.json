@@ -4,6 +4,7 @@
 	"AllianceCount_ToShare_Translation": "Do udostępnienia: ",
 	"AllianceCount_Shared_Translation": " Udostępnione: ",
 	"AllianceCount_Involved_Translation": "Misje sojuszu w drodze / na misji: ",
+	"AllianceCount_EventInvolved_Translation": "Event enroute / at mission: ",
 	"Hotkey_InputKeycode_new_Menu_Translation": "Kliknij w pole wprowadzania i naciśnij żądany przycisk:",
 	"Hotkey_Restoredefault_Menu_Translation": "Przywróć ustawienia domyślne",
 	"HideMap_POI_Header_Translation": "Ukryj/Pokaż UM po nazwie",
@@ -164,6 +165,9 @@
 		"alliance.countInvolved": {
 			"title": "Suma rozpoczętych misji sojuszniczych",
 			"description": "Sumy z misji sojuszu, gdzie jedziesz/jesteś obecny (liczba / kredyty)"
+		},
+		"alliance.countEventInvolved": {
+			"title": "Totals of the involved event missions"
 		},
 		"hotkey.savePOI": {
 			"title": "Zapisz nowe UM"
