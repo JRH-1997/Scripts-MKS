@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         vehicleChanges NL / UK / FR / US
-// @version      1.5.1
+// @version      1.5.2
 // @description  Change settings of vehicles * Original of DrTraxx *
 // @author       DrTraxx / JRH1997
 // @match        https://politie.meldkamerspel.com/
@@ -675,7 +675,7 @@ overflow-y: auto;
         	</div>`
 		);
 
-	$("ul .dropdown-menu[aria-labelledby='menu_profile'] >> a[href='/missionSpeed']")
+	$("ul .dropdown-menu[aria-labelledby='menu_profile'] >> a[href*='peed']")
 		.parent()
 		.after(`<li role="presentation"><a data-toggle="modal" data-target="#veChModal" style="cursor:pointer" id="veChOpenModal"><span class="glyphicon glyphicon-cog"></span> ${t("title")}</a></li>`);
 
