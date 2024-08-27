@@ -495,6 +495,171 @@
 		GeneralSettingsVehicleSelection: "Select vehicletype",
 		GeneralSettingsDescription: "Each setting has a checkbox to select the setting you want to change. This function will only change vehicles that has other settings than the settings you selected. Only the setting of 'Dispatch only as own vehicle class' will set all vehicles because that data is not available"
 	};
+	I18n.translations.en_AU.vehicleChanges = {
+		ids: {
+            segLeader: [23],
+            ovdp: [37],
+		},
+		close: "Close",
+		title: "Vehicle settings",
+		tabs: {
+			segLeader: "Paramedic Supervisor",
+			ovdp: "Senior Sergeant",
+			GeneralSettings: "General vehicle settings"
+		},
+		settingsForAll: "Settings for all %{category}",
+		setSettings: "Set settings",
+		settings: {
+			segLeader: {
+				hospital_automatic: {
+					title: "Automatically assign a hospital to EMS",
+					type: "checkbox",
+				},
+				hospital_own: {
+					title: "Only transport to own facilities",
+					type: "checkbox",
+					dependsOn: "hospital_automatic"
+				},
+				hospital_right_building_extension: {
+					title: "Only transport to hospitals with treatment capability",
+					type: "checkbox",
+					dependsOn: "hospital_automatic"
+				},
+				hospital_max_price: {
+					title: "Maximum accepted fee",
+					type: "select",
+					options: [
+						{ value: 0, label: "0 %" },
+						{ value: 10, label: "10 %" },
+						{ value: 20, label: "20 %" },
+						{ value: 30, label: "30 %" },
+						{ value: 40, label: "40 %" },
+						{ value: 50, label: "50 %" },
+					],
+					dependsOn: "hospital_automatic"
+				},
+				hospital_max_distance: {
+					title: "Max. distance to the hospital",
+					type: "select",
+					options: [
+						{ value: 1, label: "1 km" },
+						{ value: 5, label: "5 km" },
+						{ value: 20, label: "20 km" },
+						{ value: 50, label: "50 km" },
+						{ value: 100, label: "100 km" },
+						{ value: 200, label: "200 km" },
+					],
+					dependsOn: "hospital_automatic"
+				},
+				hospital_free_space: {
+					title: "Number of beds held as a reserve",
+					type: "select",
+					options: [
+						{ value: 0, label: "0" },
+						{ value: 1, label: "1" },
+						{ value: 2, label: "2" },
+						{ value: 3, label: "3" },
+						{ value: 4, label: "4" },
+						{ value: 5, label: "5" },
+					],
+					dependsOn: "hospital_automatic"
+				},
+			},
+			ovdp: {
+				vehicle_extra_information_attributes: {
+					category: true,
+					police_cell_automatic: {
+						title: "Assign Cells Automatically to Prisoner Transports",
+						type: "checkbox",
+					},
+					police_cell_own: {
+						title: "Only Use Own Cells",
+						type: "checkbox",
+						dependsOn: "police_cell_automatic"
+					},
+					police_cell_max_price: {
+						title: "Maximum Fees",
+						type: "select",
+						options: [
+							{ value: 0, label: "0 %" },
+							{ value: 10, label: "10 %" },
+							{ value: 20, label: "20 %" },
+							{ value: 30, label: "30 %" },
+							{ value: 40, label: "40 %" },
+							{ value: 50, label: "50 %" },
+						],
+						dependsOn: "police_cell_automatic"
+					},
+					police_cell_max_distance: {
+						title: "Max. Distance to Cell",
+						type: "select",
+						options: [
+							{ value: 1, label: "1 km" },
+							{ value: 5, label: "5 km" },
+							{ value: 20, label: "20 km" },
+							{ value: 50, label: "50 km" },
+							{ value: 100, label: "100 km" },
+							{ value: 200, label: "200 km" },
+						],
+						dependsOn: "police_cell_automatic"
+					},
+					police_cell_free_space: {
+						title: "Cells to Leave Empty in Stations",
+						type: "select",
+						options: [
+							{ value: 0, label: "0" },
+							{ value: 1, label: "1" },
+							{ value: 2, label: "2" },
+							{ value: 3, label: "3" },
+							{ value: 4, label: "4" },
+							{ value: 5, label: "5" },
+						],
+						dependsOn: "police_cell_automatic"
+					},
+				},
+				prisoner_transportation_delay: {
+					title: "Custom delay for automatic prisoner transportation (time in minutes)",
+					type: "number",
+					dependsOn: "police_cell_automatic"
+				}
+			},
+		},
+		GeneralSettings: {
+			personal_max: {
+				title: "Max. crew members",
+				type: "select",
+				options: [],
+			},
+			start_delay: {
+				title: "Response delay (Time in seconds)",
+				type: "number",
+			},
+			ignore_aao: {
+				title: "Exclude in the Alarm and Response Plan",
+				type: "checkbox",
+			},
+			working_hour_start: {
+				title: "Shift - start time",
+				type: "select",
+				options: new Array(24).fill().map((_, i) => ({ value: i, label: `${i}:00` })),
+			},
+			working_hour_end: {
+				title: "Shift - end time",
+				type: "select",
+				options: new Array(24).fill().map((_, i) => ({ value: i, label: `${i}:00` })),
+			},
+			vehicle_type_caption: {
+				title: "Own vehicle category",
+				type: "text",
+			},
+			vehicle_type_ignore_default_aao: {
+				title: "Only dispatch vehicle as own vehicle class. (If this box is ticked then the vehicle will only be dispatched as the custom class. If you wish to still have this vehicle dispatched as it’s original class as well, leave this unticked)",
+				type: "checkbox",
+			},
+		},
+		GeneralSettingsVehicleSelection: "Select vehicletype",
+		GeneralSettingsDescription: "Each setting has a checkbox to select the setting you want to change. This function will only change vehicles that has other settings than the settings you selected. Only the setting of 'Dispatch only as own vehicle class' will set all vehicles because that data is not available"
+	};
 	I18n.translations.fr_FR.vehicleChanges = {
 		ids: {
 			segLeader: [29]
